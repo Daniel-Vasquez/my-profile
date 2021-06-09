@@ -1,28 +1,32 @@
 import React from "react";
-import CadBlogPost from "../components/CardBlogPost";
+import CardBlogPost from "../components/CardBlogPost";
 import LittleCardBlogPost from "../components/LittleCardBlogPost";
 import Contacts from "../components/Contacts";
 import "../components/styles/Blogs.css";
+import BlogData from "../api";
+class Blogs extends React.Component {
+  constructor() {
+    super();
 
-function Blogs() {
-  return (
-    <div>
-      <CadBlogPost />
-      <section className="blogs-posts-container">
-        <div className="grid-container">
-          <h3>Últimos blogposts</h3>
-          <div className="blogs-posts-container-card">
-            <LittleCardBlogPost title="Instagram" />
-            <LittleCardBlogPost title="Badges" />
-            <LittleCardBlogPost title="Platzi video" />
-            <LittleCardBlogPost title="Maquetación" />
-            <LittleCardBlogPost title="Responsive Design" />
+    this.state = { BlogData };
+  }
+
+  render() {
+    return (
+      <div>
+        <CardBlogPost apiBlogs={this.state.BlogData} />
+        <section className="blogs-posts-container">
+          <div className="grid-container">
+            <h3>Últimos blogposts</h3>
+            <div className="blogs-posts-container-card">
+              <LittleCardBlogPost apiBlogs={this.state.BlogData} />
+            </div>
           </div>
-        </div>
-      </section>
-      <Contacts />
-    </div>
-  );
+        </section>
+        <Contacts />
+      </div>
+    );
+  }
 }
 
 export default Blogs;

@@ -4,6 +4,7 @@ import LayoutNavbar from "./components/LayoutNavbar";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Profile from "./pages/Profile";
+import CardBlogPost from "./components/CardBlogPost";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/blogs" component={Blogs} />
           <Route exact path="/perfil" component={Profile} />
+          <Route exact path="/blog/:id" component={CardBlogPost} />
         </Switch>
       </LayoutNavbar>
     </BrowserRouter>
