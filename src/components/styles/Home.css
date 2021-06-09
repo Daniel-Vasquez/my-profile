@@ -1,0 +1,45 @@
+:root {
+  --main-color: #c3285d;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: calc(100vh - 90px);
+  background-image: url("../../images/Cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main section {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-main__text {
+  font-family: "Roboto mono", monospace;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 5rem 0;
+}
+
+.home-main__button {
+  width: 150px;
+  height: 70px;
+  background: var(--main-color);
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 70px;
+  border-radius: 10px;
+  text-decoration: none;
+}

@@ -1,0 +1,34 @@
+.contactContainer {
+  width: 100%;
+  background-color: #e6e9ed;
+  text-align: center;
+  padding: 15px;
+}
+
+.contactContainer .contactContainer-left,
+.contactContainer-envelope,
+.contactContainer-right,
+.contactContainer-heart {
+  display: inline-block;
+  width: 49.5%;
+  height: 100%;
+}
+
+.contactContainer-envelope__link,
+.contactContainer-heart__link {
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.contactContainer .contactContainer-envelope,
+.contactContainer-heart {
+  text-align: initial;
+}
+
+.contactContainer-left__img,
+.contactContainer-right__img {
+  width: 100px;
+  margin-right: 10px;
+}
