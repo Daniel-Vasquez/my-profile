@@ -1,6 +1,6 @@
 .blogContainer {
   background-color: #e6e9ed;
-  padding: 0 50px 40px;
+  padding-bottom: 30px;
 }
 
 .blogContainer-blogs {
@@ -14,11 +14,12 @@
 }
 
 .blogContainer-coverPage .blogContainer-coverPage__img {
-  width: 90%;
+  width: 100%;
 }
 
 .blogContainer-info {
   grid-column: 2;
+  margin-left: 15px;
 }
 
 .blogContainer-info .blogContainer-info__title {

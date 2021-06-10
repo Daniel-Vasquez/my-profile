@@ -13,18 +13,27 @@ class Blogs extends React.Component {
 
   render() {
     return (
-      <div>
-        <CardBlogPost apiBlogs={this.state.BlogData} />
+      <React.Fragment>
+        <CardBlogPost
+          apiBlogs={this.state.BlogData}
+          title="Badges"
+          image="badges.png"
+          description="CRUD application, to create, edit, modify and delete users."
+          id="1"
+          link="https://instagram-dani.vercel.app/"
+        />
         <section className="blogs-posts-container">
           <div className="grid-container">
-            <h3>Últimos blogposts</h3>
+            <h3 className="blogs-posts-container__title">
+              Proyectos destacados
+            </h3>
             <div className="blogs-posts-container-card">
               <LittleCardBlogPost apiBlogs={this.state.BlogData} />
             </div>
           </div>
         </section>
         <Contacts />
-      </div>
+      </React.Fragment>
     );
   }
 }
