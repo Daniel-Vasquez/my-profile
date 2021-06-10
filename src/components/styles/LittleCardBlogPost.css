@@ -30,10 +30,16 @@
   height: 30px;
   width: 75px;
   margin-left: 10px;
+  transition: 0.3s all;
+  border-radius: 5px;
   border: 2px solid #c3285d;
 }
 
 .CarTittleContainer .CarTittleContainer-img:hover {
   transform: scale(1.5);
   transition: 0.3s all;
+}
+
+.CarTittleContainer-link:hover {
+  box-shadow: inset 0px 0px 7px #e91e63;
 }

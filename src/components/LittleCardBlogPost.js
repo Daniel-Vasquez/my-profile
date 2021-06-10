@@ -35,7 +35,7 @@ class LittleCardBlogPost extends React.Component {
         {this.state.BlogData.map((blog) => {
           return (
             <article key={blog.id} className="CarTittleContainer">
-              <Link to={`/blog/${blog.id}`}>
+              <Link to={`/blog/${blog.path}`}>
                 <img
                   className="CarTittleContainer-img"
                   src={blog.image}
@@ -46,7 +46,10 @@ class LittleCardBlogPost extends React.Component {
               <p className="CarTittleContainer-description">
                 {blog.description}
               </p>
-              <Link className="CarTittleContainer-link" to={`/blog/${blog.id}`}>
+              <Link
+                className="CarTittleContainer-link"
+                to={`/blog/${blog.path}`}
+              >
                 Leer más
               </Link>
             </article>

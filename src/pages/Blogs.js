@@ -15,11 +15,9 @@ class Blogs extends React.Component {
     return (
       <React.Fragment>
         <CardBlogPost
-          apiBlogs={this.state.BlogData}
           title="Badges"
           image="badges.png"
           description="CRUD application, to create, edit, modify and delete users."
-          id="1"
           link="https://instagram-dani.vercel.app/"
         />
         <section className="blogs-posts-container">

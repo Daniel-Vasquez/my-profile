@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/blogs" component={Blogs} />
           <Route exact path="/perfil" component={Profile} />
-          <Route exact path="/blog/:id" component={Blog} />
+          <Route exact path="/blog/:name" component={Blog} />
         </Switch>
       </LayoutNavbar>
     </BrowserRouter>

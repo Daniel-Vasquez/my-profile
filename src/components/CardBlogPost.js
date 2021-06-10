@@ -17,7 +17,7 @@ function CardBlogPost(props) {
           >
             <img
               className="blogContainer-coverPage__img"
-              src={props.image}
+              src={`/${props.image}`}
               alt="Logo Post"
             />
           </Link>
