@@ -72,6 +72,12 @@
   bottom: -9px;
 }
 
+@media screen and (max-width: 1000px) {
+  .containerImages {
+    padding: 0 10px;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .containerImages {
     grid-template: auto auto / 1fr;

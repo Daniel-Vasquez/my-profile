@@ -4,6 +4,7 @@ import CardProjectPost from "../components/CardProjectPost";
 import ProjectsDate from "../api";
 import DeskCard from "../components/DeskCard";
 import MobileCard from "../components/MobileCard";
+import Contacts from "../components/Contacts";
 import "../components/styles/Project.css";
 
 class Project extends React.Component {
@@ -40,6 +41,7 @@ class Project extends React.Component {
             Volver a Projects
           </Link>
         </div>
+        <Contacts />
       </React.Fragment>
     );
   }

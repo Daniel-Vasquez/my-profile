@@ -1,22 +1,23 @@
 .contactContainer {
-  width: 100%;
-  background-color: #e6e9ed;
+  display: flex;
+  flex-direction: column;
+  width: 4%;
   text-align: center;
-  padding: 15px;
+  position: fixed;
+  top: 80%;
+  right: 0;
+  margin-right: 5px;
 }
 
 .contactContainer .contactContainer-left,
-.contactContainer-envelope,
-.contactContainer-right,
-.contactContainer-heart {
-  display: inline-block;
-  width: 49.5%;
-  height: 100%;
+.contactContainer-right {
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 
 .contactContainer-envelope__link,
 .contactContainer-heart__link {
-  border-bottom: 1px solid black;
   padding-bottom: 2px;
   text-decoration: none;
   color: black;
@@ -29,6 +30,45 @@
 
 .contactContainer-left__img,
 .contactContainer-right__img {
-  width: 100px;
-  margin-right: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .contactContainer {
+    flex-direction: row;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    height: 7%;
+    background-color: #e6e9ed;
+  }
+
+  .contactContainer-envelope__link,
+  .contactContainer-heart__link {
+    padding: 0;
+  }
+
+  .contactContainer .contactContainer-left,
+  .contactContainer-right {
+    padding: 0;
+  }
+
+  .contactContainer-left__img,
+  .contactContainer-right__img {
+    width: 7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactContainer-left__img,
+  .contactContainer-right__img {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contactContainer-left__img,
+  .contactContainer-right__img {
+    width: 12%;
+  }
 }
