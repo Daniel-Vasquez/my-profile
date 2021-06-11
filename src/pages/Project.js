@@ -1,17 +1,18 @@
 import React from "react";
-import CardBlogPost from "../components/CardBlogPost";
-import blogDate from "../api";
-import "../components/styles/Blog.css";
+import { Link } from "react-router-dom";
+import CardProjectPost from "../components/CardProjectPost";
+import ProjectsDate from "../api";
 import DeskCard from "../components/DeskCard";
 import MobileCard from "../components/MobileCard";
+import "../components/styles/Project.css";
 
-class Blog extends React.Component {
+class Project extends React.Component {
   render() {
     const projectName = this.props.match.params.name;
 
-    const project = blogDate.find((project) => project.path === projectName);
-
-    // console.log(project);
+    const project = ProjectsDate.find(
+      (project) => project.path === projectName
+    );
 
     if (!project) {
       return (
@@ -22,7 +23,7 @@ class Blog extends React.Component {
     }
     return (
       <React.Fragment>
-        <CardBlogPost {...project} />
+        <CardProjectPost {...project} />
         <div className="containerImages grid-container">
           <div className="containerDesk">
             <DeskCard imageDesk={project.image} title={project.title} />
@@ -34,9 +35,14 @@ class Blog extends React.Component {
             />
           </div>
         </div>
+        <div className="containerButton">
+          <Link className="containerButton-button" to="/projects">
+            Volver a Projects
+          </Link>
+        </div>
       </React.Fragment>
     );
   }
 }
 
-export default Blog;
+export default Project;

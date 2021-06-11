@@ -3,8 +3,6 @@
   grid-template: 1fr / 2fr 1fr;
   width: 100%;
   height: 400px;
-  margin-bottom: 40px;
-  /* border: 1px solid red; */
 }
 
 .containerDesk {
@@ -27,7 +25,6 @@
 .containerImages-desk__img {
   width: 100%;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .cicle {
@@ -63,7 +60,6 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  /* border: 1px solid red; */
 }
 
 .cicleMobile {
@@ -81,7 +77,6 @@
     grid-template: auto auto / 1fr;
     gap: 15px 0;
     height: auto;
-    margin-bottom: 25px;
   }
 
   .containerDesk {

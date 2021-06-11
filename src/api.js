@@ -1,4 +1,4 @@
-const BlogData = [
+const ProjectsData = [
   {
     id: 0,
     path: "instagram",
@@ -46,4 +46,4 @@ const BlogData = [
   },
 ];
 
-export default BlogData;
+export default ProjectsData;
