@@ -1,6 +1,7 @@
 .blogContainer {
   background-color: #e6e9ed;
   padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .blogContainer-blogs {
@@ -24,6 +25,7 @@
 
 .blogContainer-info .blogContainer-info__title {
   font-size: 45px;
+  margin: 0;
 }
 
 .blogContainer-info .blogContainer-info__paragraph {
@@ -41,4 +43,34 @@
 
 .blogContainer-info__link:hover {
   border-color: #c3285d;
+}
+
+@media screen and (max-width: 1000px) {
+  .blogContainer {
+    padding: 0 10px 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blogContainer-info .blogContainer-info__title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blogContainer-blogs {
+    display: block;
+  }
+
+  .blogContainer-coverPage {
+    text-align: center;
+  }
+
+  .blogContainer-coverPage .blogContainer-coverPage__img {
+    width: 95%;
+  }
+
+  .blogContainer-blogs__title {
+    margin-left: 10px;
+  }
 }

@@ -1,15 +1,25 @@
 .containerImages {
   display: grid;
-  grid-template: 1fr / 1fr 1fr;
+  grid-template: 1fr / 2fr 1fr;
   width: 100%;
-  height: 250px;
+  height: 400px;
+  margin-bottom: 40px;
   /* border: 1px solid red; */
+}
+
+.containerDesk {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
 }
 
 .containerImages-desk {
   width: 90%;
   height: 90%;
-  border: 20px solid black;
+  border: 15px solid black;
   position: relative;
   margin: 0 auto;
 }
@@ -27,20 +37,94 @@
   border-radius: 50px;
   position: absolute;
   right: 50%;
-  bottom: -17px;
+  bottom: -12px;
+}
+
+.containerMobile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
 }
 
 .containerImages-mobile {
-  border-radius: 10px;
-  width: 30%;
+  border-radius: 15px;
+  width: 55%;
   height: 90%;
   margin: 0 auto;
-
+  background-color: black;
   border: 10px solid black;
+  position: relative;
 }
 
 .containerImages-mobile__img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   /* border: 1px solid red; */
+}
+
+.cicleMobile {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50px;
+  position: absolute;
+  right: 47%;
+  bottom: -9px;
+}
+
+@media screen and (max-width: 750px) {
+  .containerImages {
+    grid-template: auto auto / 1fr;
+    gap: 15px 0;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  .containerDesk {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: none;
+    height: 100%;
+  }
+
+  .containerImages-desk {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .containerMobile {
+    width: auto;
+    border: none;
+    height: 100%;
+  }
+
+  .containerImages-mobile {
+    width: 70%;
+    border-width: 20px;
+  }
+
+  .cicleMobile {
+    width: 15px;
+    height: 15px;
+    right: 48%;
+    bottom: -16px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .containerImages-mobile {
+    width: 70%;
+    border-width: 10px;
+  }
+
+  .cicleMobile {
+    width: 8px;
+    height: 8px;
+    bottom: -9px;
+  }
 }

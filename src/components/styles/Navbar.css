@@ -25,3 +25,25 @@
   text-decoration: none;
   border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 480px) {
+  .headerContainer {
+    display: block;
+    text-align: center;
+    height: auto;
+  }
+
+  .headerContainer .headerContainer-logo {
+    margin-left: 0;
+  }
+
+  .headerContainer-logo .headerContainer-logo__img {
+    margin-top: 0;
+  }
+
+  .headerContainer .headerContainer-link {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
