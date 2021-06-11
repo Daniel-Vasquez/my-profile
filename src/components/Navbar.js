@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../images/Logo-negro.png";
+import logoProfile from "../images/logoProfile.png";
 import "./styles/Navbar.css";
 
 function Navbar() {
@@ -10,7 +10,7 @@ function Navbar() {
         <Link to="/">
           <img
             className="headerContainer-logo__img"
-            src={logo}
+            src={logoProfile}
             alt="Logo of my profile"
           />
         </Link>

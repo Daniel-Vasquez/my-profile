@@ -1,16 +1,16 @@
 .headerContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90px;
+  height: auto;
 }
 
 .headerContainer .headerContainer-logo {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .headerContainer-logo .headerContainer-logo__img {
   width: 220px;
-  margin-top: 10px;
+  height: 90%;
 }
 
 .headerContainer .headerContainer-link {
@@ -24,6 +24,11 @@
   color: black;
   text-decoration: none;
   border-bottom: 1px solid black;
+}
+@media screen and (max-width: 1000px) {
+  .headerContainer .headerContainer-logo {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {

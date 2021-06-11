@@ -7,7 +7,7 @@ function Home() {
     <React.Fragment>
       <main className="home-main">
         <section>
-          <h1 className="home-main__text">Conoce las novedades</h1>
+          <h1 className="home-main__text">Frontend Developer</h1>
           <Link className="home-main__button" to="/projects">
             Entra ya!
           </Link>
