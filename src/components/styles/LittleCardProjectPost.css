@@ -46,6 +46,12 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .CarTittleContainer .CarTittleContainer-img:hover {
+    pointer-events: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .CarTittleContainer {
     width: 80%;
