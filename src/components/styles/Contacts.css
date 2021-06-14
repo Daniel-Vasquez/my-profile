@@ -1,7 +1,7 @@
 .contactContainer {
   display: flex;
   flex-direction: column;
-  width: 4%;
+  width: 50px;
   text-align: center;
   position: fixed;
   top: 80%;
@@ -30,7 +30,7 @@
 
 .contactContainer-left__img,
 .contactContainer-right__img {
-  width: 100%;
+  width: 85%;
 }
 
 @media screen and (max-width: 750px) {
@@ -55,14 +55,14 @@
 
   .contactContainer-left__img,
   .contactContainer-right__img {
-    width: 7%;
+    width: 8%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .contactContainer-left__img,
   .contactContainer-right__img {
-    width: 10%;
+    width: 11%;
   }
 }
 
@@ -70,5 +70,12 @@
   .contactContainer-left__img,
   .contactContainer-right__img {
     width: 12%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contactContainer-left__img,
+  .contactContainer-right__img {
+    width: 17%;
   }
 }

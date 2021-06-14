@@ -6,7 +6,7 @@ function Home() {
   return (
     <React.Fragment>
       <main className="home-main">
-        <section>
+        <section className="home-main__container">
           <h1 className="home-main__text">Frontend Developer</h1>
           <Link className="home-main__button" to="/projects">
             Entra ya!
