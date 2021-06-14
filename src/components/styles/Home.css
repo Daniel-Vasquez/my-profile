@@ -5,11 +5,12 @@
 .home-main {
   display: flex;
   justify-content: center;
-  height: calc(100vh - 89px);
+  height: calc(100vh - 90px);
   background-image: url("../../images/Cover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #020200;
 }
 
 .home-main .home-main__container {
