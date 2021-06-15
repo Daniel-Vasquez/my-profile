@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts";
 import logoProfile from "../images/profile.jpg";
 import projectData from "../api";
+import MobileCard from "../components/MobileCard";
 import "../components/styles/Profile.css";
 class Profile extends React.Component {
   constructor(props) {
@@ -12,7 +14,7 @@ class Profile extends React.Component {
 
   render() {
     const profileCardOutstanding = this.state.projectData;
-    const returnCard = profileCardOutstanding.splice(0, 3);
+    const returnCard = profileCardOutstanding.slice(0, 3);
 
     return (
       <div>
@@ -23,7 +25,7 @@ class Profile extends React.Component {
               <h2>Hola, mi nombre es Daniel Vásquez.</h2>
               <p>
                 Desarrollador Frontend con un año de preparación, de estudio y
-                practica.
+                práctica.
               </p>
               <p>
                 He tomado cursos base de HTMl y CSS (Maquetación, responsive
@@ -37,7 +39,7 @@ class Profile extends React.Component {
         </section>
         <section className="ProyectsContainer">
           <div className="grid-container">
-            <h3 className="ProyectsContainer-title">Proyectos</h3>
+            <h3 className="ProyectsContainer-title">Proyectos destacados</h3>
             <div className="outstandingContainer">
               {returnCard.map((element) => {
                 return (
@@ -45,9 +47,14 @@ class Profile extends React.Component {
                     key={element.id}
                     className="outstandingContainer-elements"
                   >
-                    <h4 className="project-container__title">
+                    <Link
+                      className="project-container__link"
+                      to={{ pathname: element.link }}
+                      target="_black"
+                    >
                       {element.title}
-                    </h4>
+                    </Link>
+                    <MobileCard imageMobile={element.imageMobile} />
                     <p className="project-container__description">
                       {element.description}
                     </p>

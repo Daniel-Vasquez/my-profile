@@ -36,7 +36,7 @@
   .headerContainer {
     display: block;
     text-align: center;
-    height: auto;
+    height: 115px;
   }
 
   .headerContainer .headerContainer-logo {

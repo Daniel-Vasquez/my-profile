@@ -41,7 +41,7 @@ function Contacts() {
       <div className="contactContainer-whats">
         <Link
           className="contactContainer-whats__link"
-          to={{ pathname: "https://api.whatsapp.com/send?phone=525585534135" }}
+          to={{ pathname: "https://api.whatsapp.com/send?phone=525531483433" }}
           target="_black"
         >
           <img

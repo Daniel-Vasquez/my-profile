@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <header className="headerContainer">
       <section className="headerContainer-logo">
-        <Link to="/">
+        <Link className="headerContainer-logo__link" to="/">
           <img
             className="headerContainer-logo__img"
             src={logoProfile}

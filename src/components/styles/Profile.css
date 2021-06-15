@@ -14,14 +14,14 @@
 }
 
 .ProyectsContainer {
-  padding: 0 50px 30px;
+  height: 550px;
 }
 
 .ProyectsContainer .ProyectsContainer-title {
   border-bottom: 1px solid #cdd2da;
-  padding-bottom: 25px;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   text-align: center;
+  margin: 0;
 }
 
 .projects-main-container {
@@ -43,19 +43,45 @@
   border-right: none;
 }
 
+.project-container__link {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.project-container__link:hover {
+  text-decoration: revert;
+}
+
 @media screen and (max-width: 750px) {
   .profileContainer {
     padding: 50px 20px;
   }
 
+  .outstandingContainer {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
   .ProyectsContainer {
     margin-bottom: 30px;
+    height: auto;
+  }
+
+  .outstandingContainer-elements {
+    margin-bottom: 40px;
+    border: none;
   }
 }
 
 @media screen and (max-width: 700px) {
   .ProyectsContainer {
     padding: 0 20px 30px;
+  }
+
+  .outstandingContainer-elements {
+    margin-bottom: 30px;
   }
 }
 
@@ -74,18 +100,8 @@
     height: 50%;
   }
 
-  .outstandingContainer {
-    grid-template-columns: 1fr;
-    width: 80%;
-    margin: 0 auto;
-  }
-
   .outstandingContainer-elements {
-    border: 1px solid #edd2da;
-  }
-
-  .outstandingContainer-elements:last-child {
-    border-right: 1px solid #edd2da;
+    margin-bottom: 50px;
   }
 }
 
@@ -97,7 +113,7 @@
 }
 
 @media screen and (max-width: 400px) {
-  .outstandingContainer {
-    width: 90%;
+  .outstandingContainer-elements {
+    margin-bottom: 70px;
   }
 }

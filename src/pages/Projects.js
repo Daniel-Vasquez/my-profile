@@ -9,9 +9,9 @@ class Projects extends React.Component {
     return (
       <React.Fragment>
         <CardProjectPost
-          title="Badges"
-          image="badges.png"
-          description="CRUD application, to create, edit, modify and delete users."
+          title="Instagram"
+          image="insta.gif"
+          description="Copy of Instagram page."
           link="https://instagram-dani.vercel.app/"
         />
         <section className="projects-posts-container">

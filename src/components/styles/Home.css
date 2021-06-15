@@ -33,19 +33,22 @@
 }
 
 .home-main__button {
-  width: 150px;
-  height: 70px;
+  width: 170px;
   background: var(--main-color);
   color: black;
   text-align: center;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 70px;
   border-radius: 10px;
   text-decoration: none;
 }
 
 @media screen and (max-width: 480px) {
+  .home-main {
+    height: calc(100vh - 115px);
+  }
+
   .home-main__text {
     font-size: 35px;
   }

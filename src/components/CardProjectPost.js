@@ -32,7 +32,7 @@ function CardProjectPost(props) {
             to={{ pathname: props.link }}
             target="_blank"
           >
-            Saber más...
+            Visitar sitio
           </Link>
         </div>
       </div>
