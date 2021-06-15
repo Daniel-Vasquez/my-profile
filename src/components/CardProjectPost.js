@@ -16,7 +16,7 @@ function CardProjectPost(props) {
           >
             <img
               className="projectContainer-coverPage__img"
-              src={`/${props.image}`}
+              src={`/${props.img}`}
               alt={props.title}
             />
           </Link>
