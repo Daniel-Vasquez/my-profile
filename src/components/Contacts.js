@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logoLinkedin from "../images/linkedin.png";
 import logoGithub from "../images/github.png";
+import logoWhats from "../images/whatsapp.png";
 import "./styles/Contacts.css";
 
 function Contacts() {
@@ -32,6 +33,20 @@ function Contacts() {
           <img
             className="contactContainer-right__img"
             src={logoGithub}
+            alt="Contacto"
+          />
+        </Link>
+      </div>
+
+      <div className="contactContainer-whats">
+        <Link
+          className="contactContainer-whats__link"
+          to={{ pathname: "https://api.whatsapp.com/send?phone=525585534135" }}
+          target="_black"
+        >
+          <img
+            className="contactContainer-whats__img"
+            src={logoWhats}
             alt="Contacto"
           />
         </Link>
