@@ -10,7 +10,9 @@ function Contacts() {
       <div className="contactContainer-left">
         <Link
           className="contactContainer-envelope__link"
-          to={{ pathname: "https://github.com/Daniel-Vasquez" }}
+          to={{
+            pathname: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+          }}
           target="_black"
         >
           <img
