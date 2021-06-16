@@ -10,7 +10,7 @@ class Projects extends React.Component {
       <React.Fragment>
         <CardProjectPost
           title="Instagram"
-          image="insta.gif"
+          img="insta.png"
           description="Copy of Instagram page."
           link="https://instagram-dani.vercel.app/"
         />
