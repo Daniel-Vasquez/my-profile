@@ -21,11 +21,17 @@
   margin-right: 50px;
 }
 
-.headerContainer-link .headerContainer-link__anchor {
+.headerContainer-link .headerContainer-link__perfil,
+.headerContainer-link__projects {
   color: black;
   text-decoration: none;
   border-bottom: 1px solid black;
 }
+
+.headerContainer-link__projects {
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .headerContainer .headerContainer-logo {
     margin-left: 0;
@@ -48,8 +54,11 @@
   }
 
   .headerContainer .headerContainer-link {
-    display: block;
     margin-right: 0;
-    margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+  .headerContainer-link__projects {
+    margin-right: 0px;
   }
 }

@@ -26,6 +26,7 @@ function CardProjectPost(props) {
           <h2 className="projectContainer-info__title">{props.title}</h2>
           <p className="projectContainer-info__paragraph">
             {props.description}
+            {props.children}
           </p>
           <Link
             className="projectContainer-info__link"

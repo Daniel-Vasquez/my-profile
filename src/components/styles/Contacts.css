@@ -8,8 +8,8 @@
   margin-right: 5px;
 }
 
-.contactContainer .contactContainer-left,
-.contactContainer-right,
+.contactContainer .contactContainer-linkedin,
+.contactContainer-git,
 .contactContainer-whats {
   display: flex;
   align-items: center;
@@ -17,15 +17,15 @@
 }
 
 .contactContainer-envelope__link,
-.contactContainer-heart__link,
+.contactContainer-git__link,
 .contactContainer-whats__link {
   padding-bottom: 2px;
   text-decoration: none;
   color: black;
 }
 
-.contactContainer-left__img,
-.contactContainer-right__img,
+.contactContainer-linkedin__img,
+.contactContainer-git__img,
 .contactContainer-whats__img {
   width: 85%;
 }
@@ -43,45 +43,45 @@
   }
 
   .contactContainer-envelope__link,
-  .contactContainer-heart__link,
+  .contactContainer-git__link,
   .contactContainer-whats__link {
     padding: 0;
   }
 
-  .contactContainer .contactContainer-left,
-  .contactContainer-right,
+  .contactContainer .contactContainer-linkedin,
+  .contactContainer-git,
   .contactContainer-whats {
     padding: 0;
     width: 20%;
     text-align: center;
   }
 
-  .contactContainer-left__img,
-  .contactContainer-right__img,
+  .contactContainer-linkedin__img,
+  .contactContainer-git__img,
   .contactContainer-whats__img {
     width: 19%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .contactContainer-left__img,
-  .contactContainer-right__img,
+  .contactContainer-linkedin__img,
+  .contactContainer-git__img,
   .contactContainer-whats__img {
     width: 22%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .contactContainer-left__img,
-  .contactContainer-right__img,
+  .contactContainer-linkedin__img,
+  .contactContainer-git__img,
   .contactContainer-whats__img {
     width: 30%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .contactContainer-left__img,
-  .contactContainer-right__img,
+  .contactContainer-linkedin__img,
+  .contactContainer-git__img,
   .contactContainer-whats__img {
     width: 40%;
   }

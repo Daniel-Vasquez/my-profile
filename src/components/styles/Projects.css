@@ -31,9 +31,111 @@
   margin: 20px 0px;
 }
 
+.projectLink-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.projectDestacado-link {
+  display: block;
+  width: 190px;
+  margin: 0 auto;
+}
+
+.ProjectsContainer {
+  padding: 25px 0px;
+  background-color: #e6e9ed;
+  height: calc(100vh - 90px);
+}
+
+.containerLinks {
+  display: flex;
+  width: auto;
+}
+
+.ProjectsContainer-whats__link,
+.ProjectsContainer-git__link,
+.projectDestacado-link,
+.Projects-container__mail {
+  color: black;
+  text-decoration: none;
+}
+
+.ProjectsContainer-whats__img,
+.ProjectsContainer-git__img {
+  margin-left: 10px;
+  width: 20px;
+}
+
+.ProjectsContainer-whats__link,
+.ProjectsContainer-git__link {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  font-weight: 600;
+}
+
+.ProjectsContainer-git__link {
+  margin-left: 10px;
+}
+
+.ProjectsContainer-whats__link:hover,
+.ProjectsContainer-git__link:hover,
+.Projects-container__mail:hover {
+  text-decoration: revert;
+}
+
+.projectDestacado-link {
+  width: 290px;
+  text-align: center;
+}
+
+.projectDestacado-link__img {
+  transition: 0.4s all;
+  margin: 10px 0;
+}
+
+.projectDestacado-link:hover {
+  text-decoration: revert;
+}
+
+.projectDestacado-link:hover .projectDestacado-link__img {
+  transform: rotate(360deg);
+}
+
+.ParagranphsImpact {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.containerDestacado-title {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.Projects-container__mail {
+  display: block;
+  margin-bottom: 10px;
+}
+
 @media screen and (max-width: 1000px) {
   .projects-posts-container__card {
     margin-right: 10px;
+  }
+
+  .ProjectsContainer {
+    padding: 10px;
+  }
+
+  .Projects-container__paragraphs {
+    font-size: 14px;
+  }
+
+  .ParagranphsImpact {
+    font-size: 20px;
   }
 }
 
@@ -48,5 +150,37 @@
 
   .containerButton {
     margin-bottom: 45px;
+  }
+
+  .projectLink-container {
+    bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ParagranphsImpact,
+  .containerDestacado-title {
+    font-size: 16px;
+  }
+
+  .Projects-container__paragraphs {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Projects-container__paragraphs {
+    margin: 10px 0;
+    font-size: 13px;
+  }
+
+  .ProjectsContainer-whats__link,
+  .ProjectsContainer-git__link {
+    height: auto;
+  }
+
+  .containerLinks {
+    width: 100%;
+    justify-content: center;
   }
 }

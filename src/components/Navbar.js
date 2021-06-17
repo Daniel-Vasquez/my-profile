@@ -16,7 +16,10 @@ function Navbar() {
         </Link>
       </section>
       <section className="headerContainer-link">
-        <Link className="headerContainer-link__anchor" to="/perfil">
+        <Link className="headerContainer-link__projects" to="/projects">
+          Projects
+        </Link>
+        <Link className="headerContainer-link__perfil" to="/perfil">
           Perfil
         </Link>
       </section>

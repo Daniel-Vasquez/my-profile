@@ -8,7 +8,7 @@ import "./styles/Contacts.css";
 function Contacts() {
   return (
     <section className="contactContainer">
-      <div className="contactContainer-left">
+      <div className="contactContainer-linkedin">
         <Link
           className="contactContainer-envelope__link"
           to={{
@@ -17,21 +17,21 @@ function Contacts() {
           target="_black"
         >
           <img
-            className="contactContainer-left__img"
+            className="contactContainer-linkedin__img"
             src={logoLinkedin}
             alt="Contacto"
           />
         </Link>
       </div>
 
-      <div className="contactContainer-right">
+      <div className="contactContainer-git">
         <Link
-          className="contactContainer-heart__link"
+          className="contactContainer-git__link"
           to={{ pathname: "https://github.com/Daniel-Vasquez" }}
           target="_black"
         >
           <img
-            className="contactContainer-right__img"
+            className="contactContainer-git__img"
             src={logoGithub}
             alt="Contacto"
           />
