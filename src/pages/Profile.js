@@ -24,8 +24,8 @@ class Profile extends React.Component {
             <div>
               <h2>Hola, mi nombre es Daniel Vásquez.</h2>
               <p>
-                Desarrollador Frontend con un año de preparación, de estudio y
-                práctica.
+                Desarrollador Frontend con más de un año de preparación, de
+                estudio y práctica.
               </p>
               <p>
                 He tomado cursos base de HTMl y CSS (Maquetación, responsive
@@ -40,7 +40,7 @@ class Profile extends React.Component {
         <section className="ProyectsContainer">
           <div className="grid-container">
             <h3 className="ProyectsContainer-title">
-              Proyectos que destacan por el javaScript y/o CSS
+              Proyectos que destacan por el diseño e interactividad
             </h3>
             <div className="outstandingContainer">
               {returnCard.map((element) => {

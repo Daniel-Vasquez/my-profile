@@ -19,8 +19,8 @@ class LittleCardProjectPost extends React.Component {
               <Link to={`/project/${project.path}`}>
                 <img
                   className="CarTittleContainer-img"
-                  src={project.image}
-                  alt=""
+                  src={project.gif}
+                  alt={project.title}
                 />
               </Link>
               <p className="CarTittleContainer-title">{project.title}</p>

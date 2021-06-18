@@ -32,27 +32,27 @@ class Projects extends React.Component {
           <div className="Projects-container grid-container">
             <div className="Projects-container__description">
               <p className="Projects-container__paragraphs ParagranphsImpact">
-                Soy Daniel Vásquez, con más de un años de estudio autónomo y
+                Soy Daniel Vásquez, con más de un año de estudio autónomo y
                 práctica constante, con pasión por el diseño web y con nunca
                 parar de aprender.
               </p>
 
               <p className="Projects-container__paragraphs">
-                Me encanata aprender nuevas cosas, soy una persona sumamente
+                Me encanta aprender nuevas cosas, soy una persona sumamente
                 obstinada y perseverante, pero sé en que momento pedir ayuda.
               </p>
               <p className="Projects-container__paragraphs">
                 Me fascina el diseño web. A continuación te presento algunos de
                 mis proyectos que he realizado, desde proyectos sencillos que
                 reflejan el justo por el CSS y proyectos complejos; con las
-                tecnologias de hoy en día.
+                tecnologías de hoy en día.
               </p>
               <a
                 className="Projects-container__mail"
                 href="mailto:dani.vasquez.dev@gmail.com"
                 target="_black"
               >
-                <strong>¿Trabjamos juntos?</strong>
+                <strong>¿Trabajamos juntos?</strong>
               </a>
               <div className="containerLinks">
                 <Link
@@ -117,7 +117,7 @@ class Projects extends React.Component {
             respecto al diseño. <br />
             <br />
             Instagram es una página elegante y mi mayor reto fue hacerlo
-            rsponsive.
+            responsive.
             <br />
             <br />
             Se ajusta a todo tipo de pantalla, sea Desktop o mobile.
@@ -138,7 +138,7 @@ class Projects extends React.Component {
             <br />
             -Manejo de Portal y Modal.
             <br />
-            -Implemencación de componentes Stateful y Stateless.
+            -Implementación de componentes Stateful y Stateless.
           </CardProjectPost>
         </div>
         <section className="projects-posts-container">

@@ -33,7 +33,7 @@ class Project extends React.Component {
             />
           </div>
           <div className="containerDesk">
-            <DeskCard imageDesk={project.image} title={project.title} />
+            <DeskCard imageDesk={project.gif} title={project.title} />
           </div>
         </div>
         <div className="containerButton">
