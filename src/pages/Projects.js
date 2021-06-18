@@ -44,8 +44,8 @@ class Projects extends React.Component {
               <p className="Projects-container__paragraphs">
                 Me fascina el diseño web. A continuación te presento algunos de
                 mis proyectos que he realizado, desde proyectos sencillos que
-                reflejan el justo por el CSS y proyectos complejos; con las
-                tecnologías de hoy en día.
+                reflejan el gusto por el CSS y la implementación de una de las
+                librerías de javaScript; React JS.
               </p>
               <a
                 className="Projects-container__mail"
