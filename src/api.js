@@ -8,6 +8,7 @@ const ProjectsData = [
     img: "insta.png",
     image: "insta.gif",
     imageMobile: "mobileInsta.gif",
+    codigo: "https://github.com/Daniel-Vasquez/instagram",
   },
   {
     id: 1,
@@ -18,6 +19,7 @@ const ProjectsData = [
     img: "badges.png",
     image: "badges.gif",
     imageMobile: "mobileBadges.gif",
+    codigo: "https://github.com/Daniel-Vasquez/badges",
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ const ProjectsData = [
     img: "platziVideo.png",
     image: "platziVideo.gif",
     imageMobile: "mobilePlatziVideo.gif",
+    codigo: "https://github.com/Daniel-Vasquez/platzi-video",
   },
   {
     id: 3,
@@ -38,6 +41,7 @@ const ProjectsData = [
     img: "maquetacion.png",
     image: "maquetacion.gif",
     imageMobile: "mobileMaquetacion.gif",
+    codigo: "https://github.com/Daniel-Vasquez/maquetacion",
   },
   {
     id: 4,
@@ -48,6 +52,7 @@ const ProjectsData = [
     img: "responsiveDesign.png",
     image: "responsiveDesign.gif",
     imageMobile: "mobileResponsiDesign.gif",
+    codigo: "https://github.com/Daniel-Vasquez/responsive-design",
   },
 ];
 

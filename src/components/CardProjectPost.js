@@ -28,13 +28,22 @@ function CardProjectPost(props) {
             {props.description}
             {props.children}
           </p>
-          <Link
-            className="projectContainer-info__link"
-            to={{ pathname: props.link }}
-            target="_blank"
-          >
-            Visitar sitio
-          </Link>
+          <div className="projectContainer-links">
+            <Link
+              className="projectContainer-sitio__link"
+              to={{ pathname: props.link }}
+              target="_blank"
+            >
+              Visitar sitio
+            </Link>
+            <Link
+              className="projectContainer-codigo__link"
+              to={{ pathname: props.codigo }}
+              target="_blank"
+            >
+              Ver código
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -111,7 +111,35 @@ class Projects extends React.Component {
             title="Instagram"
             img="insta.png"
             link="https://instagram-dani.vercel.app/"
-          ></CardProjectPost>
+            codigo="https://github.com/Daniel-Vasquez/instagram"
+          >
+            El mayor reto que tuve al realizar la copia de instagram fue
+            respecto al diseño. <br />
+            <br />
+            Instagram es una página elegante y mi mayor reto fue hacerlo
+            rsponsive.
+            <br />
+            <br />
+            Se ajusta a todo tipo de pantalla, sea Desktop o mobile.
+            <br />
+            <br />
+            El sitio web esta hecha con React JS y cuenta con:
+            <br />
+            <br />
+            -Manejo de estado.
+            <br />
+            -User Interface
+            <br />
+            -Manejo de single page apps.
+            <br />
+            -Llamada a APIs externas.
+            <br />
+            -Manejo de rutas (Route).
+            <br />
+            -Manejo de Portal y Modal.
+            <br />
+            -Implemencación de componentes Stateful y Stateless.
+          </CardProjectPost>
         </div>
         <section className="projects-posts-container">
           <div className="grid-container">
