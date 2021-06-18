@@ -39,7 +39,9 @@ class Profile extends React.Component {
         </section>
         <section className="ProyectsContainer">
           <div className="grid-container">
-            <h3 className="ProyectsContainer-title">Proyectos destacados</h3>
+            <h3 className="ProyectsContainer-title">
+              Proyectos que destacan por el javaScript y/o CSS
+            </h3>
             <div className="outstandingContainer">
               {returnCard.map((element) => {
                 return (
@@ -55,9 +57,6 @@ class Profile extends React.Component {
                       {element.title}
                     </Link>
                     <MobileCard imageMobile={element.imageMobile} />
-                    <p className="project-container__description">
-                      {element.description}
-                    </p>
                   </article>
                 );
               })}

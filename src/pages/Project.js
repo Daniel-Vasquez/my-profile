@@ -26,14 +26,14 @@ class Project extends React.Component {
       <React.Fragment>
         <CardProjectPost {...project} />
         <div className="containerImages grid-container">
-          <div className="containerDesk">
-            <DeskCard imageDesk={project.image} title={project.title} />
-          </div>
           <div className="containerMobile">
             <MobileCard
               imageMobile={project.imageMobile}
               title={project.title}
             />
+          </div>
+          <div className="containerDesk">
+            <DeskCard imageDesk={project.image} title={project.title} />
           </div>
         </div>
         <div className="containerButton">

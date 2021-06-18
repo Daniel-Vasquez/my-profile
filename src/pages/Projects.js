@@ -128,7 +128,7 @@ class Projects extends React.Component {
             <br />
             -Manejo de estado.
             <br />
-            -User Interface
+            -User Interface.
             <br />
             -Manejo de single page apps.
             <br />
