@@ -31,7 +31,7 @@ class Projects extends React.Component {
         <section className="ProjectsContainer">
           <div className="Projects-container grid-container">
             <div className="Projects-container__description">
-              <p className="Projects-container__paragraphs ParagranphsImpact">
+              <p className="ParagranphsImpact">
                 Soy Daniel Vásquez, con más de un año de estudio autónomo y
                 práctica constante, con pasión por el diseño web y con nunca
                 parar de aprender.

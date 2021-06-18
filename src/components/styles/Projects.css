@@ -184,3 +184,9 @@
     justify-content: center;
   }
 }
+
+@media screen and (max-height: 400px) {
+  .Projects-container__paragraphs {
+    display: none;
+  }
+}
