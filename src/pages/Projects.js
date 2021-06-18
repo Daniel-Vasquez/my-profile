@@ -94,7 +94,7 @@ class Projects extends React.Component {
               this.handleDown(event, "destacado");
             }}
           >
-            Projecto realizado desde cero
+            Proyecto realizado desde cero
             <img
               className="projectDestacado-link__img"
               src={ArrowDown}
