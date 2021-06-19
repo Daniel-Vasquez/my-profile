@@ -29,7 +29,7 @@ class Profile extends React.Component {
               </p>
               <p>
                 He tomado cursos base de HTMl y CSS (Maquetación, responsive
-                design y CSS Grid), y he tomado cursos un poco más avanzados
+                design y CSS Grid), además de otros cursos más avanzados
                 referente a JavaScript como: Web Components, Asíncronismo con
                 javaScript , manipulación del DOM (con puro vanilla js), React y
                 Redux (tema en curso).

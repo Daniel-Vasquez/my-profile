@@ -39,13 +39,13 @@ class Projects extends React.Component {
 
               <p className="Projects-container__paragraphs">
                 Me encanta aprender nuevas cosas, soy una persona sumamente
-                obstinada y perseverante, pero sé en que momento pedir ayuda.
+                obstinada y perseverante, pero sé en qué momento pedir ayuda.
               </p>
               <p className="Projects-container__paragraphs">
                 Me fascina el diseño web. A continuación te presento algunos de
-                mis proyectos que he realizado, desde proyectos sencillos que
-                reflejan el gusto por el CSS y la implementación de una de las
-                librerías de javaScript; React JS.
+                los proyectos en que he trabajado, los cuales reflejan el gusto
+                por el CSS y la implementación de React JS, librería de
+                javaScript.
               </p>
               <a
                 className="Projects-container__mail"
@@ -113,17 +113,14 @@ class Projects extends React.Component {
             link="https://instagram-dani.vercel.app/"
             codigo="https://github.com/Daniel-Vasquez/instagram"
           >
-            El mayor reto que tuve al realizar la copia de instagram fue
-            respecto al diseño. <br />
-            <br />
-            Instagram es una página elegante y mi mayor reto fue hacerlo
-            responsive.
+            El mayor reto que tuve al replicar instagram fue respecto al diseño;
+            siendo una página elegante y mi mayor reto fue hacerlo "responsive".
             <br />
             <br />
             Se ajusta a todo tipo de pantalla, sea Desktop o mobile.
             <br />
             <br />
-            El sitio web esta hecha con React JS y cuenta con:
+            El sitio web está hecho con React JS y cuenta con:
             <br />
             <br />
             -Manejo de estado.
