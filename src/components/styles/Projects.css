@@ -6,7 +6,6 @@
 
 .projects-posts-container__card {
   display: grid;
-  grid-template: 1fr / 1fr 1fr 1fr;
 }
 
 .containerButton {
@@ -122,10 +121,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .projects-posts-container__card {
-    margin-right: 10px;
-  }
-
   .ProjectsContainer {
     padding: 10px;
   }
@@ -141,11 +136,7 @@
 
 @media screen and (max-width: 750px) {
   .projects-posts-container__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 55px;
-    margin-right: 0;
   }
 
   .containerButton {

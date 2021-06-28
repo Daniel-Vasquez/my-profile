@@ -12,31 +12,42 @@ class LittleCardProjectPost extends React.Component {
 
   render() {
     return (
-      <React.Fragment>
-        {this.state.ProjectsData.map((project) => {
+      <div className="general-container">
+        {ProjectsData.map((project) => {
           return (
-            <article key={project.id} className="CarTittleContainer">
-              <Link to={`/project/${project.path}`}>
-                <img
-                  className="CarTittleContainer-img"
-                  src={project.gif}
-                  alt={project.title}
-                />
-              </Link>
-              <p className="CarTittleContainer-title">{project.title}</p>
-              <p className="CarTittleContainer-description">
-                {project.description}
-              </p>
-              <Link
-                className="CarTittleContainer-link"
-                to={`/project/${project.path}`}
+            <React.Fragment key={project.id}>
+              <input
+                className="radio"
+                type="radio"
+                name="card"
+                id={project.id}
+              />
+
+              <label
+                style={{
+                  backgroundImage: `url("${project.gif}")`,
+                }}
+                className="content"
+                htmlFor={project.id}
               >
-                Leer más
-              </Link>
-            </article>
+                <h3 className="content-title">{project.title}</h3>
+                <div className="cardLinks">
+                  <Link className="card-title" to={`/project/${project.path}`}>
+                    Leer más
+                  </Link>
+                  <Link
+                    className="card-title"
+                    to={{ pathname: project.link }}
+                    target="_black"
+                  >
+                    Visitar sitio
+                  </Link>
+                </div>
+              </label>
+            </React.Fragment>
           );
         })}
-      </React.Fragment>
+      </div>
     );
   }
 }
