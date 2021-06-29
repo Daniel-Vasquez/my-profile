@@ -1,6 +1,5 @@
 .projectContainer {
   background-color: #e6e9ed;
-  padding-bottom: 30px;
 }
 
 .projectContainer-blogs {
@@ -56,9 +55,14 @@
   border-color: black;
 }
 
+.projectContainer-links {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1000px) {
   .projectContainer {
-    padding: 0 10px 20px;
+    padding: 0 10px;
   }
 }
 
@@ -84,7 +88,11 @@
 
 @media screen and (max-width: 750px) {
   .projectContainer {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+  }
+
+  .projectContainer-links {
+    padding-bottom: 20px;
   }
 }
 
