@@ -113,6 +113,7 @@ class Projects extends React.Component {
           <div className="grid-container">
             <h3 className="projects-posts-container__title">
               Proyectos destacados
+              <div className="container-line"></div>
             </h3>
             <div className="projects-posts-container__card">
               <LittleCardProjectPost />

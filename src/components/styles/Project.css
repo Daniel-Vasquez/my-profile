@@ -49,13 +49,11 @@
 .containerImages-mobile {
   border-radius: 15px;
   width: 55%;
-  height: 95%;
+  height: 350px;
   margin: 0 auto;
   background-color: black;
   border: 10px solid black;
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 5px;
 }
 
 .containerImages-mobile__img {

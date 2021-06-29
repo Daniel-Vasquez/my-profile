@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoProfile from "../images/logoProfile.png";
+import logoProfile from "../images/logoPortafolio.png";
 import "./styles/Navbar.css";
 
 function Navbar() {

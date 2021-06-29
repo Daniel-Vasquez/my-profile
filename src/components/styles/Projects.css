@@ -1,7 +1,12 @@
 .projects-posts-container .projects-posts-container__title {
-  border-bottom: 1px solid #cdd2da;
-  padding-bottom: 20px;
   text-align: center;
+}
+
+.container-line {
+  max-width: 85%;
+  margin: 10px auto;
+  padding: 1px 0;
+  background: linear-gradient(0.25turn, #000, #00bcd4, #000);
 }
 
 .projects-posts-container__card {
