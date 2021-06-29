@@ -6,6 +6,7 @@ import Contacts from "../components/Contacts";
 import logoWhats from "../images/whatsapp.png";
 import logoGithub from "../images/github.png";
 import ArrowDown from "../images/flechaDown.png";
+import logoEmail from "../images/logoCorreo.png";
 import "../components/styles/Projects.css";
 
 class Projects extends React.Component {
@@ -53,6 +54,11 @@ class Projects extends React.Component {
                 target="_black"
               >
                 <strong>¿Trabajamos juntos?</strong>
+                <img
+                  className="Projects-mail__logo"
+                  src={logoEmail}
+                  alt="Correo de contacto"
+                />
               </a>
               <div className="containerLinks">
                 <Link
@@ -85,23 +91,34 @@ class Projects extends React.Component {
               </div>
             </div>
           </div>
+          <div className="projectLink-container">
+            <a
+              className="projectDestacado-link"
+              href="#destacado"
+              onClick={(event) => {
+                this.handleDown(event, "destacado");
+              }}
+            >
+              Proyecto realizado desde cero
+              <img
+                className="projectDestacado-link__img"
+                src={ArrowDown}
+                alt="Icono de flecha"
+              />
+            </a>
+          </div>
         </section>
-        <div className="projectLink-container">
-          <a
-            className="projectDestacado-link"
-            href="#destacado"
-            onClick={(event) => {
-              this.handleDown(event, "destacado");
-            }}
-          >
-            Proyecto realizado desde cero
-            <img
-              className="projectDestacado-link__img"
-              src={ArrowDown}
-              alt="Icono de flecha"
-            />
-          </a>
-        </div>
+
+        <section className="projects-posts-container">
+          <div className="grid-container">
+            <h3 className="projects-posts-container__title">
+              Proyectos destacados
+            </h3>
+            <div className="projects-posts-container__card">
+              <LittleCardProjectPost />
+            </div>
+          </div>
+        </section>
 
         <div className="containerDestacado" id="destacado">
           <h2 className="containerDestacado-title">
@@ -114,7 +131,8 @@ class Projects extends React.Component {
             codigo="https://github.com/Daniel-Vasquez/instagram"
           >
             El mayor reto que tuve al replicar instagram fue respecto al diseño;
-            siendo una página elegante y mi mayor reto fue hacerlo "responsive".
+            siendo una página elegante, por lo tanto fue difícil hacerlo
+            "responsive".
             <br />
             <br />
             Se ajusta a todo tipo de pantalla, sea Desktop o mobile.
@@ -138,16 +156,6 @@ class Projects extends React.Component {
             -Implementación de componentes Stateful y Stateless.
           </CardProjectPost>
         </div>
-        <section className="projects-posts-container">
-          <div className="grid-container">
-            <h3 className="projects-posts-container__title">
-              Proyectos destacados
-            </h3>
-            <div className="projects-posts-container__card">
-              <LittleCardProjectPost />
-            </div>
-          </div>
-        </section>
         <Contacts />
       </React.Fragment>
     );

@@ -4,7 +4,7 @@ const ProjectsData = [
     path: "instagram",
     title: "Instagram",
     description:
-      "Replica de la página de Instagram. Creada desde cero con React. Cuanta con petición a una API externa de Rick and Morty, responsive design y manejo CSS Grid.",
+      "Replica de la página de Instagram. Creada desde cero con React. Cuanta con petición a una API externa de Rick and Morty, manejo de estado, rutas, portales y modales. Es responsive gracias al curso de Diseño Web que previamente tomé.",
     link: "https://instagram-dani.vercel.app/",
     img: "insta.png",
     gif: "insta.gif",
@@ -28,7 +28,7 @@ const ProjectsData = [
     path: "platzi-video",
     title: "Platzi video",
     description:
-      "Website layout, usando solo HTML y CSS. Mi primer proyecto website, dónde refleja el amor por el CSS y el diseño.",
+      "Website layout, usando solo HTML y CSS. Mi primer proyecto website, dónde refleja el amor por el CSS y el diseño, siguiendo la metodología de BEM.",
     link: "https://daniel-vasquez.github.io/platzi-video/",
     img: "platziVideo.png",
     gif: "platziVideo.gif",
@@ -40,7 +40,7 @@ const ProjectsData = [
     path: "maquetacion",
     title: "Maquetación",
     description:
-      "Maquetación CSS y web components. Cuando recien comence a aprender HTMl y CSS, relice este proyecto, pero en cada archivo de HTMl copiaba y pegaba el código del header, así que tome un curso de Web Components, entonces encapsulé todo el código del header en una etiqueta de HTML; que yo realice en javaScript y así implementar mi etiqueta html en cualquier página html.",
+      "Maquetación CSS y web components. Cuando recien comencé a aprender HTMl y CSS relicé este proyecto, pero en cada archivo de html copiaba y pegaba el código del header, así que tomé un curso de Web Components, dónde encapsulé todo el código del header en una etiqueta de html; que yo realicé en javaScript y así implementar mi etiqueta custom en cualquier archivo de html.",
     link: "https://daniel-vasquez.github.io/maquetacion/",
     img: "maquetacion.png",
     gif: "maquetacion.gif",
@@ -52,7 +52,7 @@ const ProjectsData = [
     path: "responsive-design",
     title: "Responsive design",
     description:
-      "Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y CSS.",
+      "Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y CSS. Lo agregué a mis 'proyectos destacados' porque refleja la enorme diferencia entre el primer y el actual portafolio.",
     link: "https://daniel-vasquez.github.io/responsive-design/",
     img: "responsiveDesign.png",
     gif: "responsiveDesign.gif",

@@ -7,6 +7,8 @@ function MobileCard({ imageMobile, title }) {
         className="containerImages-mobile__img"
         src={`/${imageMobile}`}
         alt={title}
+        width="146px"
+        height="286px"
       />
       <div className="cicleMobile"></div>
     </div>

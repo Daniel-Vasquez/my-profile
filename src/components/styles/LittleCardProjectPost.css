@@ -1,10 +1,9 @@
 .general-container {
   display: flex;
   height: 500px;
-  margin: 0 auto;
   max-width: 100%;
-  width: 600px;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .radio {
@@ -93,12 +92,6 @@
   .content {
     margin-right: 0;
     margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .general-container {
-    width: 95%;
   }
 }
 

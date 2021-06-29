@@ -30,23 +30,10 @@
   margin: 20px 0px;
 }
 
-.projectLink-container {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-}
-
-.projectDestacado-link {
-  display: block;
-  width: 190px;
-  margin: 0 auto;
-}
-
 .ProjectsContainer {
-  padding: 25px 0px;
+  padding: 15px 0px;
   background-color: #e6e9ed;
-  height: calc(100vh - 90px);
+  position: relative;
 }
 
 .containerLinks {
@@ -87,6 +74,8 @@
 }
 
 .projectDestacado-link {
+  display: block;
+  margin: 0 auto;
   width: 290px;
   text-align: center;
 }
@@ -107,6 +96,13 @@
 .ParagranphsImpact {
   font-size: 25px;
   font-weight: 600;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.Projects-container__paragraphs {
+  margin: 10px 0;
+  line-height: 1.04;
 }
 
 .containerDestacado-title {
@@ -116,8 +112,15 @@
 }
 
 .Projects-container__mail {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  width: 230px;
   margin-bottom: 10px;
+}
+
+.Projects-mail__logo {
+  width: 25px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -135,16 +138,8 @@
 }
 
 @media screen and (max-width: 750px) {
-  .projects-posts-container__card {
-    margin-bottom: 55px;
-  }
-
   .containerButton {
     margin-bottom: 45px;
-  }
-
-  .projectLink-container {
-    bottom: 45px;
   }
 }
 
@@ -173,6 +168,11 @@
   .containerLinks {
     width: 100%;
     justify-content: center;
+    margin: 10px 0;
+  }
+
+  .Projects-container__mail {
+    margin: 0 auto;
   }
 }
 
