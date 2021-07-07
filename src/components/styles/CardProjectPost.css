@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr;
+  padding-bottom: 20px;
 }
 
 .projectContainer-coverPage {
@@ -93,6 +94,10 @@
 
   .projectContainer-links {
     padding-bottom: 20px;
+  }
+
+  .projectContainer-blogs {
+    padding-bottom: 0;
   }
 }
 
