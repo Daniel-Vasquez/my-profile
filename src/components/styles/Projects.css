@@ -21,18 +21,21 @@
 }
 
 .containerButton-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
+  color: white;
+  background-color: #555555;
+  padding: 10px;
   text-decoration: none;
-  font-size: 15px;
-  height: 40px;
-  width: 175px;
+  border: 2px solid #555555;
   border-radius: 5px;
-  font-weight: 900;
-  border: 2px solid #c3285d;
+  font-weight: 600;
   margin: 20px 0px;
+  transition: 0.3s all;
+}
+
+.containerButton-button:hover {
+  border-color: black;
+  background-color: white;
+  color: black;
 }
 
 .ProjectsContainer {
