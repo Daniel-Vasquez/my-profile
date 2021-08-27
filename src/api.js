@@ -59,6 +59,18 @@ const ProjectsData = [
     imageMobile: "mobileResponsiDesign.gif",
     codigo: "https://github.com/Daniel-Vasquez/responsive-design",
   },
+  {
+    id: 6,
+    path: "encontrar-numero",
+    title: "Find number",
+    description:
+      "Pequeño juedo didáctico donde el usuario tendra que encontrar un número random que puede ser del 1 hasta el 100.",
+    link: "https://encontrar-numero.vercel.app/",
+    img: "randomImg.png",
+    gif: "randomGif.gif",
+    imageMobile: "mobileRandomGif.gif",
+    codigo: "https://github.com/Daniel-Vasquez/encontrar-numero",
+  },
 ];
 
 export default ProjectsData;
