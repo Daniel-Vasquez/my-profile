@@ -71,6 +71,18 @@ const ProjectsData = [
     imageMobile: "mobileRandomGif.gif",
     codigo: "https://github.com/Daniel-Vasquez/encontrar-numero",
   },
+  {
+    id: 7,
+    path: "recordatorios",
+    title: "Recordatorios",
+    description:
+      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca mas llegaras a olvidar citas, reuniones, juntas, etc..",
+    link: "https://notas-kappa.vercel.app/",
+    img: "recordatoriosImg.png",
+    gif: "recordatorioGif.gif",
+    imageMobile: "mobileRecordatorioGif.gif",
+    codigo: "https://github.com/Daniel-Vasquez/reminder",
+  },
 ];
 
 export default ProjectsData;
