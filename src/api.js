@@ -62,9 +62,9 @@ const ProjectsData = [
   {
     id: 6,
     path: "encontrar-numero",
-    title: "Find number",
+    title: "Encuentra el número",
     description:
-      "Pequeño juedo didáctico donde el usuario tendra que encontrar un número random que puede ser del 1 hasta el 100.",
+      "Pequeño juedo didáctico donde el usuario tendrá que encontrar un número random que puede llegar a ser entre el 1 y el 100.",
     link: "https://encontrar-numero.vercel.app/",
     img: "randomImg.png",
     gif: "randomGif.gif",
@@ -76,7 +76,7 @@ const ProjectsData = [
     path: "recordatorios",
     title: "Recordatorios",
     description:
-      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca mas llegaras a olvidar citas, reuniones, juntas, etc..",
+      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca más llegaras a olvidar citas, reuniones, juntas, etc..",
     link: "https://notas-kappa.vercel.app/",
     img: "recordatoriosImg.png",
     gif: "recordatorioGif.gif",

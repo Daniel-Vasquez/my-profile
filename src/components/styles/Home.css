@@ -34,7 +34,8 @@
 
 .home-main__button {
   width: 170px;
-  background: var(--main-color);
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
   color: black;
   text-align: center;
   font-weight: 700;
@@ -42,6 +43,11 @@
   line-height: 70px;
   border-radius: 10px;
   text-decoration: none;
+  transition: all 0.3s;
+}
+
+.home-main__button:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 480px) {
