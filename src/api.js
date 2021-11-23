@@ -76,7 +76,7 @@ const ProjectsData = [
     path: "recordatorios",
     title: "Recordatorios",
     description:
-      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca más llegaras a olvidar citas, reuniones, juntas, etc..",
+      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca más llegaras a olvidar citas, reuniones, juntas, etc.",
     link: "https://notas-kappa.vercel.app/",
     img: "recordatoriosImg.png",
     gif: "recordatorioGif.gif",

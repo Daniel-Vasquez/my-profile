@@ -142,19 +142,19 @@ class Projects extends React.Component {
             El sitio web está hecho con React JS y cuenta con:
             <br />
             <br />
-            -Manejo de estado.
+            - Manejo de estado.
             <br />
-            -User Interface.
+            - User Interface.
             <br />
-            -Manejo de single page apps.
+            - Manejo de single page apps.
             <br />
-            -Llamada a APIs externas.
+            - Llamada a APIs externas.
             <br />
-            -Manejo de rutas (Route).
+            - Manejo de rutas (Route).
             <br />
-            -Manejo de Portal y Modal.
+            - Manejo de Portal y Modal.
             <br />
-            -Implementación de componentes Stateful y Stateless.
+            - Implementación de componentes Stateful y Stateless.
           </CardProjectPost>
         </div>
         <Contacts />
