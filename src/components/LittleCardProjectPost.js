@@ -16,34 +16,35 @@ class LittleCardProjectPost extends React.Component {
         {ProjectsData.map((project) => {
           return (
             <React.Fragment key={project.id}>
-              <input
-                className="radio"
-                type="radio"
-                name="card"
-                id={project.id}
-              />
-
-              <label
-                style={{
-                  backgroundImage: `url("${project.gif}")`,
-                }}
-                className="content"
-                htmlFor={project.id}
-              >
-                <h3 className="content-title">{project.title}</h3>
-                <div className="cardLinks">
-                  <Link className="card-title" to={`/project/${project.path}`}>
-                    Leer más
-                  </Link>
-                  <Link
-                    className="card-title"
-                    to={{ pathname: project.link }}
-                    target="_black"
-                  >
-                    Visitar sitio
-                  </Link>
+              <div className="card">
+                <div className="card-img">
+                  <img
+                    className="card-img__img"
+                    src={project.imageMobile}
+                    alt={project.title}
+                  />
                 </div>
-              </label>
+                <div className="card-description">
+                  <div className="description-title">
+                    <p className="description-title__title">{project.title}</p>
+                  </div>
+                  <div className="description-buttons">
+                    <Link
+                      className="description-buttons__btn"
+                      to={`/project/${project.path}`}
+                    >
+                      Leer más
+                    </Link>
+                    <Link
+                      className="description-buttons__btn"
+                      to={{ pathname: project.link }}
+                      target="_black"
+                    >
+                      Visitar sitio
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </React.Fragment>
           );
         })}
