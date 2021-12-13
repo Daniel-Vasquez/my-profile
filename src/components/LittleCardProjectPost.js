@@ -22,11 +22,19 @@ class LittleCardProjectPost extends React.Component {
                     className="card-img__img"
                     src={project.imageMobile}
                     alt={project.title}
-                  />
+                    />
                 </div>
                 <div className="card-description">
                   <div className="description-title">
-                    <p className="description-title__title">{project.title}</p>
+                    <Link
+                      className="description-title__btn"
+                      to={{ pathname: project.link }}
+                      target="_black"
+                    >
+                      <p className="description-title__title">
+                        {project.title}
+                      </p>
+                    </Link>
                   </div>
                   <div className="description-buttons">
                     <Link

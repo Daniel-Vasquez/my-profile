@@ -23,8 +23,12 @@
   border: 1px solid #bdbdbdfc;
   overflow: hidden;
   position: relative;
-  box-shadow: 0px 0px 11px -1px black;
   margin: 10px;
+  transition: all .3s;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 11px -1px black;
 }
 
 .card-img__img {
@@ -43,6 +47,11 @@
   position: absolute;
 }
 
+.description-title__btn {
+  color: black;
+}
+
+
 .description-title__title {
   margin: 0;
   margin-left: 10px;
@@ -54,6 +63,12 @@
   font-size: 20px;
   border: 1px solid #5a5a5afc;
   margin-top: 10px;
+  user-select: none;
+  transition: all .3s;
+}
+
+.description-title__title:hover {
+  text-decoration: inherit;
 }
 
 .description-buttons {
