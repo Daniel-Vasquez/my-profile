@@ -6,7 +6,7 @@ const ProjectsData = [
     description:
       "Replica de la página de Instagram. Creada desde cero con React. Cuanta con petición a una API externa de Rick and Morty, manejo de estado, rutas, portales y modales. Es responsive gracias al curso de Diseño Web que previamente tomé.",
     link: "https://instagram-dani.vercel.app/",
-    img: "insta.png",
+    img: "instagramImg.png",
     gif: "insta.gif",
     imageMobile: "mobileInsta.gif",
     codigo: "https://github.com/Daniel-Vasquez/instagram",
@@ -82,6 +82,17 @@ const ProjectsData = [
     gif: "recordatorioGif.gif",
     imageMobile: "mobileRecordatorioGif.gif",
     codigo: "https://github.com/Daniel-Vasquez/reminder",
+  },
+  {
+    id: 8,
+    path: "cachorros",
+    title: "Cachorros",
+    description: "Adopta uno y salva dos vidas. Nuestra fundación CachorrosOtraOportunidad reúne protectores de animales y personas que buscan adoptar una mascota.",
+    link: "https://cachorros.vercel.app/",
+    img: "cachorros.png",
+    gif: "cachorrosGif.gif",
+    imageMobile: "mobileCachorrosGif.gif",
+    codigo: "https://github.com/Daniel-Vasquez/cachorros",
   },
 ];
 

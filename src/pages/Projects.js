@@ -127,7 +127,7 @@ class Projects extends React.Component {
           </h2>
           <CardProjectPost
             title="Instagram"
-            img="insta.png"
+            img="instagramImg.png"
             link="https://instagram-dani.vercel.app/"
             codigo="https://github.com/Daniel-Vasquez/instagram"
           >

@@ -13,6 +13,8 @@
 
 .projectContainer-coverPage {
   grid-column: 1;
+  border: 1px solid #c8cbcf;
+  height: 500px;
 }
 
 .projectContainer-coverPage .projectContainer-coverPage__img {
@@ -110,10 +112,11 @@
 
   .projectContainer-coverPage {
     text-align: center;
+    height: 400px;
   }
 
   .projectContainer-coverPage .projectContainer-coverPage__img {
-    height: 80%;
+    height: 100%;
   }
 
   .projectContainer-blogs__title {
@@ -129,6 +132,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  .projectContainer-coverPage {
+    height: 300px;
+  }
+
   .projectContainer-blogs__title {
     margin-left: 10px;
   }
@@ -137,3 +144,10 @@
     margin-left: 0;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .projectContainer-coverPage {
+    height: 250px;
+  }
+}
+
