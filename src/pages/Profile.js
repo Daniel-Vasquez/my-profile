@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts";
-import logoProfile from "../images/danPerfil.jpg";
+import logoProfile from "../images/danielPerfil.png";
 import projectData from "../api";
 import MobileCard from "../components/MobileCard";
 import "../components/styles/Profile.css";
