@@ -5,6 +5,7 @@ import logoProfile from "../images/danielPerfil.png";
 import projectData from "../api";
 import MobileCard from "../components/MobileCard";
 import "../components/styles/Profile.css";
+
 class Profile extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,22 @@ class Profile extends React.Component {
       <div>
         <section className="profileContainer">
           <div className="profile-container grid-container">
-            <img className="profile-container__img" src={logoProfile} alt="" />
+            <Link
+            className="profile-container__link"
+              to={{
+                pathname:
+                  "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+              }}
+              target="_black"
+            >
+              <acronym title="Linkedin">
+                <img
+                  className="profile-container__img"
+                  src={logoProfile}
+                  alt="Daniel Vásquez"
+                />
+              </acronym>
+            </Link>
             <div>
               <h2>Hola, mi nombre es Daniel Vásquez.</h2>
               <p>

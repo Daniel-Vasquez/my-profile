@@ -118,6 +118,10 @@
     width: 70%;
     height: 50%;
   }
+
+  .profile-container__link {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 550px) {
