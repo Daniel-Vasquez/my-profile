@@ -24,10 +24,9 @@ function CardProjectPost(props) {
 
         <div className="projectContainer-info">
           <h2 className="projectContainer-info__title">{props.title}</h2>
-          <p className="projectContainer-info__paragraph">
-            {props.description}
+          <div className="projectContainer-info__paragraph">
             {props.children}
-          </p>
+          </div>
           <div className="projectContainer-links">
             <Link
               className="projectContainer-sitio__link"
