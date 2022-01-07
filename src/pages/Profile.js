@@ -54,7 +54,7 @@ class Profile extends React.Component {
                       to={{ pathname: element.link }}
                       target="_black"
                     >
-                      {element.title}
+                      <acronym title="Visitar sitio">{element.title}</acronym>
                     </Link>
                     <MobileCard imageMobile={element.imageMobile} />
                   </article>

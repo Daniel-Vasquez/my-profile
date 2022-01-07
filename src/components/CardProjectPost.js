@@ -14,11 +14,13 @@ function CardProjectPost(props) {
             to={{ pathname: props.link }}
             target="_blank"
           >
-            <img
-              className="projectContainer-coverPage__img"
-              src={`/${props.img}`}
-              alt={props.title}
-            />
+            <acronym title="Visitar sitio">
+              <img
+                className="projectContainer-coverPage__img"
+                src={`/${props.img}`}
+                alt={props.title}
+              />
+            </acronym>
           </Link>
         </div>
 
@@ -26,6 +28,7 @@ function CardProjectPost(props) {
           <h2 className="projectContainer-info__title">{props.title}</h2>
           <div className="projectContainer-info__paragraph">
             {props.children}
+            {props.description}
           </div>
           <div className="projectContainer-links">
             <Link

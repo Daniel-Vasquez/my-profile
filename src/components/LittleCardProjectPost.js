@@ -22,7 +22,7 @@ class LittleCardProjectPost extends React.Component {
                     className="card-img__img"
                     src={project.imageMobile}
                     alt={project.title}
-                    />
+                  />
                 </div>
                 <div className="card-description">
                   <div className="description-title">
@@ -32,7 +32,7 @@ class LittleCardProjectPost extends React.Component {
                       target="_black"
                     >
                       <p className="description-title__title">
-                        {project.title}
+                        <acronym title="Visitar sitio">{project.title}</acronym>
                       </p>
                     </Link>
                   </div>
