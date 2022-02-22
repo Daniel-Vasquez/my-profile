@@ -52,7 +52,7 @@ const ProjectsData = [
     title: "Encuentra el número",
     description:
       "Pequeño juedo didáctico donde el usuario tendrá que encontrar un número random que puede llegar a ser entre el 1 y el 100.",
-    link: "https://encontrar-numero.vercel.app/",
+    link: "https://encontrar-numero-phi.vercel.app/",
     img: "randomImg.png",
     gif: "randomGif.gif",
     imageMobile: "mobileRandomGif.gif",
