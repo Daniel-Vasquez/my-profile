@@ -3,13 +3,22 @@ import { Link } from "react-router-dom";
 import CardProjectPost from "../components/CardProjectPost";
 import LittleCardProjectPost from "../components/LittleCardProjectPost";
 import Contacts from "../components/Contacts";
-import logoWhats from "../images/whatsapp.png";
 import logoGithub from "../images/github.png";
-import ArrowDown from "../images/flechaDown.png";
+import logoWhats from "../images/whatsapp.png";
 import logoEmail from "../images/logoCorreo.png";
-import "../components/styles/Projects.css";
 
-class Projects extends React.Component {
+// import logoWhats from "../images/whatsapp-white.png";
+// import logoGithub from "../images/github-white.png";
+// import logoEmail from "../images/logoCorreo-white.png";
+
+// import ArrowDown from "../images/flechaDown-white.png";
+import ArrowDown from "../images/flechaDown.png";
+
+import personalImage from "../images/danielPerfil.png";
+
+import "../components/styles/Main.css";
+
+class Main extends React.Component {
   constructor(props) {
     super(props);
 
@@ -29,65 +38,76 @@ class Projects extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <section className="ProjectsContainer">
-          <div className="Projects-container grid-container">
-            <div className="Projects-container__description">
-              <p className="ParagranphsImpact">
-                Soy Daniel Vásquez, con más de un año de estudio autónomo y
+        <section className="mainContainer">
+          <div className="main-container grid-container">
+            <div className="main-container">
+              <div className="main-container__img">
+                <img src={personalImage} alt="Personal img" />
+              </div>
+              <div className="main-container__description">
+                <p className="ParagranphsImpact">Hola, soy <span>Daniel Vásquez</span>.</p>
+                <p className="main-container__paragraphs">
+                  Soy <span>desarrollador frontend Developer</span>, con más de
+                  un año de estudio autónomo y práctica constante, con pasión
+                  por el diseño web y con nunca parar de aprender.
+                </p>
+                {/* <p className="ParagranphsImpact">
+                con más de un año de estudio autónomo y
                 práctica constante, con pasión por el diseño web y con nunca
                 parar de aprender.
               </p>
 
-              <p className="Projects-container__paragraphs">
+              <p className="main-container__paragraphs">
                 Me encanta aprender nuevas cosas, soy una persona sumamente
                 obstinada y perseverante, pero sé en qué momento pedir ayuda.
               </p>
-              <p className="Projects-container__paragraphs">
+              <p className="main-container__paragraphs">
                 Me fascina el diseño web. A continuación te presento algunos de
                 los proyectos en que he trabajado, los cuales reflejan el gusto
                 por el CSS y la implementación de React JS, librería de
                 javaScript.
-              </p>
-              <a
-                className="Projects-container__mail"
-                href="mailto:dani.vasquez.dev@gmail.com"
-                target="_black"
-              >
-                <strong>¿Trabajamos juntos?</strong>
-                <img
-                  className="Projects-mail__logo"
-                  src={logoEmail}
-                  alt="Correo de contacto"
-                />
-              </a>
-              <div className="containerLinks">
-                <Link
-                  className="ProjectsContainer-whats__link"
-                  to={{
-                    pathname:
-                      "https://api.whatsapp.com/send?phone=525531483433",
-                  }}
+              </p> */}
+                <a
+                  className="main-container__mail"
+                  href="mailto:dani.vasquez.dev@gmail.com"
                   target="_black"
                 >
-                  whatsApp
+                  <strong>¿Trabajamos juntos?</strong>
                   <img
-                    className="ProjectsContainer-whats__img"
-                    src={logoWhats}
-                    alt="Contacto"
+                    className="main-mail__logo"
+                    src={logoEmail}
+                    alt="Correo de contacto"
                   />
-                </Link>
-                <Link
-                  className="ProjectsContainer-git__link"
-                  to={{ pathname: "https://github.com/Daniel-Vasquez" }}
-                  target="_black"
-                >
-                  Github
-                  <img
-                    className="ProjectsContainer-git__img"
-                    src={logoGithub}
-                    alt="Contacto"
-                  />
-                </Link>
+                </a>
+                <div className="containerLinks">
+                  <Link
+                    className="mainContainer-whats__link"
+                    to={{
+                      pathname:
+                        "https://api.whatsapp.com/send?phone=525531483433",
+                    }}
+                    target="_black"
+                  >
+                    whatsApp
+                    <img
+                      className="mainContainer-whats__img"
+                      src={logoWhats}
+                      alt="Contacto"
+                    />
+                  </Link>
+                  <Link
+                    className="mainContainer-git__link"
+                    to={{ pathname: "https://github.com/Daniel-Vasquez" }}
+                    target="_black"
+                  >
+                    Github
+                    <img
+                      className="mainContainer-git__img"
+                      src={logoGithub}
+                      alt="Contacto"
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -109,13 +129,13 @@ class Projects extends React.Component {
           </div>
         </section>
 
-        <section className="projects-posts-container">
+        <section className="mainPosts-container">
           <div className="grid-container">
-            <h3 className="projects-posts-container__title">
-              Proyectos destacados
+            <h3 className="mainPosts-container__title">
+              Proyectos
               <div className="container-line"></div>
             </h3>
-            <div className="projects-posts-container__card">
+            <div className="mainPosts-container__card">
               <LittleCardProjectPost />
             </div>
           </div>
@@ -155,4 +175,4 @@ class Projects extends React.Component {
   }
 }
 
-export default Projects;
+export default Main;

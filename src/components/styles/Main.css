@@ -1,5 +1,48 @@
-.projects-posts-container .projects-posts-container__title {
+.mainContainer {
+  padding: 20px 0px;
+  background-color: black;
+  background-color: white;
+  position: relative;
+  border-bottom: 1px solid #4d5055;
+  border-top: 1px solid #4d5055;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  width: auto;
+  position: relative;
+}
+
+.main-container__description {
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 12px;
+  background-color: #a0a0a0;
+  background-color: white;
+  position: absolute;
+  left: 350px;
+  box-shadow: 10px 10px 0px 1px black;
+}
+
+.mainPosts-container {
+  background-color: #f7ede2;
+  border: 1px solid red;
+}
+
+
+.mainPosts-container .mainPosts-container__title {
+  color: black;
   text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.main-container__img img {
+  height: 450px;
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  margin-left: 100px;
 }
 
 .container-line {
@@ -9,7 +52,7 @@
   background: linear-gradient(0.25turn, #000, #00bcd4, #000);
 }
 
-.projects-posts-container__card {
+.mainPosts-container__card {
   display: grid;
 }
 
@@ -38,48 +81,44 @@
   color: black;
 }
 
-.ProjectsContainer {
-  padding: 15px 0px;
-  background-color: #e6e9ed;
-  position: relative;
-  border-bottom: 1px solid #a1a3a76e;
-  border-top: 1px solid #a1a3a76e;
-}
-
 .containerLinks {
   display: flex;
   width: auto;
 }
 
-.ProjectsContainer-whats__link,
-.ProjectsContainer-git__link,
-.projectDestacado-link,
-.Projects-container__mail {
-  color: black;
+.mainContainer-whats__link,
+.mainContainer-git__link,
+.main-container__mail, 
+.projectDestacado-link {
   text-decoration: none;
+  color: black;
 }
 
-.ProjectsContainer-whats__img,
-.ProjectsContainer-git__img {
+.projectLink-container {
+  margin: 10px 0;
+}
+
+.mainContainer-whats__img,
+.mainContainer-git__img {
   margin-left: 10px;
   width: 20px;
 }
 
-.ProjectsContainer-whats__link,
-.ProjectsContainer-git__link {
+.mainContainer-whats__link,
+.mainContainer-git__link {
   display: flex;
   align-items: center;
   height: 35px;
   font-weight: 600;
 }
 
-.ProjectsContainer-git__link {
+.mainContainer-git__link {
   margin-left: 10px;
 }
 
-.ProjectsContainer-whats__link:hover,
-.ProjectsContainer-git__link:hover,
-.Projects-container__mail:hover {
+.mainContainer-whats__link:hover,
+.mainContainer-git__link:hover,
+.main-container__mail:hover {
   text-decoration: revert;
 }
 
@@ -110,11 +149,23 @@
   font-weight: 600;
   margin: 0;
   line-height: 1.3;
+  color: black;
 }
 
-.Projects-container__paragraphs {
+.ParagranphsImpact span{
+  color: #da0f54;
+}
+
+
+.main-container__paragraphs {
   margin: 10px 0;
   line-height: 1.4;
+  color: black;
+}
+
+.main-container__paragraphs span {
+  color: #c3285d;
+  font-weight: 900;
 }
 
 .projectContainer-info__paragraph ul {
@@ -128,24 +179,25 @@
   padding: 10px 0;
 }
 
-.Projects-container__mail {
+.main-container__mail {
   display: flex;
   align-items: center;
   width: 230px;
   margin-bottom: 10px;
+  color: black;
 }
 
-.Projects-mail__logo {
+.main-mail__logo {
   width: 25px;
   margin-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
-  .ProjectsContainer {
+  .mainContainer {
     padding: 10px;
   }
 
-  .Projects-container__paragraphs {
+  .main-container__paragraphs {
     font-size: 14px;
   }
 
@@ -154,9 +206,35 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .main-container__img img {
+    margin-left: 0px;
+  }
+
+  .main-container__description {
+    left: 230px;
+  }
+}
+
+
 @media screen and (max-width: 750px) {
   .containerButton {
     margin-bottom: 45px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .main-container__img img {
+    height: 300px;
+  }
+
+  .main-container__description {
+    position: relative;
+    left: 0;
+    width: auto;
+    box-shadow: none;
   }
 }
 
@@ -166,19 +244,19 @@
     font-size: 16px;
   }
 
-  .Projects-container__paragraphs {
+  .main-container__paragraphs {
     font-size: 15px;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .Projects-container__paragraphs {
+  .main-container__paragraphs {
     margin: 10px 0;
     font-size: 13px;
   }
 
-  .ProjectsContainer-whats__link,
-  .ProjectsContainer-git__link {
+  .mainContainer-whats__link,
+  .mainContainer-git__link {
     height: auto;
   }
 
@@ -188,13 +266,13 @@
     margin: 10px 0;
   }
 
-  .Projects-container__mail {
+  .main-container__mail {
     margin: 0 auto;
   }
 }
 
 @media screen and (max-height: 400px) {
-  .Projects-container__paragraphs {
+  .main-container__paragraphs {
     display: none;
   }
 }

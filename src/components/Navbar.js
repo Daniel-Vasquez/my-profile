@@ -1,27 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoProfile from "../images/logoPortafolio.png";
 import "./styles/Navbar.css";
 
 function Navbar() {
   return (
     <header className="headerContainer">
-      <section className="headerContainer-logo">
-        <Link className="headerContainer-logo__link" to="/">
-          <img
-            className="headerContainer-logo__img"
-            src={logoProfile}
-            alt="Logo of my profile"
-          />
+      <section className="headerContainer-title">
+        <Link className="headerContainer-title__link" to="/">
+            Mi portafolio
         </Link>
       </section>
       <section className="headerContainer-link">
-        <Link className="headerContainer-link__projects" to="/projects">
-          Projects
-        </Link>
-        <Link className="headerContainer-link__perfil" to="/perfil">
-          Perfil
-        </Link>
+        <div className="headerContainer-containerLinks">
+          <Link className="headerContainer-link__projects" to="/projects">
+            Projects
+          </Link>
+          <Link className="headerContainer-link__perfil" to="/perfil">
+            Perfil
+          </Link>
+        </div>
       </section>
     </header>
   );

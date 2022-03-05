@@ -3,24 +3,32 @@
   grid-template-columns: 1fr 1fr;
   height: 90px;
   background-color: white;
+  user-select: none;
 }
 
-.headerContainer .headerContainer-logo {
+.headerContainer .headerContainer-title {
   margin-left: 20px;
   height: 90px;
   display: flex;
   align-items: center;
 }
 
-.headerContainer-logo .headerContainer-logo__img {
-  width: 120px;
-  height: 50px;
-  border-radius: 10px;
-  transition: all .3s;
+.headerContainer-title .headerContainer-title__img:hover {
+  box-shadow: 0px 0px 1px 2px #c3285d;
 }
 
-.headerContainer-logo .headerContainer-logo__img:hover {
-  box-shadow: 0px 0px 1px 2px #c3285d;
+.headerContainer-title__link {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  border-bottom: 2px solid white;
+  transition: all .7s;
+  margin-left: 10px;
+}
+
+.headerContainer-title__link:hover {
+  border-bottom-color: black;
 }
 
 .headerContainer .headerContainer-link {
@@ -30,23 +38,31 @@
   margin-right: 20px;
 }
 
-.headerContainer-link .headerContainer-link__perfil,
 .headerContainer-link__projects {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px solid black;
+  border-right: 2px solid black;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
+.headerContainer-link .headerContainer-link__perfil,
 .headerContainer-link__projects {
-  margin-right: 20px;
+  color: #9f9f9f;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  font-weight: 900;
+  transition: all .3s;
+}
+
+.headerContainer-link__perfil:hover {
+  color: black;
+}
+
+.headerContainer-link__projects:hover {
+  color: black;
 }
 
 @media screen and (max-width: 1000px) {
-  .headerContainer-logo .headerContainer-logo__img {
-    margin-left: 20px;
-  }
-
-  .headerContainer .headerContainer-logo {
+  .headerContainer .headerContainer-title {
     margin-left: 0;
   }
 }
@@ -58,13 +74,9 @@
     height: 115px;
   }
 
-  .headerContainer .headerContainer-logo {
+  .headerContainer .headerContainer-title {
     margin-left: 0;
     justify-content: center;
-  }
-
-  .headerContainer-logo .headerContainer-logo__img {
-    margin-left: 0;
   }
 
   .headerContainer .headerContainer-link {
@@ -74,5 +86,9 @@
 
   .headerContainer-link__projects {
     margin-right: 0px;
+  }
+
+  .headerContainer-link__perfil{
+    margin-left: 10px;
   }
 }
