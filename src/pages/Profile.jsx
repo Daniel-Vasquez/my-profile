@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contacts from "../components/Contacts";
+import Contacts from "../components/Contacts.jsx";
 import logoProfile from "../images/danielPerfil.png";
 import projectData from "../api";
-import MobileCard from "../components/MobileCard";
+import MobileCard from "../components/MobileCard.jsx";
 import "../components/styles/Profile.css";
 
 class Profile extends React.Component {
@@ -21,8 +21,31 @@ class Profile extends React.Component {
       <div>
         <section className="profileContainer">
           <div className="profile-container grid-container">
+            <div className="presentation">
+              <h3>
+                Soy Desarrollador Frontend con más de un año de preparación, de
+                estudio y práctica.
+              </h3>
+              <p>
+                He tomado cursos base de HTMl y CSS (Maquetación, responsive
+                design y CSS Grid), además de otros cursos más avanzados
+                referente a JavaScript como: Web Components, Asíncronismo con
+                javaScript, manipulación del DOM (con puro vanilla js), React y
+                python (tema en curso).
+              </p>
+              <p className="main-container__paragraphs">
+                Me encanta aprender nuevas cosas, soy una persona sumamente
+                obstinada y perseverante, pero sé en qué momento pedir ayuda.
+              </p>
+              <p className="main-container__paragraphs">
+                Me fascina el diseño web. A continuación te presento algunos de
+                los proyectos más destacados en que he trabajado, los cuales
+                reflejan el gusto por el CSS y la implementación de React JS,
+                librería de javaScript.
+              </p>
+            </div>
             <Link
-            className="profile-container__link"
+              className="profile-container__link"
               to={{
                 pathname:
                   "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
@@ -37,20 +60,6 @@ class Profile extends React.Component {
                 />
               </acronym>
             </Link>
-            <div>
-              <h2>Hola, mi nombre es Daniel Vásquez.</h2>
-              <p>
-                Desarrollador Frontend con más de un año de preparación, de
-                estudio y práctica.
-              </p>
-              <p>
-                He tomado cursos base de HTMl y CSS (Maquetación, responsive
-                design y CSS Grid), además de otros cursos más avanzados
-                referente a JavaScript como: Web Components, Asíncronismo con
-                javaScript, manipulación del DOM (con puro vanilla js), React y
-                Redux (tema en curso).
-              </p>
-            </div>
           </div>
         </section>
         <section className="ProyectsContainer">

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CardProjectPost from "../components/CardProjectPost";
+import CardProjectPost from "../components/CardProjectPost.jsx";
 import ProjectsDate from "../api";
-import DeskCard from "../components/DeskCard";
-import MobileCard from "../components/MobileCard";
-import Contacts from "../components/Contacts";
+import DeskCard from "../components/DeskCard.jsx";
+import MobileCard from "../components/MobileCard.jsx";
+import Contacts from "../components/Contacts.jsx";
 import "../components/styles/Project.css";
 
 class Project extends React.Component {
@@ -38,7 +38,10 @@ class Project extends React.Component {
         </div>
         <div className="containerButton">
           <Link className="containerButton-button" to="/projects">
-            Volver a Projects
+            Volver a Proyectos
+          </Link>
+          <Link className="containerButton-button" to="/main">
+            Home
           </Link>
         </div>
         <Contacts />

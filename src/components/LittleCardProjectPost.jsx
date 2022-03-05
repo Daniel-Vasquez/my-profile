@@ -20,7 +20,7 @@ class LittleCardProjectPost extends React.Component {
                 <div className="card-img">
                   <img
                     className="card-img__img"
-                    src={project.imageMobile}
+                    src={project.gif}
                     alt={project.title}
                   />
                 </div>

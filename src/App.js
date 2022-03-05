@@ -1,12 +1,11 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import LayoutNavbar from "./components/LayoutNavbar";
-import Home from "./pages/Home";
-import Main from "./pages/Main";
-import Project from "./pages/Project";
-import Profile from "./pages/Profile";
+import LayoutNavbar from "./components/LayoutNavbar.jsx";
+import Home from "./pages/Home.jsx";
+import Main from "./pages/Main.jsx";
+import Project from "./pages/Project.jsx";
+import Profile from "./pages/Profile.jsx";
 import Projects from "./pages/Projects.jsx";
-// import CardBlogPost from "./components/CardBlogPost";
 
 function App() {
   return (

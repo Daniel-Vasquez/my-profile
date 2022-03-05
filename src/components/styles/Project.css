@@ -73,6 +73,24 @@
   bottom: -9px;
 }
 
+.containerButton-button {
+  color: white;
+  background-color: #555555;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #555555;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 20px 5px;
+  transition: 0.3s all;
+}
+
+.containerButton-button:hover {
+  border-color: black;
+  background-color: white;
+  color: black;
+}
+
 @media screen and (max-width: 1000px) {
   .containerImages {
     padding: 0 10px;

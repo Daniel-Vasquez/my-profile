@@ -9,7 +9,7 @@ function Home() {
         <section className="home-main__container">
           <h1 className="home-main__text">Frontend Developer</h1>
           <Link className="home-main__button" to="/main">
-            Ver proyectos
+            Presentación
           </Link>
         </section>
       </main>

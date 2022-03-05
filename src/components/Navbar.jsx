@@ -13,7 +13,7 @@ function Navbar() {
       <section className="headerContainer-link">
         <div className="headerContainer-containerLinks">
           <Link className="headerContainer-link__projects" to="/projects">
-            Projects
+            Proyectos
           </Link>
           <Link className="headerContainer-link__perfil" to="/perfil">
             Perfil

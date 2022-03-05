@@ -1,0 +1,16 @@
+.projects-options {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.projects-options__title {
+  color: white;
+  margin: 0;
+  font-size: 40px;
+}
+
+.linkHome {
+  background-color: black;
+  text-align: center;
+}
