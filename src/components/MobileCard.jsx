@@ -1,4 +1,5 @@
 import React from "react";
+import './styles/MobileCard.css'
 
 function MobileCard({ imageMobile, title }) {
   return (
@@ -7,8 +8,6 @@ function MobileCard({ imageMobile, title }) {
         className="containerImages-mobile__img"
         src={`/${imageMobile}`}
         alt={title}
-        width="146px"
-        height="286px"
       />
       <div className="cicleMobile"></div>
     </div>

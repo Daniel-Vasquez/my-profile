@@ -1,5 +1,6 @@
 import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
 import Btn from '../components/Btn.jsx'
+import Contacts from "../components/Contacts.jsx";
 import "../components/styles/Projects.css";
 
 function Projects() {
@@ -15,6 +16,7 @@ function Projects() {
       <div className="linkHome">
         <Btn name='Inicio' direction='main'/>
       </div>
+      <Contacts/>
     </div>
   );
 }

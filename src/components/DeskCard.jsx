@@ -1,4 +1,5 @@
 import React from "react";
+import './styles/DeskCard.css'
 
 function DeskCard({ imageDesk, title }) {
   return (
