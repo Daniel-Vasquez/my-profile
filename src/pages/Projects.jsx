@@ -13,7 +13,7 @@ function Projects() {
       <section className="projects-cards">
         <LittleCardProjectPost />
       </section>
-      <div className="linkHome">
+      <div className="start-button">
         <Btn name='Inicio' direction='main'/>
       </div>
       <Contacts/>
