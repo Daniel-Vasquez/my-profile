@@ -14,8 +14,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/main" component={Main} />
-          <Route exact path="/projects" component={Projects} />
           <Route exact path="/project/:name" component={Project} />
+          <Route exact path="/projects" component={Projects} />
           <Route exact path="/perfil" component={Profile} />
         </Switch>
       </LayoutNavbar>

@@ -14,3 +14,9 @@
   background-color: black;
   text-align: center;
 }
+
+@Media screen and (max-width: 750px) {
+  .linkHome {
+    margin-bottom: 50px;
+  }
+}

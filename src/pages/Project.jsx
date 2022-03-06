@@ -30,10 +30,15 @@ class Project extends React.Component {
             <MobileCard
               imageMobile={project.imageMobile}
               title={project.title}
+              link={project.link}
             />
           </div>
           <div className="containerDesk">
-            <DeskCard imageDesk={project.gif} title={project.title} />
+            <DeskCard
+              imageDesk={project.gif}
+              title={project.title}
+              link={project.link}
+            />
           </div>
         </div>
         <div className="containerButton">

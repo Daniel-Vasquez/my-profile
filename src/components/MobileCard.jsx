@@ -1,16 +1,22 @@
-import React from "react";
-import './styles/MobileCard.css'
+import { Link } from "react-router-dom";
+import "./styles/MobileCard.css";
 
-function MobileCard({ imageMobile, title }) {
+function MobileCard({ imageMobile, title, link }) {
   return (
-    <div className="containerImages-mobile">
-      <img
-        className="containerImages-mobile__img"
-        src={`/${imageMobile}`}
-        alt={title}
-      />
+    <Link
+      className="containerImages-mobile"
+      to={{ pathname: link }}
+      target="_blank"
+    >
+      <acronym title="Visitar sitio">
+        <img
+          className="containerImages-mobile__img"
+          src={`/${imageMobile}`}
+          alt={title}
+        />
+      </acronym>
       <div className="cicleMobile"></div>
-    </div>
+    </Link>
   );
 }
 
