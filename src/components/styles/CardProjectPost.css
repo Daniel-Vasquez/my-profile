@@ -9,7 +9,7 @@
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 2fr;
   padding: 15px;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 30px;
 }
 
@@ -24,8 +24,8 @@
 
 .projectContainer-coverPage {
   grid-column: 1;
-  border: 1px solid #c8cbcf;
   height: 500px;
+  text-align: center;
 }
 
 .projectContainer-coverPage .projectContainer-coverPage__img {

@@ -125,9 +125,10 @@
 }
 
 .instagramContainer {
-  background-color: #4d5055;
+  background-color: #76787a;
   border-top: 1px solid #a1a3a76e;
   border-bottom: 1px solid #a1a3a76e;
+  padding-bottom: 30px;
 }
 
 .projectDestacado-link {
@@ -198,6 +199,59 @@
   margin-left: 10px;
 }
 
+.instagram-container {
+  display: grid;
+  grid-template: 560px / 2fr 1fr;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.instagramContainer-img {
+  width: 95%;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.instagramContainer-description {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 15px;
+  box-shadow: 10px 10px 0 1px #000;
+}
+
+.instagram-container__title {
+  font-size: 45px;
+  margin: 0;
+}
+
+.projectsContainer-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.projectsContainer-buttons__visit,
+.projectsContainer-buttons__code {
+  color: #fff;
+  background-color: #555;
+  padding: 10px;
+  text-decoration: none;
+  border: 2px solid #555;
+  transition: all 0.3s;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.projectsContainer-buttons__code {
+  margin-left: 10px;
+}
+
+.projectsContainer-buttons__visit:hover, .projectsContainer-buttons__code:hover {
+  background-color: white;
+  color: black;
+}
+
 @media screen and (max-width: 1000px) {
   .mainContainer {
     padding: 10px;
@@ -211,6 +265,28 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .instagram-container {
+    grid-template: auto auto / 90%;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .instagramContainer-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .instagramContainer-description {
+    box-shadow: none;
+  }
+
+  .projectsContainer-buttons {
+    justify-content: center;
+  }
+}
+
 
 @media screen and (max-width: 850px) {
   .main-container__img img {

@@ -1,27 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/CardProjectPost.css";
+import CarouselImages from "./CarouselImages";
 
-function CardProjectPost(props) {
+function CardProjectPost(props, image, title) {
   return (
     <section className="projectContainer">
       <div className="projectContainer-blogs generalContainer">
+
         <h3 className="projectContainer-blogs__title">{props.title}</h3>
 
         <div className="projectContainer-coverPage">
-          <Link
-            className="projectContainer-info__link"
-            to={{ pathname: props.link }}
-            target="_blank"
-          >
-            <acronym title="Visitar sitio">
-              <img
-                className="projectContainer-coverPage__img"
-                src={`/${props.img}`}
-                alt={props.title}
-              />
-            </acronym>
-          </Link>
+          <CarouselImages ProjectsData={props} />
         </div>
 
         <div className="projectContainer-info">
@@ -47,6 +37,7 @@ function CardProjectPost(props) {
             </Link>
           </div>
         </div>
+
       </div>
     </section>
   );

@@ -10,6 +10,20 @@ const ProjectsData = [
     gif: "insta.gif",
     imageMobile: "mobileInsta.gif",
     codigo: "https://github.com/Daniel-Vasquez/instagram",
+    images: [
+      {
+        id: 0,
+        src: "../insta-1.png",
+      },
+      {
+        id: 2,
+        src: "../insta-2.png",
+      },
+      {
+        id: 3,
+        src: "../insta-3.png",
+      },
+    ],
   },
   {
     id: 1,
@@ -22,6 +36,20 @@ const ProjectsData = [
     gif: "badges.gif",
     imageMobile: "mobileBadges.gif",
     codigo: "https://github.com/Daniel-Vasquez/badges",
+    images: [
+      {
+        id: 0,
+        src: "../badge-1.png",
+      },
+      {
+        id: 2,
+        src: "../badge-2.png",
+      },
+      {
+        id: 3,
+        src: "../badge-3.png",
+      },
+    ],
   },
   {
     id: 2,
@@ -34,17 +62,42 @@ const ProjectsData = [
     gif: "mi-credito-GIF.gif",
     imageMobile: "mi-credito-Mobile-GIF.gif",
     codigo: "https://github.com/Daniel-Vasquez/mi-credito",
+    images: [
+      {
+        id: 0,
+        src: "../mi-credito-1.png",
+      },
+      {
+        id: 2,
+        src: "../mi-credito-2.png",
+      },
+      {
+        id: 3,
+        src: "../mi-credito-3.png",
+      },
+    ],
   },
   {
     id: 3,
     path: "cachorros",
     title: "Cachorros",
-    description: "Adopta uno y salva dos vidas. Nuestra fundación CachorrosOtraOportunidad reúne protectores de animales y personas que buscan adoptar una mascota.",
+    description:
+      "Adopta uno y salva dos vidas. Nuestra fundación CachorrosOtraOportunidad reúne protectores de animales y personas que buscan adoptar una mascota.",
     link: "https://cachorros.vercel.app/",
     img: "cachorros.png",
     gif: "cachorrosGif.gif",
     imageMobile: "mobileCachorrosGif.gif",
     codigo: "https://github.com/Daniel-Vasquez/cachorros",
+    images: [
+      {
+        id: 0,
+        src: "../cachorros-1.png",
+      },
+      {
+        id: 2,
+        src: "../cachorros-2.png",
+      },
+    ],
   },
   {
     id: 4,
@@ -57,6 +110,20 @@ const ProjectsData = [
     gif: "randomGif.gif",
     imageMobile: "mobileRandomGif.gif",
     codigo: "https://github.com/Daniel-Vasquez/encontrar-numero",
+    images: [
+      {
+        id: 0,
+        src: "../numero-1.png",
+      },
+      {
+        id: 2,
+        src: "../numero-2.png",
+      },
+      {
+        id: 3,
+        src: "../numero-1.png",
+      },
+    ],
   },
   {
     id: 5,
@@ -69,6 +136,20 @@ const ProjectsData = [
     gif: "platziVideo.gif",
     imageMobile: "mobilePlatziVideo.gif",
     codigo: "https://github.com/Daniel-Vasquez/platzi-video",
+    images: [
+      {
+        id: 0,
+        src: "../platzi-video-1.png",
+      },
+      {
+        id: 2,
+        src: "../platzi-video-2.png",
+      },
+      {
+        id: 3,
+        src: "../platzi-video-3.png",
+      },
+    ],
   },
   {
     id: 6,
@@ -81,18 +162,46 @@ const ProjectsData = [
     gif: "maquetacion.gif",
     imageMobile: "mobileMaquetacion.gif",
     codigo: "https://github.com/Daniel-Vasquez/maquetacion",
+    images: [
+      {
+        id: 0,
+        src: "../maquetacion-1.png",
+      },
+      {
+        id: 2,
+        src: "../maquetacion-2.png",
+      },
+      {
+        id: 3,
+        src: "../maquetacion-3.png",
+      },
+    ],
   },
   {
     id: 7,
     path: "responsive-design",
     title: "Responsive design",
     description:
-      "Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y CSS. Lo agregué a mis 'proyectos destacados' porque refleja la enorme diferencia entre el primer y el actual portafolio.",
+      <>Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y CSS. Lo agregué a mis proyectos destacados porque refleja la enorme diferencia entre el primer y el actual portafolio. <br/> Es un diseño sumamente sencillo y fácil, pero marca el antes y de lo que ahora puedo lograr con mi constante preparación. </>,
     link: "https://daniel-vasquez.github.io/responsive-design/",
     img: "responsiveDesign.png",
     gif: "responsiveDesign.gif",
     imageMobile: "mobileResponsiDesign.gif",
     codigo: "https://github.com/Daniel-Vasquez/responsive-design",
+    images: [
+      {
+        id: 0,
+        src: "../responsive-design-1.png",
+      },
+      {
+        id: 2,
+        src: "../responsive-design-2.png",
+      },
+      {
+        id: 3,
+        src: "../responsive-design-3.png",
+      },
+    ],
   },
   {
     id: 8,
@@ -105,7 +214,21 @@ const ProjectsData = [
     gif: "recordatorioGif.gif",
     imageMobile: "mobileRecordatorioGif.gif",
     codigo: "https://github.com/Daniel-Vasquez/reminder",
-  }
+    images: [
+      {
+        id: 0,
+        src: "../recordatorio-1.png",
+      },
+      {
+        id: 2,
+        src: "../recordatorio-2.png",
+      },
+      {
+        id: 3,
+        src: "../recordatorio-3.png",
+      },
+    ],
+  },
 ];
 
 export default ProjectsData;

@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CardProjectPost from "../components/CardProjectPost.jsx";
 import Contacts from "../components/Contacts.jsx";
 import logoGithub from "../images/github.png";
 import logoWhats from "../images/whatsapp.png";
 import logoEmail from "../images/logoCorreo.png";
 import personalImage from "../images/danielPerfil.png";
 import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
-// import Btn from "../components/Btn.jsx";
 import "../components/styles/Main.css";
 
 function Main() {
@@ -86,29 +84,61 @@ function Main() {
           <h2 className="instagramContainer-title">
             Replica de Instagram, proyecto creado desde cero.
           </h2>
-          <CardProjectPost
-            title="Instagram"
-            img="instagramImg.png"
-            link="https://instagram-dani.vercel.app/"
-            codigo="https://github.com/Daniel-Vasquez/instagram"
-          >
-            <p>
-              El mayor reto que tuve al replicar instagram fue respecto al
-              diseño; siendo una página elegante, por lo tanto fue difícil
-              hacerlo "responsive".
-            </p>
-            <p>Se ajusta a todo tipo de pantalla, sea Desktop o mobile.</p>
-            <p>El sitio web está hecho con React JS y cuenta con:</p>
-            <ul>
-              <li>Manejo de estado.</li>
-              <li>User Interface.</li>
-              <li>Manejo de single page apps.</li>
-              <li>Llamada a APIs externas.</li>
-              <li>Manejo de rutas (Route).</li>
-              <li>Manejo de Portal y Modal.</li>
-              <li>Implementación de componentes Stateful y Stateless.</li>
-            </ul>
-          </CardProjectPost>
+
+          <div className="instagram-container">
+            <Link
+              to={{ pathname: "https://instagram-dani.vercel.app/" }}
+              target="_black"
+            >
+              <img
+                className="instagramContainer-img"
+                src="instagramImg.png"
+                alt="Instagram"
+              />
+            </Link>
+            <div className="instagramContainer-description">
+              <h1 className="instagram-container__title">Instagram</h1>
+              <p className="instagramContainer-description__paragraph">
+                El mayor reto que tuve al replicar instagram fue respecto al
+                diseño; siendo una página elegante, por lo tanto fue difícil
+                hacerlo "responsive".
+              </p>
+              <p className="instagramContainer-description__paragraph">
+                Se ajusta a todo tipo de pantalla, sea Desktop o mobile.
+              </p>
+              <p className="instagramContainer-description__paragraph">
+                El sitio web está hecho con React JS y cuenta con:
+              </p>
+              <ul className="instagramContainer-ul">
+                <li>Manejo de estado.</li>
+                <li>User Interface.</li>
+                <li>Manejo de single page apps.</li>
+                <li>Llamada a APIs externas.</li>
+                <li>Manejo de rutas (Route).</li>
+                <li>Manejo de Portal y Modal.</li>
+                <li>Implementación de componentes Stateful y Stateless.</li>
+              </ul>
+              <div className="projectsContainer-buttons">
+                <Link
+                  className="projectsContainer-buttons__visit"
+                  to={{ pathname: "https://instagram-dani.vercel.app/" }}
+                  target="_black"
+                >
+                  Visitar
+                </Link>
+
+                <Link
+                  className="projectsContainer-buttons__code"
+                  to={{
+                    pathname: "https://github.com/Daniel-Vasquez/instagram",
+                  }}
+                  target="_black"
+                >
+                  Ver código
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Contacts />
