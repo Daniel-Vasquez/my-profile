@@ -25,7 +25,7 @@ class Project extends React.Component {
     return (
       <React.Fragment>
         <CardProjectPost {...project} />
-        <div className="containerImages grid-container">
+        <div className="containerImages generalContainer">
           <div className="containerMobile">
             <MobileCard
               imageMobile={project.imageMobile}

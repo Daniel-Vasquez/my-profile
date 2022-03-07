@@ -12,7 +12,11 @@ code {
     monospace;
 }
 
-.grid-container {
+.generalContainer {
   max-width: 1000px;
   margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }

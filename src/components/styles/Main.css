@@ -1,5 +1,5 @@
 .mainContainer {
-  padding: 20px 0px;
+  padding: 15px 0px;
   background-color: black;
   background-color: white;
   position: relative;
@@ -30,7 +30,6 @@
   background-color: #f7ede2;
   border: 1px solid red;
 }
-
 
 .mainPosts-container .mainPosts-container__title {
   color: black;
@@ -70,7 +69,7 @@
 
 .mainContainer-whats__link,
 .mainContainer-git__link,
-.main-container__mail, 
+.main-container__mail,
 .projectDestacado-link {
   text-decoration: none;
   color: black;
@@ -118,6 +117,19 @@
   text-decoration: revert;
 }
 
+.projectsContainer-title {
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+}
+
+.instagramContainer {
+  background-color: #4d5055;
+  border-top: 1px solid #a1a3a76e;
+  border-bottom: 1px solid #a1a3a76e;
+}
+
 .projectDestacado-link {
   display: flex;
   flex-direction: column;
@@ -148,10 +160,9 @@
   color: black;
 }
 
-.ParagranphsImpact span{
+.ParagranphsImpact span {
   color: #da0f54;
 }
-
 
 .main-container__paragraphs {
   margin: 10px 0;
@@ -169,7 +180,7 @@
   padding-left: 0px;
 }
 
-.containerDestacado-title {
+.instagramContainer-title {
   text-align: center;
   margin: 30px 0;
 }
@@ -211,7 +222,6 @@
   }
 }
 
-
 @media screen and (max-width: 750px) {
   .containerButton {
     margin-bottom: 45px;
@@ -235,7 +245,7 @@
 
 @media screen and (max-width: 480px) {
   .ParagranphsImpact,
-  .containerDestacado-title {
+  .instagramContainer-title {
     font-size: 16px;
   }
 

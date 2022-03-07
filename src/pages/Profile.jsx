@@ -20,7 +20,7 @@ class Profile extends React.Component {
     return (
       <div>
         <section className="profileContainer">
-          <div className="profile-container grid-container">
+          <div className="profile-container generalContainer">
             <div className="presentation">
               <h3>
                 Soy Desarrollador Frontend con más de un año de preparación, de
@@ -44,6 +44,7 @@ class Profile extends React.Component {
                 librería de javaScript.
               </p>
             </div>
+            <div className="presentationImg">
             <Link
               className="profile-container__link"
               to={{
@@ -60,10 +61,11 @@ class Profile extends React.Component {
                 />
               </acronym>
             </Link>
+            </div>
           </div>
         </section>
         <section className="ProyectsContainer">
-          <div className="grid-container">
+          <div className="generalContainer">
             <h3 className="ProyectsContainer-title">
               Proyectos que destacan por el diseño e interactividad
             </h3>
@@ -81,7 +83,10 @@ class Profile extends React.Component {
                     >
                       <acronym title="Visitar sitio">{element.title}</acronym>
                     </Link>
-                    <MobileCard imageMobile={element.imageMobile} />
+                    <MobileCard
+                      imageMobile={element.imageMobile}
+                      link={element.link}
+                    />
                   </article>
                 );
               })}

@@ -12,7 +12,7 @@ class LittleCardProjectPost extends React.Component {
 
   render() {
     return (
-      <div className="general-container">
+      <div className="cardsContainer generalContainer">
         {ProjectsData.map((project) => {
           return (
             <React.Fragment key={project.id}>
@@ -20,7 +20,7 @@ class LittleCardProjectPost extends React.Component {
                 <div className="card-img">
                   <img
                     className="card-img__img"
-                    src={project.gif}
+                    src={project.img}
                     alt={project.title}
                   />
                 </div>

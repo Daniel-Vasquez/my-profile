@@ -1,4 +1,5 @@
 .containerImages-mobile {
+  display: block;
   border-radius: 15px;
   width: 166px;
   height: 350px;

@@ -10,13 +10,6 @@
   font-size: 40px;
 }
 
-.start-button {
-  background-color: black;
-  text-align: center;
-}
-
-@Media screen and (max-width: 750px) {
-  .start-button {
-    margin-bottom: 50px;
-  }
+.projects-cards {
+  margin-bottom: 30px;
 }

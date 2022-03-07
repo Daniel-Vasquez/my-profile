@@ -6,14 +6,15 @@ import logoGithub from "../images/github.png";
 import logoWhats from "../images/whatsapp.png";
 import logoEmail from "../images/logoCorreo.png";
 import personalImage from "../images/danielPerfil.png";
-import Btn from "../components/Btn.jsx";
+import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
+// import Btn from "../components/Btn.jsx";
 import "../components/styles/Main.css";
 
 function Main() {
   return (
     <React.Fragment>
       <section className="mainContainer">
-        <div className="main-container grid-container">
+        <div className="main-container generalContainer">
           <div className="main-container">
             <div className="main-container__img">
               <img src={personalImage} alt="Personal img" />
@@ -71,38 +72,44 @@ function Main() {
             </div>
           </div>
         </div>
-        <div className="mainContainer-linkProjects">
-          <Btn color="white" name="Ir a proyectos" direction="/projects" />
+      </section>
+
+      <section className='projectsContainer' id="proyectos">
+        <div className="generalContainer">
+          <h1 className='projectsContainer-title'>Proyectos</h1>
+          <LittleCardProjectPost />
         </div>
       </section>
 
-      <div className="containerDestacado">
-        <h2 className="containerDestacado-title">
-          Replica Instagram, proyecto creado desde cero.
-        </h2>
-        <CardProjectPost
-          title="Instagram"
-          img="instagramImg.png"
-          link="https://instagram-dani.vercel.app/"
-          codigo="https://github.com/Daniel-Vasquez/instagram"
-        >
-          <p>
-            El mayor reto que tuve al replicar instagram fue respecto al diseño;
-            siendo una página elegante, por lo tanto fue difícil hacerlo
-            "responsive".
-          </p>
-          <p>Se ajusta a todo tipo de pantalla, sea Desktop o mobile.</p>
-          <p>El sitio web está hecho con React JS y cuenta con:</p>
-          <ul>
-            <li>Manejo de estado.</li>
-            <li>User Interface.</li>
-            <li>Manejo de single page apps.</li>
-            <li>Llamada a APIs externas.</li>
-            <li>Manejo de rutas (Route).</li>
-            <li>Manejo de Portal y Modal.</li>
-            <li>Implementación de componentes Stateful y Stateless.</li>
-          </ul>
-        </CardProjectPost>
+      <div className="instagramContainer">
+        <div className="generalContainer">
+          <h2 className="instagramContainer-title">
+            Replica de Instagram, proyecto creado desde cero.
+          </h2>
+          <CardProjectPost
+            title="Instagram"
+            img="instagramImg.png"
+            link="https://instagram-dani.vercel.app/"
+            codigo="https://github.com/Daniel-Vasquez/instagram"
+          >
+            <p>
+              El mayor reto que tuve al replicar instagram fue respecto al
+              diseño; siendo una página elegante, por lo tanto fue difícil
+              hacerlo "responsive".
+            </p>
+            <p>Se ajusta a todo tipo de pantalla, sea Desktop o mobile.</p>
+            <p>El sitio web está hecho con React JS y cuenta con:</p>
+            <ul>
+              <li>Manejo de estado.</li>
+              <li>User Interface.</li>
+              <li>Manejo de single page apps.</li>
+              <li>Llamada a APIs externas.</li>
+              <li>Manejo de rutas (Route).</li>
+              <li>Manejo de Portal y Modal.</li>
+              <li>Implementación de componentes Stateful y Stateless.</li>
+            </ul>
+          </CardProjectPost>
+        </div>
       </div>
       <Contacts />
     </React.Fragment>

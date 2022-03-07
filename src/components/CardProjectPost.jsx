@@ -5,7 +5,7 @@ import "./styles/CardProjectPost.css";
 function CardProjectPost(props) {
   return (
     <section className="projectContainer">
-      <div className="projectContainer-blogs grid-container">
+      <div className="projectContainer-blogs generalContainer">
         <h3 className="projectContainer-blogs__title">{props.title}</h3>
 
         <div className="projectContainer-coverPage">

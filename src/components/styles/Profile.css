@@ -7,14 +7,17 @@
 .profileContainer .profile-container {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
+.presentationImg {
+  max-width: 400px;
+  height: 400px;
+}
 
 .profileContainer .profile-container__img {
-  height: 400px;
+  height: 100%;
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-
-
 }
 
 .presentation {
@@ -31,11 +34,12 @@
   height: 550px;
 }
 
-.ProyectsContainer .ProyectsContainer-title {
+.ProyectsContainer-title {
   border-bottom: 1px solid #cdd2da;
   padding-bottom: 15px;
   text-align: center;
   margin: 0;
+  font-size: 30px;
 }
 
 .projects-main-container {
@@ -139,11 +143,19 @@
   .profile-container__link {
     text-align: center;
   }
+
+  .ProyectsContainer-title {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 550px) {
   .ProyectsContainer {
-    padding: 0;
+    padding: 0 5px;
     margin-bottom: 60px;
+  }
+
+  .ProyectsContainer-title {
+    font-size: 20px;
   }
 }
