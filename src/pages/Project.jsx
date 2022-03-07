@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import CardProjectPost from "../components/CardProjectPost.jsx";
 import ProjectsDate from "../api";
 import DeskCard from "../components/DeskCard.jsx";
 import MobileCard from "../components/MobileCard.jsx";
 import Contacts from "../components/Contacts.jsx";
+import Btn from "../components/Btn.jsx";
 import "../components/styles/Project.css";
 
 class Project extends React.Component {
@@ -25,29 +25,28 @@ class Project extends React.Component {
     return (
       <React.Fragment>
         <CardProjectPost {...project} />
-        <div className="containerImages generalContainer">
-          <div className="containerMobile">
-            <MobileCard
-              imageMobile={project.imageMobile}
-              title={project.title}
-              link={project.link}
-            />
-          </div>
-          <div className="containerDesk">
-            <DeskCard
-              imageDesk={project.gif}
-              title={project.title}
-              link={project.link}
-            />
+        <div className="generalContainer">
+          <div className="containerImages generalContainer">
+            <div className="containerMobile">
+              <p className="containerMobile-title">Versión Mobile</p>
+              <MobileCard
+                imageMobile={project.imageMobile}
+                title={project.title}
+                link={project.link}
+              />
+            </div>
+            <div className="containerDesk">
+              <p className="containerDesk-title">Versión Desktop</p>
+              <DeskCard
+                imageDesk={project.gif}
+                title={project.title}
+                link={project.link}
+              />
+            </div>
           </div>
         </div>
         <div className="containerButton">
-          <Link className="containerButton-button" to="/projects">
-            Volver a Proyectos
-          </Link>
-          <Link className="containerButton-button" to="/main">
-            Home
-          </Link>
+          <Btn name="Volver a Proyectos" direction="/projects" color="white" />
         </div>
         <Contacts />
       </React.Fragment>

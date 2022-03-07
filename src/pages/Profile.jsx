@@ -45,22 +45,22 @@ class Profile extends React.Component {
               </p>
             </div>
             <div className="presentationImg">
-            <Link
-              className="profile-container__link"
-              to={{
-                pathname:
-                  "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-              }}
-              target="_black"
-            >
-              <acronym title="Linkedin">
-                <img
-                  className="profile-container__img"
-                  src={logoProfile}
-                  alt="Daniel Vásquez"
-                />
-              </acronym>
-            </Link>
+              <Link
+                className="profile-container__link"
+                to={{
+                  pathname:
+                    "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+                }}
+                target="_black"
+              >
+                <acronym title="Linkedin">
+                  <img
+                    className="profile-container__img"
+                    src={logoProfile}
+                    alt="Daniel Vásquez"
+                  />
+                </acronym>
+              </Link>
             </div>
           </div>
         </section>

@@ -74,9 +74,9 @@ function Main() {
         </div>
       </section>
 
-      <section className='projectsContainer' id="proyectos">
+      <section className="projectsContainer" id="proyectos">
         <div className="generalContainer">
-          <h1 className='projectsContainer-title'>Proyectos</h1>
+          <h1 className="projectsContainer-title">Proyectos</h1>
           <LittleCardProjectPost />
         </div>
       </section>
