@@ -6,11 +6,9 @@
 
 .projectContainer-blogs {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr;
-  padding: 15px;
+  grid-template-rows: .2fr .9fr .5fr;
   align-items: flex-start;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .projectContainer-blogs__title {
@@ -18,13 +16,7 @@
   text-decoration: none;
 }
 
-.projectContainer-info__link, .projectContainer-info__link acronym {
-  text-decoration: none;
-}
-
 .projectContainer-coverPage {
-  grid-column: 1;
-  height: 500px;
   text-align: center;
 }
 
@@ -34,13 +26,10 @@
 }
 
 .projectContainer-info {
-  grid-column: 2;
-  margin-left: 15px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid black;
   border-radius: 15px;
   background-color: white;
-  box-shadow: 10px 10px 0px 1px black;
 }
 
 .projectContainer-info .projectContainer-info__title {
@@ -51,6 +40,13 @@
 .projectContainer-info .projectContainer-info__paragraph {
   margin-bottom: 35px;
   line-height: 1.4;
+}
+
+.projectContainer-info__span {
+  font-size: 10px;
+  letter-spacing: -0.3px;
+  color: black;
+  opacity: .6;
 }
 
 .projectContainer-info .projectContainer-sitio__link,
@@ -88,15 +84,6 @@
 }
 
 @media screen and (max-width: 920px) {
-  .projectContainer-blogs {
-    display: block;
-  }
-
-  .projectContainer-info {
-    width: 80%;
-    margin: 10px auto;
-  }
-
   .projectContainer-links {
     justify-content: center;
   }
@@ -111,6 +98,9 @@
 }
 
 @media screen and (max-width: 750px) {
+  .projectContainer-blogs {
+    grid-template-rows: .2fr .5fr .5fr;
+  }
   .projectContainer {
     margin-bottom: 30px;
   }
@@ -118,18 +108,9 @@
   .projectContainer-links {
     padding-bottom: 20px;
   }
-
-  .projectContainer-coverPage {
-    height: 400px;
-  }
 }
 
 @media screen and (max-width: 700px) {
-  .projectContainer-coverPage {
-    text-align: center;
-    height: 400px;
-  }
-
   .projectContainer-coverPage .projectContainer-coverPage__img {
     height: 100%;
   }
@@ -146,14 +127,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .projectContainer-coverPage {
-    height: 300px;
-  }
-
-  .projectContainer-info {
-    width: auto;
-  }
-
   .projectContainer-links {
     flex-direction: column;
     align-items: center;
@@ -163,15 +136,17 @@
     margin-left: 0;
     margin-top: 10px;
   }
+}
 
-  .projectContainer-info {
-    box-shadow: 2px 2px 1px 1px black;
+@media screen and (max-width: 360px) {
+  .projectContainer-blogs__title {
+    width: 100px;
+  }
+  
+  .projectContainer-coverPage, .projectContainer-info {
+    width: 90%;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .projectContainer-coverPage {
-    height: 250px;
-  }
-}
+
 

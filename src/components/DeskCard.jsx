@@ -8,13 +8,12 @@ function DeskCard({ imageDesk, title, link }) {
       to={{ pathname: link }}
       target="_blank"
     >
-      <acronym title="Visitar sitio">
-        <img
-          className="containerImages-desk__img"
-          src={`/${imageDesk}`}
-          alt={title}
-        />
-      </acronym>
+      <img
+        className="containerImages-desk__img"
+        src={`/${imageDesk}`}
+        alt={title}
+        title="Visitar sitio"
+      />
       <div className="cicle"></div>
     </Link>
   );

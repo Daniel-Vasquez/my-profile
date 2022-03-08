@@ -7,14 +7,13 @@ function MobileCard({ imageMobile, title, link }) {
       className="containerImages-mobile"
       to={{ pathname: link }}
       target="_blank"
+      title="Visitar sitio"
     >
-      <acronym title="Visitar sitio">
-        <img
-          className="containerImages-mobile__img"
-          src={`/${imageMobile}`}
-          alt={title}
-        />
-      </acronym>
+      <img
+        className="containerImages-mobile__img"
+        src={`/${imageMobile}`}
+        alt={title}
+      />
       <div className="cicleMobile"></div>
     </Link>
   );

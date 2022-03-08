@@ -52,14 +52,13 @@ class Profile extends React.Component {
                     "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
                 }}
                 target="_black"
+                title="Linkedin"
               >
-                <acronym title="Linkedin">
-                  <img
-                    className="profile-container__img"
-                    src={logoProfile}
-                    alt="Daniel Vásquez"
-                  />
-                </acronym>
+                <img
+                  className="profile-container__img"
+                  src={logoProfile}
+                  alt="Daniel Vásquez"
+                />
               </Link>
             </div>
           </div>
@@ -80,8 +79,9 @@ class Profile extends React.Component {
                       className="project-container__link"
                       to={{ pathname: element.link }}
                       target="_black"
+                      title="Visitar sitio"
                     >
-                      <acronym title="Visitar sitio">{element.title}</acronym>
+                      {element.title}
                     </Link>
                     <MobileCard
                       imageMobile={element.imageMobile}

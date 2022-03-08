@@ -59,10 +59,6 @@
   transition: all .3s;
 }
 
-.description-title__title acronym {
-  text-decoration: none;
-}
-
 .description-title__title:hover {
   background-color: white;
   color: black;

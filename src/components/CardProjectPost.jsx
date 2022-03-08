@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/CardProjectPost.css";
 import CarouselImages from "./CarouselImages";
+import "./styles/CardProjectPost.css";
 
-function CardProjectPost(props, image, title) {
+import Icons from "./Icons";
+
+function CardProjectPost(props) {
   return (
     <section className="projectContainer">
       <div className="projectContainer-blogs generalContainer">
-
         <h3 className="projectContainer-blogs__title">{props.title}</h3>
 
         <div className="projectContainer-coverPage">
@@ -19,6 +20,8 @@ function CardProjectPost(props, image, title) {
           <div className="projectContainer-info__paragraph">
             {props.children}
             {props.description}
+            <Icons technologies={props.technologies}/>
+            <span className="projectContainer-info__span">*Porcentajes tomados de cada proyecto en GitHub</span>
           </div>
           <div className="projectContainer-links">
             <Link
@@ -37,7 +40,6 @@ function CardProjectPost(props, image, title) {
             </Link>
           </div>
         </div>
-
       </div>
     </section>
   );

@@ -24,6 +24,23 @@ const ProjectsData = [
         src: "../insta-3.png",
       },
     ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 49.3,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 49.2,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 1.4,
+      },
+    ],
   },
   {
     id: 1,
@@ -48,6 +65,23 @@ const ProjectsData = [
       {
         id: 3,
         src: "../badge-3.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 76.8,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 1.8,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 21.4,
       },
     ],
   },
@@ -76,6 +110,23 @@ const ProjectsData = [
         src: "../mi-credito-3.png",
       },
     ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 61.4,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 1.8,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 36.8,
+      },
+    ],
   },
   {
     id: 3,
@@ -96,6 +147,23 @@ const ProjectsData = [
       {
         id: 2,
         src: "../cachorros-2.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 53.9,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 4.3,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 41.8,
       },
     ],
   },
@@ -124,6 +192,23 @@ const ProjectsData = [
         src: "../numero-1.png",
       },
     ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 62.7,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 8.0,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 29.3,
+      },
+    ],
   },
   {
     id: 5,
@@ -148,6 +233,18 @@ const ProjectsData = [
       {
         id: 3,
         src: "../platzi-video-3.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 69.4,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 30.6,
       },
     ],
   },
@@ -176,13 +273,42 @@ const ProjectsData = [
         src: "../maquetacion-3.png",
       },
     ],
+    technologies: [
+      {
+        name: "web components",
+        src: "../web-components-icono.png",
+        level: 7.1,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 66.8,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 20.9,
+      },
+      {
+        name: "sass",
+        src: "../sass-icono.png",
+        level: 5.2,
+      },
+    ],
   },
   {
     id: 7,
     path: "responsive-design",
     title: "Responsive design",
-    description:
-      <>Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y CSS. Lo agregué a mis proyectos destacados porque refleja la enorme diferencia entre el primer y el actual portafolio. <br/> Es un diseño sumamente sencillo y fácil, pero marca el antes y de lo que ahora puedo lograr con mi constante preparación. </>,
+    description: (
+      <>
+        Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y
+        CSS. Lo agregué a mis proyectos destacados porque refleja la enorme
+        diferencia entre el primer y el actual portafolio. <br /> Es un diseño
+        sumamente sencillo y fácil, pero marca el antes y de lo que ahora puedo
+        lograr con mi constante preparación.{" "}
+      </>
+    ),
     link: "https://daniel-vasquez.github.io/responsive-design/",
     img: "responsiveDesign.png",
     gif: "responsiveDesign.gif",
@@ -200,6 +326,23 @@ const ProjectsData = [
       {
         id: 3,
         src: "../responsive-design-3.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "javaScript",
+        src: "../java-script-icono.png",
+        level: 1.5,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 46.9,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 51.6,
       },
     ],
   },
@@ -226,6 +369,23 @@ const ProjectsData = [
       {
         id: 3,
         src: "../recordatorio-3.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 58.0,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 7.8,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 34.2,
       },
     ],
   },

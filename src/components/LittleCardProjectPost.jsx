@@ -30,9 +30,10 @@ class LittleCardProjectPost extends React.Component {
                       className="description-title__btn"
                       to={{ pathname: project.link }}
                       target="_black"
+                      title="Visitar sitio web"
                     >
                       <p className="description-title__title">
-                        <acronym title="Visitar sitio">{project.title}</acronym>
+                        {project.title}
                       </p>
                     </Link>
                   </div>
@@ -40,15 +41,17 @@ class LittleCardProjectPost extends React.Component {
                     <Link
                       className="description-buttons__btn"
                       to={`/project/${project.path}`}
+                      title='Ver detalles del proycto'
                     >
-                      Leer más
+                      Detalles
                     </Link>
                     <Link
                       className="description-buttons__btn"
                       to={{ pathname: project.link }}
                       target="_black"
+                      title='Visitar sitio web'
                     >
-                      Visitar sitio
+                      Visitar
                     </Link>
                   </div>
                 </div>
