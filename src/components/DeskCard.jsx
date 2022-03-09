@@ -13,6 +13,7 @@ function DeskCard({ imageDesk, title, link }) {
         src={`/${imageDesk}`}
         alt={title}
         title="Visitar sitio"
+        loading="lazy"
       />
       <div className="cicle"></div>
     </Link>

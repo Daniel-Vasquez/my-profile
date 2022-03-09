@@ -22,6 +22,7 @@ class LittleCardProjectPost extends React.Component {
                     className="card-img__img"
                     src={project.img}
                     alt={project.title}
+                    loading="lazy"
                   />
                 </div>
                 <div className="card-description">
@@ -41,7 +42,7 @@ class LittleCardProjectPost extends React.Component {
                     <Link
                       className="description-buttons__btn"
                       to={`/project/${project.path}`}
-                      title='Ver detalles del proycto'
+                      title="Ver detalles del proycto"
                     >
                       Detalles
                     </Link>
@@ -49,7 +50,7 @@ class LittleCardProjectPost extends React.Component {
                       className="description-buttons__btn"
                       to={{ pathname: project.link }}
                       target="_black"
-                      title='Visitar sitio web'
+                      title="Visitar sitio web"
                     >
                       Visitar
                     </Link>

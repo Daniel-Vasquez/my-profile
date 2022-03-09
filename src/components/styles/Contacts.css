@@ -27,6 +27,14 @@
 .contactContainer-git__img,
 .contactContainer-whats__img {
   width: 85%;
+  opacity: .5;
+  transition: all .2s;
+}
+
+.contactContainer-linkedin__img:hover, 
+.contactContainer-git__img:hover,
+.contactContainer-whats__img:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 750px) {
@@ -59,6 +67,7 @@
   .contactContainer-linkedin__img,
   .contactContainer-git__img,
   .contactContainer-whats__img {
+    opacity: 1;
     width: 30px;
   }
 }

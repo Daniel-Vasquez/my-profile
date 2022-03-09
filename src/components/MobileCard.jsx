@@ -8,6 +8,7 @@ function MobileCard({ imageMobile, title, link }) {
       to={{ pathname: link }}
       target="_blank"
       title="Visitar sitio"
+      loading="lazy"
     >
       <img
         className="containerImages-mobile__img"
