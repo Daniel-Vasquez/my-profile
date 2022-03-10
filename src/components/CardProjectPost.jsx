@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
-import CarouselImages from "./CarouselImages";
+import Icons from "./Icons";
 import "./styles/CardProjectPost.css";
 
-import Icons from "./Icons";
+const CarouselImages = lazy(() => import("./CarouselImages"));
 
 function CardProjectPost(props) {
   return (
@@ -12,7 +12,9 @@ function CardProjectPost(props) {
         <h3 className="projectContainer-blogs__title">{props.title}</h3>
 
         <div className="projectContainer-coverPage">
-          <CarouselImages ProjectsData={props} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <CarouselImages ProjectsData={props} />
+          </Suspense>
         </div>
 
         <div className="projectContainer-info">
@@ -20,8 +22,10 @@ function CardProjectPost(props) {
           <div className="projectContainer-info__paragraph">
             {props.children}
             {props.description}
-            <Icons technologies={props.technologies}/>
-            <span className="projectContainer-info__span">*Porcentajes tomados de cada proyecto en GitHub</span>
+            <Icons technologies={props.technologies} />
+            <span className="projectContainer-info__span">
+              *Porcentajes tomados de cada proyecto en GitHub
+            </span>
           </div>
           <div className="projectContainer-links">
             <Link

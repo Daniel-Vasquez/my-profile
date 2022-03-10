@@ -1,22 +1,13 @@
-import { useEffect } from "react";
-
 import React from "react";
 import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
 import Contacts from "../components/Contacts.jsx";
+import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Projects.css";
 
-function ScrollToTopOnMount() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  return null;
-}
-
 function Projects() {
+  useScrollToTop()
   return (
     <React.Fragment>
-      <ScrollToTopOnMount />
       <div className="projects">
         <div className="projects-options">
           <div className="generalContainer">

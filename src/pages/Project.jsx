@@ -1,25 +1,24 @@
-// import { useEffect } from "react";
-
-import React from "react";
-import CardProjectPost from "../components/CardProjectPost.jsx";
+import React, {Component, Suspense, lazy } from "react";
 import ProjectsDate from "../api";
-import DeskCard from "../components/DeskCard.jsx";
-import MobileCard from "../components/MobileCard.jsx";
 import Contacts from "../components/Contacts.jsx";
 import Btn from "../components/Btn.jsx";
+import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Project.css";
 
-class ScrollToTopOnMount extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
+const CardProjectPost = lazy(() =>
+  import("../components/CardProjectPost.jsx")
+);
 
-  render() {
-    return null;
-  }
+const DeskCard = lazy(() => import("../components/DeskCard.jsx"));
+
+const MobileCard = lazy(() => import("../components/MobileCard.jsx"));
+
+function ScrollToTopOnMount() {
+  useScrollToTop();
+  return null;
 }
 
-class Project extends React.Component {
+class Project extends Component {
   render() {
     const projectName = this.props.match.params.name;
 
@@ -37,24 +36,30 @@ class Project extends React.Component {
     return (
       <React.Fragment>
         <ScrollToTopOnMount />
-        <CardProjectPost {...project} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <CardProjectPost {...project} />
+        </Suspense>
         <div className="generalContainer">
           <div className="containerImages generalContainer">
             <div className="containerMobile">
               <p className="containerMobile-title">Versión Mobile</p>
-              <MobileCard
-                imageMobile={project.imageMobile}
-                title={project.title}
-                link={project.link}
-              />
+              <Suspense fallback={<div>Loading...</div>}>
+                <MobileCard
+                  imageMobile={project.imageMobile}
+                  title={project.title}
+                  link={project.link}
+                />
+              </Suspense>
             </div>
             <div className="containerDesk">
               <p className="containerDesk-title">Versión Desktop</p>
-              <DeskCard
-                imageDesk={project.gif}
-                title={project.title}
-                link={project.link}
-              />
+              <Suspense fallback={<div>Loading...</div>}>
+                <DeskCard
+                  imageDesk={project.gif}
+                  title={project.title}
+                  link={project.link}
+                />
+              </Suspense>
             </div>
           </div>
         </div>

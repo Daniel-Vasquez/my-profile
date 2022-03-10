@@ -1,12 +1,13 @@
-import React from "react";
+import { Component, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
 import logoProfile from "../images/danielPerfil.png";
 import projectData from "../api";
-import MobileCard from "../components/MobileCard.jsx";
 import "../components/styles/Profile.css";
 
-class Profile extends React.Component {
+const MobileCard = lazy(() => import("../components/MobileCard.jsx"));
+
+class Profile extends Component {
   constructor(props) {
     super(props);
 
@@ -83,10 +84,12 @@ class Profile extends React.Component {
                     >
                       {element.title}
                     </Link>
-                    <MobileCard
-                      imageMobile={element.imageMobile}
-                      link={element.link}
-                    />
+                    <Suspense fallback={<div>Loading...</div>}>
+                      <MobileCard
+                        imageMobile={element.imageMobile}
+                        link={element.link}
+                      />
+                    </Suspense>
                   </article>
                 );
               })}

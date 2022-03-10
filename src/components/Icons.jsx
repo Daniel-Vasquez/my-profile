@@ -12,7 +12,6 @@ const Icons = ({ technologies }) => {
                 src={element.src}
                 alt={element.name}
                 title={element.name}
-                loading='lazy'
               />
               <div className="iconContainer-level">
                 <div className="levelContainer">
