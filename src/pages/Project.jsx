@@ -1,3 +1,5 @@
+// import { useEffect } from "react";
+
 import React from "react";
 import CardProjectPost from "../components/CardProjectPost.jsx";
 import ProjectsDate from "../api";
@@ -6,6 +8,16 @@ import MobileCard from "../components/MobileCard.jsx";
 import Contacts from "../components/Contacts.jsx";
 import Btn from "../components/Btn.jsx";
 import "../components/styles/Project.css";
+
+class ScrollToTopOnMount extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
+  render() {
+    return null;
+  }
+}
 
 class Project extends React.Component {
   render() {
@@ -24,6 +36,7 @@ class Project extends React.Component {
     }
     return (
       <React.Fragment>
+        <ScrollToTopOnMount />
         <CardProjectPost {...project} />
         <div className="generalContainer">
           <div className="containerImages generalContainer">
