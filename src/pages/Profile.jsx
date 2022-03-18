@@ -1,11 +1,12 @@
-import { Component, lazy, Suspense } from "react";
+import { Component } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
 import logoProfile from "../images/danielPerfil.png";
+import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import "../components/styles/Profile.css";
 
-const MobileCard = lazy(() => import("../components/MobileCard.jsx"));
+const ImageProfile = () => <p className="imageProfile">Cargando...</p> 
 
 class Profile extends Component {
   constructor(props) {
@@ -55,6 +56,7 @@ class Profile extends Component {
                 target="_black"
                 title="Linkedin"
               >
+                {!logoProfile && <ImageProfile/>}
                 <img
                   className="profile-container__img"
                   src={logoProfile}
@@ -84,12 +86,10 @@ class Profile extends Component {
                     >
                       {element.title}
                     </Link>
-                    <Suspense fallback={<div>Loading...</div>}>
-                      <MobileCard
-                        imageMobile={element.imageMobile}
-                        link={element.link}
-                      />
-                    </Suspense>
+                    <MobileCard
+                      imageMobile={element.imageMobile}
+                      link={element.link}
+                    />
                   </article>
                 );
               })}

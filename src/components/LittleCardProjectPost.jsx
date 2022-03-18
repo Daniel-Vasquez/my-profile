@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ProjectsData from "../api";
 import "./styles/LittleCardProjectPost.css";
 
+const LoadingImg = () => <p className="loadingImg">Cargando...</p>;
+
 class LittleCardProjectPost extends React.Component {
   constructor() {
     super();
@@ -18,6 +20,7 @@ class LittleCardProjectPost extends React.Component {
             <React.Fragment key={project.id}>
               <div className="card">
                 <div className="card-img">
+                  {!project.img && <LoadingImg />}
                   <img
                     className="card-img__img"
                     src={project.img}

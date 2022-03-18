@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import "./styles/MobileCard.css";
 
+const LoadingImgMobileCard = () => (
+  <p className="loadingImgMobileCard">Cargando...</p>
+);
+
 function MobileCard({ imageMobile, title, link }) {
   return (
     <Link
@@ -9,11 +13,14 @@ function MobileCard({ imageMobile, title, link }) {
       target="_blank"
       title="Visitar sitio"
     >
-      <img
-        className="containerImages-mobile__img"
-        src={`/${imageMobile}`}
-        alt={title}
-      />
+      {!imageMobile && <LoadingImgMobileCard />}
+      {imageMobile && (
+        <img
+          className="containerImages-mobile__img"
+          src={`/${imageMobile}`}
+          alt={title}
+        />
+      )}
       <div className="cicleMobile"></div>
     </Link>
   );

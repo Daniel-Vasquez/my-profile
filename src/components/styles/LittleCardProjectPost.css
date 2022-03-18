@@ -123,6 +123,12 @@
   text-decoration: revert;
 }
 
+.loadingImg {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+}
+
 @Media screen and (max-width: 400px) {
   .cardsContainer {
     max-width: 100%;
