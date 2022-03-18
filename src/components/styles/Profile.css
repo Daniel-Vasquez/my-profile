@@ -97,8 +97,10 @@
 
   .profileContainer .profile-container__img {
     height: 350px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    margin-top: 5px;
+    width: 280px;
+    clip-path: none;
+    margin: 5px auto;
+    border-radius: 20%;
   }
 
   .presentation {
