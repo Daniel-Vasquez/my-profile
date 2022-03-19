@@ -10,13 +10,10 @@ import "../components/styles/Main.css";
 
 function Main() {
   return (
-    <React.Fragment>
+    <>
       <section className="mainContainer">
-        <div className="main-container generalContainer">
-          <div className="main-container">
-            <div className="main-container__img">
-              <img src={personalImage} alt="Personal img" />
-            </div>
+        <div className="generalContainer">
+          <div className="main-container">          
             <div className="main-container__description">
               <p className="ParagranphsImpact">
                 Hola, soy <span>Daniel Vásquez</span>.
@@ -68,6 +65,9 @@ function Main() {
                 </Link>
               </div>
             </div>
+            <div className="main-container__img">
+              <img className="main-containerImg" src={personalImage} alt="Personal img" />
+            </div>
           </div>
         </div>
       </section>
@@ -100,15 +100,11 @@ function Main() {
             <div className="instagramContainer-description">
               <h1 className="instagram-container__title">Instagram</h1>
               <p className="instagramContainer-description__paragraph">
-                El mayor reto que tuve al replicar instagram fue respecto al
-                diseño; siendo una página elegante, por lo tanto fue difícil
-                hacerlo "responsive".
-              </p>
-              <p className="instagramContainer-description__paragraph">
-                Se ajusta a todo tipo de pantalla, sea Desktop o mobile.
-              </p>
-              <p className="instagramContainer-description__paragraph">
-                El sitio web está hecho con React JS y cuenta con:
+                Mi proyecto está hecho con {" "}
+                <span className="instagramContainer-description__span">
+                  React JS
+                </span>{" "}
+                y cuenta con:
               </p>
               <ul className="instagramContainer-ul">
                 <li>Manejo de estado.</li>
@@ -143,7 +139,7 @@ function Main() {
         </div>
       </div>
       <Contacts />
-    </React.Fragment>
+    </>
   );
 }
 

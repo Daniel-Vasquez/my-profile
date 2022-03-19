@@ -59,6 +59,7 @@
   transition: 0.3s all;
   border-radius: 5px;
   font-weight: 600;
+  text-align: center;
 }
 
 .projectContainer-codigo__link {
