@@ -4,9 +4,11 @@ import Contacts from "../components/Contacts.jsx";
 import logoProfile from "../images/danielPerfil.png";
 import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
+import Education from "../components/Education.jsx";
+import Certificates from "../components/Certificates.jsx";
 import "../components/styles/Profile.css";
 
-const ImageProfile = () => <p className="imageProfile">Cargando...</p> 
+const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
 
 class Profile extends Component {
   constructor(props) {
@@ -20,7 +22,7 @@ class Profile extends Component {
     const returnCard = profileCardOutstanding.slice(0, 3);
 
     return (
-      <div>
+      <div className="containerGenealProfile">
         <section className="profileContainer">
           <div className="profile-container generalContainer">
             <div className="presentation">
@@ -56,7 +58,7 @@ class Profile extends Component {
                 target="_black"
                 title="Linkedin"
               >
-                {!logoProfile && <ImageProfile/>}
+                {!logoProfile && <ImageProfile />}
                 <img
                   className="profile-container__img"
                   src={logoProfile}
@@ -66,6 +68,20 @@ class Profile extends Component {
             </div>
           </div>
         </section>
+
+        <section className="Education">
+          <div className="generalContainer">
+            <Education />
+          </div>
+        </section>
+
+        <section className="Certificates">
+          <div className="generalContainer">
+            <Certificates />
+          </div>
+        </section>
+        
+
         <section className="ProyectsContainer">
           <div className="generalContainer">
             <h3 className="ProyectsContainer-title">

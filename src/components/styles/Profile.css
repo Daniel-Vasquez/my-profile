@@ -1,6 +1,7 @@
 .profileContainer {
-  padding: 70px 40px;
-  border-bottom: 2px solid #adadad;
+  padding: 40px;
+  border-top: 2px solid #cdd2da;
+  border-bottom: 2px solid #cdd2da;
   margin-bottom: 30px;
 }
 
@@ -36,6 +37,7 @@
   border-left: 1px solid #c1c1c1;
   border-top: 1px solid #c1c1c1;
   box-shadow: 13px 13px 0px 1px black;
+  background-color: white;
 }
 
 .ProyectsContainer {
