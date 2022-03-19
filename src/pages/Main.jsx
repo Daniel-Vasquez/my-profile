@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contacts from "../components/Contacts.jsx";
 import logoGithub from "../images/github.png";
 import logoWhats from "../images/whatsapp.png";
 import logoEmail from "../images/logoCorreo.png";
@@ -13,7 +12,7 @@ function Main() {
     <>
       <section className="mainContainer">
         <div className="generalContainer">
-          <div className="main-container">          
+          <div className="main-container">
             <div className="main-container__description">
               <p className="ParagranphsImpact">
                 Hola, soy <span>Daniel Vásquez</span>.
@@ -65,8 +64,13 @@ function Main() {
                 </Link>
               </div>
             </div>
+
             <div className="main-container__img">
-              <img className="main-containerImg" src={personalImage} alt="Personal img" />
+              <img
+                className="main-containerImg"
+                src={personalImage}
+                alt="Personal img"
+              />
             </div>
           </div>
         </div>
@@ -100,7 +104,7 @@ function Main() {
             <div className="instagramContainer-description">
               <h1 className="instagram-container__title">Instagram</h1>
               <p className="instagramContainer-description__paragraph">
-                Mi proyecto está hecho con {" "}
+                Mi proyecto está hecho con{" "}
                 <span className="instagramContainer-description__span">
                   React JS
                 </span>{" "}
@@ -138,7 +142,6 @@ function Main() {
           </div>
         </div>
       </div>
-      <Contacts />
     </>
   );
 }

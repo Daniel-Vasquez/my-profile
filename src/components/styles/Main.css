@@ -38,7 +38,7 @@
   width: 480px;
   height: 290px;
   padding: 12px;
-  background-color: #e6e6e6;
+  background-color: #eeeeee96;
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -436,6 +436,7 @@
 
   .main-container__mail {
     margin: 0 auto;
+    justify-content: center;
   }
 }
 

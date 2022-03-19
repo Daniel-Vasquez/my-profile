@@ -1,10 +1,9 @@
 .contactContainer {
   display: flex;
-  flex-direction: column;
-  width: 50px;
-  position: fixed;
-  top: 50%;
-  right: 0;
+  justify-content: center;
+  width: 140px;
+  height: 55px;
+  margin: 0 auto;
 }
 
 .contactContainer .contactContainer-linkedin,
@@ -29,45 +28,11 @@
   width: 85%;
   opacity: .5;
   transition: all .2s;
+  user-select: none;
 }
 
 .contactContainer-linkedin__img:hover, 
 .contactContainer-git__img:hover,
 .contactContainer-whats__img:hover {
   opacity: 1;
-}
-
-@media screen and (max-width: 750px) {
-  .contactContainer {
-    flex-direction: row;
-    justify-content: space-evenly;
-    bottom: 0;
-    top: auto;
-    width: 100%;
-    height: 50px;
-    background-color: #e6e9ed;
-    margin: 0 auto;
-    border-top: 1px solid #00000038;
-  }
-
-  .contactContainer-envelope__link,
-  .contactContainer-git__link,
-  .contactContainer-whats__link {
-    padding: 0;
-  }
-
-  .contactContainer .contactContainer-linkedin,
-  .contactContainer-git,
-  .contactContainer-whats {
-    padding: 0;
-    width: 35px;
-    text-align: center;
-  }
-
-  .contactContainer-linkedin__img,
-  .contactContainer-git__img,
-  .contactContainer-whats__img {
-    opacity: 1;
-    width: 30px;
-  }
 }

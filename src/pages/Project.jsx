@@ -1,6 +1,5 @@
 import React, {Component, Suspense, lazy } from "react";
 import ProjectsDate from "../api";
-import Contacts from "../components/Contacts.jsx";
 import Btn from "../components/Btn.jsx";
 import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Project.css";
@@ -66,7 +65,6 @@ class Project extends Component {
         <div className="containerButton">
           <Btn name="Volver a Proyectos" direction="/projects" color="white" />
         </div>
-        <Contacts />
       </React.Fragment>
     );
   }

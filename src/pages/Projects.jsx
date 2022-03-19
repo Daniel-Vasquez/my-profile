@@ -1,6 +1,5 @@
 import React from "react";
 import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
-import Contacts from "../components/Contacts.jsx";
 import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Projects.css";
 
@@ -17,7 +16,6 @@ function Projects() {
         <section className="projects-cards">
           <LittleCardProjectPost />
         </section>
-        <Contacts />
       </div>
     </React.Fragment>
   );
