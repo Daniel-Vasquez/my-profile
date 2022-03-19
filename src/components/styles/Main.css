@@ -439,9 +439,3 @@
     justify-content: center;
   }
 }
-
-@media screen and (max-height: 400px) {
-  .main-container__paragraphs {
-    display: none;
-  }
-}
