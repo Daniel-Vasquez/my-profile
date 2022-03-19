@@ -24,30 +24,31 @@ class Profile extends Component {
     return (
       <div className="containerGenealProfile">
         <section className="profileContainer">
-          <div className="profile-container generalContainer">
-            <div className="presentation">
-              <h3>
-                Soy Desarrollador Frontend con más de un año de preparación, de
-                estudio y práctica.
-              </h3>
-              <p>
-                He tomado cursos base de HTMl y CSS (Maquetación, responsive
-                design y CSS Grid), además de otros cursos más avanzados
-                referente a JavaScript como: Web Components, Asíncronismo con
-                javaScript, manipulación del DOM (con puro vanilla js), React y
-                python (tema en curso).
-              </p>
-              <p className="main-container__paragraphs">
-                Me encanta aprender nuevas cosas, soy una persona sumamente
-                obstinada y perseverante, pero sé en qué momento pedir ayuda.
-              </p>
-              <p className="main-container__paragraphs">
-                Me fascina el diseño web. A continuación te presento algunos de
-                los proyectos más destacados en que he trabajado, los cuales
-                reflejan el gusto por el CSS y la implementación de React JS,
-                librería de javaScript.
-              </p>
-            </div>
+          <div className="generalContainer profile-container">
+            <h3 className="profile-container__title">
+              Soy{" "}
+              <span className="profile-container__span">
+                Desarrollador Frontend
+              </span>
+              con más de un año de preparación, de estudio y práctica.
+            </h3>
+            <p className="profile-container__text1">
+              He tomado cursos base de HTMl y CSS (Maquetación, CSS Grid y
+              responsive design), además de otros cursos más avanzados referente
+              a <span className="text1-span__js">JavaScript</span> como: Web
+              Components, Asíncronismo con javaScript, manipulación del DOM (con
+              puro vanilla js), <span className="text1-span__react">React</span>{" "}
+              y python (tema en curso).
+            </p>
+            <p className="profile-container__text2">
+              Me encanta aprender nuevas cosas, soy una persona sumamente
+              obstinada y perseverante, pero sé en qué momento pedir ayuda.
+            </p>
+            <p className="profile-container__text3">
+              A continuación te presento algunos de los proyectos más destacados
+              en que he trabajado, los cuales reflejan el gusto por el CSS y la
+              implementación de React JS, librería de javaScript.
+            </p>
             <div className="presentationImg">
               <Link
                 className="profile-container__link"
@@ -80,7 +81,6 @@ class Profile extends Component {
             <Certificates />
           </div>
         </section>
-        
 
         <section className="ProyectsContainer">
           <div className="generalContainer">

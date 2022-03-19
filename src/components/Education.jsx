@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import education from "../education";
 import "./styles/Education.css";
 
@@ -22,7 +23,15 @@ const Education = () => {
                 </div>
                 <div className="listEducation-descrption">
                   <h4 className="listEducation-descrption__name">
-                    {element.name}
+                    <Link
+                      className="listEducation-descrption__link"
+                      to={{
+                        pathname: element.link,
+                      }}
+                      target="_blank"
+                    >
+                      {element.name}
+                    </Link>
                   </h4>
                   <p className="listEducation-descrption__title">
                     {element.title}

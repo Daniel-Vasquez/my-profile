@@ -6,6 +6,7 @@
 	margin-bottom: 40px;
 	max-width: 750px;
 	width: 100%;
+  user-select: none;
 }
 
 .containerEducation-title__text {
@@ -45,6 +46,16 @@
 .listEducation-descrption__title,
 .listEducation-descrption__date {
   margin: 3px 0;
+}
+
+.listEducation-descrption__link {
+  text-decoration: none;
+  color: black;
+}
+
+.listEducation-descrption__link:hover {
+  color: #2666c2;
+  text-decoration: revert;
 }
 
 .listEducation-descrption__name {
