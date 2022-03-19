@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import education_certificates from "../education-certificates";
+import certificates from "../certificates";
 import "./styles/Certificates.css";
 
 const Certificates = () => {
@@ -10,7 +10,7 @@ const Certificates = () => {
         <p className="containercCertificates-title__text">Certificaciones</p>
       </div>
       <div className="containerListCertificates">
-        {education_certificates.map((certificate, index) => {
+        {certificates.map((certificate, index) => {
           return (
             <div className="listCertificates" key={index}>
               <div className="listCertificates-img">

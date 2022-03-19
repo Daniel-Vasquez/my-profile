@@ -1,5 +1,5 @@
 import React from "react";
-import education_info from "../education-info";
+import education from "../education";
 import "./styles/Education.css";
 
 const Education = () => {
@@ -10,7 +10,7 @@ const Education = () => {
           <p className="containerEducation-title__text">Educación</p>
         </div>
         <div className="containerListEducation">
-          {education_info.map((element, index) => {
+          {education.map((element, index) => {
             return (
               <div className="listEducation" key={index}>
                 <div className="listEducation-img">

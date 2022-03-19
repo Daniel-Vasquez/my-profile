@@ -1,8 +1,8 @@
-const education_info = [
+const education = [
   {
     name: "Platzi",
     title: "Frontend Developer",
-    date: "abri. 2020 - actalidad",
+    date: "abr. 2020 - actualidad",
     logo: "logoplatzi.png",
   },
   {
@@ -19,4 +19,4 @@ const education_info = [
   },
 ];
 
-export default education_info;
+export default education;

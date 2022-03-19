@@ -1,4 +1,4 @@
-const education_certificates = [
+const certificates = [
 	{
 		title: 'Curso de React.js',
 		institution: 'Platzi',
@@ -43,4 +43,4 @@ const education_certificates = [
 	}
 ]
 
-export default education_certificates
+export default certificates
