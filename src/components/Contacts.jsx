@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoLinkedin from "../images/linkedin.png";
-import logoGithub from "../images/github.png";
-import logoWhats from "../images/whatsapp.png";
+
+import logoLinkedin from "../images/logo-linkedin.png";
+import logoGithub from "../images/logo-github.png";
+import logoWhats from "../images/logo-whatsapp.png";
+import logoEmail from "../images/logo-correo.png";
+
 import "./styles/Contacts.css";
 
 function Contacts() {
@@ -20,6 +23,7 @@ function Contacts() {
             className="contactContainer-linkedin__img"
             src={logoLinkedin}
             alt="Contacto"
+            title="Linkedin"
           />
         </Link>
       </div>
@@ -34,6 +38,7 @@ function Contacts() {
             className="contactContainer-git__img"
             src={logoGithub}
             alt="Contacto"
+            title="GitHub"
           />
         </Link>
       </div>
@@ -48,6 +53,23 @@ function Contacts() {
             className="contactContainer-whats__img"
             src={logoWhats}
             alt="Contacto"
+            title="WhatsApp"
+          />
+        </Link>
+      </div>
+      <div className="contactContainer-email">
+        <Link
+          className="contactContainer-email__link"
+          to={{
+            pathname: "mailto:dani.vasquez.dev@gmail.com",
+          }}
+          target="_black"
+        >
+          <img
+            className="contactContainer-email__img"
+            src={logoEmail}
+            alt="Correo de contacto"
+            title="Correo"
           />
         </Link>
       </div>

@@ -1,14 +1,15 @@
 .contactContainer {
   display: flex;
   justify-content: center;
-  width: 140px;
+  width: 170px;
   height: 55px;
   margin: 0 auto;
 }
 
 .contactContainer .contactContainer-linkedin,
 .contactContainer-git,
-.contactContainer-whats {
+.contactContainer-whats,
+.contactContainer-email  {
   display: flex;
   align-items: center;
   padding: 5px;
@@ -16,7 +17,8 @@
 
 .contactContainer-envelope__link,
 .contactContainer-git__link,
-.contactContainer-whats__link {
+.contactContainer-whats__link,
+.contactContainer-email__link {
   padding-bottom: 2px;
   text-decoration: none;
   color: black;
@@ -24,8 +26,9 @@
 
 .contactContainer-linkedin__img,
 .contactContainer-git__img,
-.contactContainer-whats__img {
-  width: 85%;
+.contactContainer-whats__img,
+.contactContainer-email__img {
+  width: 90%;
   opacity: .5;
   transition: all .2s;
   user-select: none;
@@ -33,6 +36,7 @@
 
 .contactContainer-linkedin__img:hover, 
 .contactContainer-git__img:hover,
-.contactContainer-whats__img:hover {
+.contactContainer-whats__img:hover,
+.contactContainer-email__img:hover {
   opacity: 1;
 }

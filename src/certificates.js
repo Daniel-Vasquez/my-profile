@@ -14,6 +14,20 @@ const certificates = [
 		img: './logo-web-components.png'
 	},
 	{
+		title: 'Programación funcional',
+		institution: 'Platzi',
+		date: 'nov. 2020',
+		link: 'https://platzi.com/p/DanielVas/curso/1497-funcional-js/diploma/detalle/',
+		img: './logo-programacion-funcional.png'
+	},
+	{
+		title: 'CSS Grid Layout',
+		institution: 'Platzi',
+		date: 'nov. 2020',
+		link: 'https://platzi.com/p/DanielVas/curso/1229-css-grid-layout-2017/diploma/detalle/',
+		img: './logo-css-grid.png'
+	},
+	{
 		title: 'Curso de Manipulación del DOM',
 		institution: 'Pltazi',
 		date: 'feb. 2021',
@@ -35,12 +49,12 @@ const certificates = [
 		img: './logo-fundamentos-js.png'
 	},
 	{
-		title: 'CSS Grid Layout',
+		title: 'Maquetación CSS',
 		institution: 'Platzi',
 		date: 'nov. 2020',
-		link: 'https://platzi.com/p/DanielVas/curso/1229-css-grid-layout-2017/diploma/detalle/',
-		img: './logo-css-grid.png'
-	}
+		link: 'https://platzi.com/p/DanielVas/curso/1744-practico-css/diploma/detalle/',
+		img: './logo-maquetacion.png'
+	},
 ]
 
 export default certificates

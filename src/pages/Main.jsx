@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoGithub from "../images/github.png";
-import logoWhats from "../images/whatsapp.png";
-import logoEmail from "../images/logoCorreo.png";
+
+import logoGithub from "../images/logo-github.png";
+import logoWhats from "../images/logo-whatsapp.png";
+import logoEmail from "../images/logo-correo.png";
+
 import personalImage from "../images/danielPerfil.png";
 import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
 import "../components/styles/Main.css";
@@ -22,9 +24,11 @@ function Main() {
                 año de estudio autónomo y práctica constante, con pasión por el
                 diseño web y con nunca parar de aprender.
               </p>
-              <a
+              <Link
                 className="main-container__mail"
-                href="mailto:dani.vasquez.dev@gmail.com"
+                to={{
+                  pathname: "mailto:dani.vasquez.dev@gmail.com",
+                }}
                 target="_black"
               >
                 <strong>¿Trabajamos juntos?</strong>
@@ -33,7 +37,7 @@ function Main() {
                   src={logoEmail}
                   alt="Correo de contacto"
                 />
-              </a>
+              </Link>
               <div className="containerLinks">
                 <Link
                   className="mainContainer-whats__link"
@@ -66,11 +70,20 @@ function Main() {
             </div>
 
             <div className="main-container__img">
-              <img
-                className="main-containerImg"
-                src={personalImage}
-                alt="Personal img"
-              />
+              <Link
+                to={{
+                  pathname:
+                    "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+                }}
+                target='_blank'
+                title="Linkedin"
+              >
+                <img
+                  className="main-containerImg"
+                  src={personalImage}
+                  alt="Personal img"
+                />
+              </Link>
             </div>
           </div>
         </div>
