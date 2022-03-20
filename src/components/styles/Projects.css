@@ -8,6 +8,7 @@
   color: white;
   margin: 0;
   font-size: 40px;
+  user-select: none;
 }
 
 .projects-cards {

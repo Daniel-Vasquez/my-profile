@@ -75,7 +75,7 @@ function Main() {
                   pathname:
                     "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
                 }}
-                target='_blank'
+                target="_blank"
                 title="Linkedin"
               >
                 <img
@@ -90,8 +90,8 @@ function Main() {
       </section>
 
       <section className="projectsContainer" id="proyectos">
+        <h1 className="projectsContainer-title">Proyectos</h1>
         <div className="generalContainer">
-          <h1 className="projectsContainer-title">Proyectos</h1>
           <LittleCardProjectPost />
         </div>
       </section>

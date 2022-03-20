@@ -21,25 +21,25 @@
   position: absolute;
   right: 25%;
   bottom: 0%;
-  transition: all .3s;
-  
+  transition: all 0.3s;
 }
 
 .main-container__img:hover {
   transform: scale(0.9);
-} 
+}
 
 .main-containerImg {
   width: 100%;
   border-radius: 30px;
-  -webkit-animation-name: main-containerImg;
-  animation-name: main-containerImg;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 
 .main-container__description {
   width: 480px;
@@ -152,10 +152,14 @@
 }
 
 .projectsContainer-title {
-  font-size: 30px;
-  font-weight: 900;
-  color: black;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background-color: black;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 25px 0;
+  color: white;
 }
 
 .instagramContainer {
@@ -292,26 +296,20 @@
   color: black;
 }
 
-@-webkit-keyframes main-containerImg {
+@-webkit-keyframes fadeIn {
   0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    opacity: 1;
   }
 }
-@keyframes main-containerImg {
+@keyframes fadeIn {
   0% {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    visibility: visible;
+    opacity: 0;
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -411,7 +409,6 @@
     width: auto;
   }
 }
-
 
 @media screen and (max-width: 480px) {
   .ParagranphsImpact,
