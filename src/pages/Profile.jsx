@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
-import logoProfile from "../images/danielPerfil.png";
+import profilePhoto from "../images/danPerfil.jpeg";
 import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import Education from "../components/Education.jsx";
@@ -59,10 +59,10 @@ class Profile extends Component {
                 target="_black"
                 title="Linkedin"
               >
-                {!logoProfile && <ImageProfile />}
+                {!profilePhoto && <ImageProfile />}
                 <img
                   className="profile-container__img"
-                  src={logoProfile}
+                  src={profilePhoto}
                   alt="Daniel Vásquez"
                 />
               </Link>

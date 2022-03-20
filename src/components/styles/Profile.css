@@ -29,8 +29,8 @@
   width: 250px;
   padding: 30px;
   position: absolute;
-  top: -30px;
-  left: 10%;
+  top: -12px;
+  left: 13%;
   border-radius: 15px;
   margin: 0;
   -webkit-animation-name: slideInUp;
@@ -53,8 +53,8 @@
   padding: 20px;
   border-radius: 15px;
   position: absolute;
-  top: -32px;
-  right: 2%;
+  top: -30px;
+  right: 3%;
   margin: 0;
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
@@ -76,8 +76,8 @@
   padding: 20px;
   border-radius: 15px;
   position: absolute;
-  bottom: -7px;
-  left: 10%;
+  bottom: -15px;
+  left: 12%;
   margin: 0;
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -99,8 +99,8 @@
   padding: 20px;
   border-radius: 15px;
   position: absolute;
-  right: 7%;
-  bottom: -15px;
+  right: 8%;
+  bottom: -32px;
   margin: 0;
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -133,15 +133,17 @@
 
 .presentationImg {
   position: absolute;
-  left: 36%;
-  bottom: 20%;
-  max-width: 400px;
-  width: 250px;
-  transition: all 0.3s;
-}
-
-.presentationImg:hover {
-  transform: scale(0.9);
+  left: 38%;
+  bottom: 13%;
+  max-width: 250px;
+  width: 220px;
+  height: 335px;
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .profile-container__link {
@@ -154,6 +156,7 @@
   height: 100%;
   width: 100%;
   border-radius: 20px;
+  border: 1px solid black;
 }
 
 .ProyectsContainer {
@@ -223,7 +226,6 @@
   padding: 10px;
   margin: 0 auto;
   border-radius: 20px;
-  background: #eeeeee;
   transition: all 0.3s;
 }
 
@@ -294,6 +296,27 @@
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
     opacity: 1;
   }
 }
