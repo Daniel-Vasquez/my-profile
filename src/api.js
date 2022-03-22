@@ -209,9 +209,51 @@ const ProjectsData = [
         level: 29.3,
       },
     ],
+  },  {
+    id: 5,
+    path: "recordatorios",
+    title: "Recordatorios",
+    description:
+      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca más llegaras a olvidar citas, reuniones, juntas, etc.",
+    link: "https://notas-kappa.vercel.app/",
+    img: "recordatoriosImg.png",
+    gif: "recordatorioGif.gif",
+    imageMobile: "mobileRecordatorioGif.gif",
+    codigo: "https://github.com/Daniel-Vasquez/reminder",
+    images: [
+      {
+        id: 0,
+        src: "../recordatorio-1.png",
+      },
+      {
+        id: 2,
+        src: "../recordatorio-2.png",
+      },
+      {
+        id: 3,
+        src: "../recordatorio-3.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "react",
+        src: "../react-icono.png",
+        level: 58.0,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 7.8,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 34.2,
+      },
+    ],
   },
   {
-    id: 5,
+    id: 6,
     path: "platzi-video",
     title: "Platzi video",
     description:
@@ -249,7 +291,7 @@ const ProjectsData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     path: "maquetacion",
     title: "Maquetación",
     description:
@@ -297,7 +339,7 @@ const ProjectsData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     path: "responsive-design",
     title: "Responsive design",
     description: (
@@ -306,7 +348,7 @@ const ProjectsData = [
         CSS. Lo agregué a mis proyectos destacados porque refleja la enorme
         diferencia entre el primer y el actual portafolio. <br /> Es un diseño
         sumamente sencillo y fácil, pero marca el antes y de lo que ahora puedo
-        lograr con mi constante preparación.{" "}
+        lograr con mi constante preparación.
       </>
     ),
     link: "https://daniel-vasquez.github.io/responsive-design/",
@@ -343,49 +385,6 @@ const ProjectsData = [
         name: "css",
         src: "../css-3-icono.png",
         level: 51.6,
-      },
-    ],
-  },
-  {
-    id: 8,
-    path: "recordatorios",
-    title: "Recordatorios",
-    description:
-      "¿Tiene muchas cosas en la cabeza y le cuesta recordar algunas de ellas? Con esta aplicación usted puede crear los recordatorios que desee y así nunca más llegaras a olvidar citas, reuniones, juntas, etc.",
-    link: "https://notas-kappa.vercel.app/",
-    img: "recordatoriosImg.png",
-    gif: "recordatorioGif.gif",
-    imageMobile: "mobileRecordatorioGif.gif",
-    codigo: "https://github.com/Daniel-Vasquez/reminder",
-    images: [
-      {
-        id: 0,
-        src: "../recordatorio-1.png",
-      },
-      {
-        id: 2,
-        src: "../recordatorio-2.png",
-      },
-      {
-        id: 3,
-        src: "../recordatorio-3.png",
-      },
-    ],
-    technologies: [
-      {
-        name: "react",
-        src: "../react-icono.png",
-        level: 58.0,
-      },
-      {
-        name: "html",
-        src: "../html-5-icono.png",
-        level: 7.8,
-      },
-      {
-        name: "css",
-        src: "../css-3-icono.png",
-        level: 34.2,
       },
     ],
   },

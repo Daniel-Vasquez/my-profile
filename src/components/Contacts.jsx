@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import logoLinkedin from "../images/logo-linkedin.png";
 import logoGithub from "../images/logo-github.png";
 import logoWhats from "../images/logo-whatsapp.png";
 import logoEmail from "../images/logo-correo.png";
-
 import "./styles/Contacts.css";
 
 function Contacts() {
