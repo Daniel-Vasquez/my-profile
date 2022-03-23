@@ -13,6 +13,23 @@ function Main() {
       <section className="mainContainer">
         <div className="generalContainer">
           <div className="main-container">
+            <div className="main-container__img">
+              <Link
+                to={{
+                  pathname:
+                    "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+                }}
+                target="_blank"
+                title="Linkedin"
+              >
+                <img
+                  className="main-containerImg"
+                  src={personalImage}
+                  alt="Personal img"
+                />
+              </Link>
+            </div>
+            
             <div className="main-container__description">
               <p className="ParagranphsImpact">
                 Hola, soy <span>Daniel Vásquez</span>.
@@ -65,23 +82,6 @@ function Main() {
                   />
                 </Link>
               </div>
-            </div>
-
-            <div className="main-container__img">
-              <Link
-                to={{
-                  pathname:
-                    "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-                }}
-                target="_blank"
-                title="Linkedin"
-              >
-                <img
-                  className="main-containerImg"
-                  src={personalImage}
-                  alt="Personal img"
-                />
-              </Link>
             </div>
           </div>
         </div>
