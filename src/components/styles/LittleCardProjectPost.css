@@ -7,27 +7,22 @@
 }
 
 .card {
-  width: 100%;
   max-width: 420px;
+  width: 100%;
   min-height: 260px;
   border-radius: 25px;
   border: 1px solid black;
   overflow: hidden;
   position: relative;
   margin: 5px;
-  transition: all .3s;
+  transition: all 0.3s;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .card:hover {
   box-shadow: 0px 0px 11px -1px black;
-  transform: scale(.95);
-}
-
-.card-img__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  transform: scale(0.95);
 }
 
 .card-description {
@@ -43,7 +38,6 @@
   color: black;
 }
 
-
 .description-title__title {
   margin: 0;
   margin-left: 10px;
@@ -57,7 +51,7 @@
   border: 1px solid white;
   margin-top: 10px;
   user-select: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .description-title__title:hover {
@@ -79,7 +73,7 @@
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
-  transition: all .3s;
+  transition: all 0.3s;
   text-decoration: none;
   color: black;
   background-color: #e6e9ed;
@@ -95,7 +89,7 @@
   right: 40%;
 }
 
-@Media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .cardsContainer {
     max-width: 100%;
   }
