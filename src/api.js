@@ -209,7 +209,8 @@ const ProjectsData = [
         level: 29.3,
       },
     ],
-  },  {
+  },
+  {
     id: 5,
     path: "recordatorios",
     title: "Recordatorios",
@@ -385,6 +386,57 @@ const ProjectsData = [
         name: "css",
         src: "../css-3-icono.png",
         level: 51.6,
+      },
+    ],
+  },
+  {
+    id: 9,
+    path: "piedra-papel-tijera",
+    title: "Piedra, papel o tijera",
+    description: (
+      <>
+        Jugar a "Piedra, papel o tijera" no solo es un entretenimiento, también
+        juega un papel importante la estrategia. Hay quien tiene hasta un método
+        para ganar siempre. ¡Siempre! <br />
+        <br /> Además, jugarlo supone rapidez física y mental, eso lo convierte
+        en un divertido entretenimiento que gusta mucho a los niños porque
+        pueden enfrentar sus habilidades.
+      </>
+    ),
+    link: "https://daniel-vasquez.github.io/piedra-papel-tijera/",
+    img: "piedra-papel-tijera.png",
+    gif: "piedra-papel-tijera.gif",
+    imageMobile: "mobile-piedra-papel-tijera.gif",
+    codigo: "https://github.com/Daniel-Vasquez/piedra-papel-tijera",
+    images: [
+      {
+        id: 0,
+        src: "../piedra-papel-tijera.png",
+      },
+      {
+        id: 2,
+        src: "../piedra-papel-tijera-2.png",
+      },
+      {
+        id: 3,
+        src: "../piedra-papel-tijera-3.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "javaScript",
+        src: "../java-script-icono.png",
+        level: 33.4,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 30.0,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 36.6,
       },
     ],
   },
