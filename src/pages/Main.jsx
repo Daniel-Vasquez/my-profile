@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import logoGithub from "../images/logo-github.png";
 import logoWhats from "../images/logo-whatsapp.png";
 import logoEmail from "../images/logo-correo.png";
-import personalImage from "../images/danPerfil.jpeg";
-import LittleCardProjectPost from "../components/LittleCardProjectPost.jsx";
+// import personalImage from "../images/danMain.jpeg";
+import personalImage from "../images/danPerfil.png";
 import "../components/styles/Main.css";
+
+import NewLittleCard from "../components/NewLittleCard";
 
 function Main() {
   return (
@@ -29,7 +31,7 @@ function Main() {
                 />
               </Link>
             </div>
-            
+
             <div className="main-container__description">
               <p className="ParagranphsImpact">
                 Hola, soy <span>Daniel Vásquez</span>.
@@ -90,7 +92,7 @@ function Main() {
       <section className="projectsContainer" id="proyectos">
         <h1 className="projectsContainer-title">Proyectos</h1>
         <div className="generalContainer">
-          <LittleCardProjectPost />
+          <NewLittleCard />
         </div>
       </section>
 

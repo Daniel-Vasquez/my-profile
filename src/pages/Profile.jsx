@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
-import profilePhoto from "../images/danPerfil.jpeg";
+import profilePhoto from "../images/danPerfil.png";
 import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import Education from "../components/Education.jsx";
@@ -43,11 +43,6 @@ class Profile extends Component {
             <p className="profile-container__text2">
               Me encanta aprender nuevas cosas, soy una persona sumamente
               obstinada y perseverante, pero sé en qué momento pedir ayuda.
-            </p>
-            <p className="profile-container__text3">
-              A continuación te presento algunos de los proyectos más destacados
-              en que he trabajado, los cuales reflejan el gusto por el CSS y la
-              implementación de React JS, librería de javaScript.
             </p>
             <div className="presentationImg">
               <Link

@@ -9,7 +9,7 @@
 .contactContainer .contactContainer-linkedin,
 .contactContainer-git,
 .contactContainer-whats,
-.contactContainer-email  {
+.contactContainer-email {
   display: flex;
   align-items: center;
   padding: 5px;
@@ -29,12 +29,11 @@
 .contactContainer-whats__img,
 .contactContainer-email__img {
   width: 90%;
-  opacity: .5;
-  transition: all .2s;
-  user-select: none;
+  opacity: 0.4;
+  transition: all 0.2s;
 }
 
-.contactContainer-linkedin__img:hover, 
+.contactContainer-linkedin__img:hover,
 .contactContainer-git__img:hover,
 .contactContainer-whats__img:hover,
 .contactContainer-email__img:hover {

@@ -3,10 +3,9 @@
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px #00000063;
   margin: 0 auto;
-	margin-bottom: 40px;
-	max-width: 750px;
-	width: 100%;
-  user-select: none;
+  margin-bottom: 40px;
+  max-width: 750px;
+  width: 100%;
 }
 
 .containerEducation-title__text {
@@ -24,7 +23,7 @@
 }
 
 .listEducation:last-child {
-	border-bottom: none;
+  border-bottom: none;
 }
 
 .listEducation-img {
@@ -34,7 +33,7 @@
 
 .listEducation-img__img {
   width: 100%;
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .listEducation-descrption {
@@ -73,13 +72,13 @@
 }
 
 @media screen and (max-width: 700px) {
-	.containerEducation {
-		border-radius: 0;
-	}
+  .containerEducation {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 500px) {
-	.containerEducation {
+  .containerEducation {
     box-shadow: none;
   }
 

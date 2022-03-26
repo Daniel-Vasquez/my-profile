@@ -9,17 +9,19 @@
 .main-container {
   display: flex;
   align-items: center;
-  max-width: 710px;
+  max-width: 1000px;
+  width: 100%;
   min-height: 440px;
   position: relative;
   margin: 0 auto;
 }
 
 .main-container__img {
-  max-width: 245px;
+  max-width: 305px;
   width: 100%;
+  height: 400px;
   position: absolute;
-  right: 0;
+  right: 100px;
   transition: all 0.3s;
 }
 
@@ -29,8 +31,8 @@
 
 .main-containerImg {
   width: 100%;
+  height: 100%;
   border-radius: 30px;
-  box-shadow: 0px 0px 5px 0px #00000063;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 4s;
@@ -46,16 +48,23 @@
   height: 260px;
   padding: 30px 15px;
   box-shadow: 0px 0px 7px 1px #5a5a5a;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
   border-radius: 20px;
   position: absolute;
-  left: 0;
+  left: 145px;
+  transition: all 0.4s;
+  background-color: transparent;
   -webkit-animation-name: main-container__description;
   animation-name: main-container__description;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.main-container__description:hover {
+  filter: invert(1);
+  background-color: white;
 }
 
 .containerLinks {
@@ -79,6 +88,10 @@
 .mainContainer-git__img {
   margin-left: 10px;
   width: 20px;
+}
+
+.projectsContainer {
+  margin-bottom: 30px;
 }
 
 .mainContainer-linkProjects {
@@ -236,6 +249,7 @@
 
 .projectsContainer-buttons {
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -315,13 +329,28 @@
   .mainContainer {
     padding: 10px;
   }
+
+  .main-container {
+    flex-direction: column;
+    height: auto;
+    position: initial;
+  }
+
+  .main-container__img {
+    position: initial;
+  }
+
+  .main-container__description {
+    padding: 35px 15px 30px;
+    width: auto;
+    position: initial;
+  }
 }
 
 @media screen and (max-width: 950px) {
   .instagram-container {
     grid-template: auto auto / 90%;
     justify-content: center;
-    padding-bottom: 50px;
   }
 
   .instagramContainer-img {
@@ -339,33 +368,12 @@
 }
 
 @media screen and (max-width: 750px) {
-  .main-container {
-    flex-direction: column;
-    height: 570px;
-  }
-
-  .main-container__img {
-    position: initial;
-    margin-top: 15px;
-    width: 180px;
-  }
-
-  .main-container__description {
-    padding: 35px 15px 30px;
-    width: auto;
-    bottom: 3%;
-  }
-
   .containerButton {
     margin-bottom: 45px;
   }
-
-  .main-container__img {
-    text-align: center;
-  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .ParagranphsImpact,
   .instagramContainer-title {
     font-size: 16px;
@@ -400,5 +408,12 @@
 
   .ParagranphsImpact span {
     font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-container__img {
+    width: 280px;
+    height: 300px;
   }
 }

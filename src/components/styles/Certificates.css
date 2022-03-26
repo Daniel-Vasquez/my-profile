@@ -7,7 +7,6 @@
   max-width: 750px;
   width: 100%;
   height: 370px;
-  user-select: none;
 }
 
 .containercCertificates-title__text {
@@ -33,7 +32,7 @@
 }
 
 .listCertificates-description {
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 .listCertificates-description__title {
@@ -60,7 +59,7 @@
 }
 
 .moreCertificates {
-  opacity: .5;
+  opacity: 0.5;
   font-size: 14px;
   text-align: center;
   margin: 5px 0;
@@ -88,7 +87,7 @@
 
   .listCertificates-description {
     margin-left: 0;
-		text-align: center;
+    text-align: center;
   }
 
   .containercCertificates-title__text {

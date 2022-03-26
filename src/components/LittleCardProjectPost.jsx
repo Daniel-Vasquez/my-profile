@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import ProjectsData from "../api";
 import "./styles/LittleCardProjectPost.css";
 
+import { motion } from "framer-motion";
+
 class LittleCardProjectPost extends React.Component {
   constructor() {
     super();
@@ -16,11 +18,14 @@ class LittleCardProjectPost extends React.Component {
         {ProjectsData.map((project) => {
           return (
             <React.Fragment key={project.id}>
-              <div
+              <motion.div
                 className="card"
                 style={{
                   backgroundImage: `url('${project.img}')`,
                 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
               >
                 <div className="card-description">
                   <div className="description-title">
@@ -53,7 +58,7 @@ class LittleCardProjectPost extends React.Component {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </React.Fragment>
           );
         })}
