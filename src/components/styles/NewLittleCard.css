@@ -132,19 +132,22 @@
 
 .newCard-description {
   width: 100%;
-  height: 93%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
+  justify-content: end;
+  position: relative;
 }
 
 .cardDescription-buttons {
   display: flex;
   justify-content: space-around;
-  align-items: end;
-  height: 100%;
+  align-items: center;
+  width: 100%;
+  height: 100px;
   padding: 0 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 .cardDescription-buttons__btn {
@@ -158,6 +161,7 @@
   text-decoration: none;
   color: black;
   background-color: #e6e9ed;
+  margin-right: 20px;
 }
 
 .cardDescription-buttons__btn:hover {
