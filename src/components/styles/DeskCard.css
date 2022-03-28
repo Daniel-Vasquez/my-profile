@@ -1,6 +1,6 @@
 .containerImages-desk {
   width: 90%;
-  height: 65%;
+  height: 350px;
   border: 15px solid black;
   position: relative;
   margin: 0 auto;
@@ -25,4 +25,3 @@
     border-width: 11px;
   }
 }
-
