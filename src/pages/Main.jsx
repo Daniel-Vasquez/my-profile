@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import logoGithub from "../images/logo-github.png";
 import logoWhats from "../images/logo-whatsapp.png";
 import logoEmail from "../images/logo-correo.png";
-// import personalImage from "../images/danMain.jpeg";
 import personalImage from "../images/danPerfil.png";
 import "../components/styles/Main.css";
 
@@ -33,8 +32,9 @@ function Main() {
             </div>
 
             <div className="main-container__description">
-              <p className="ParagranphsImpact">
-                Hola, soy <span>Daniel Vásquez</span>.
+              <p className="line anim-typewriter">
+                Hola, soy{" "}
+                <span className="main-container__span">Daniel Vásquez</span>.
               </p>
               <p className="main-container__paragraphs">
                 Soy <span>desarrollador frontend Developer</span>, con más de un
