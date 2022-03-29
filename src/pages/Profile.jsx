@@ -8,6 +8,8 @@ import Education from "../components/Education.jsx";
 import Certificates from "../components/Certificates.jsx";
 import "../components/styles/Profile.css";
 
+import Skills from "../components/Skills.jsx";
+
 const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
 
 class Profile extends Component {
@@ -78,6 +80,12 @@ class Profile extends Component {
         <section className="Certificates">
           <div className="generalContainer">
             <Certificates />
+          </div>
+        </section>
+
+        <section className="skills">
+          <div className="generalContainer">
+            <Skills />
           </div>
         </section>
 

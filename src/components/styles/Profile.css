@@ -1,5 +1,5 @@
 .profileContainer {
-  padding: 30px 40px 45px;
+  padding: 30px 40px;
   border-top: 2px solid #cdd2da;
   border-bottom: 2px solid #cdd2da;
   margin-bottom: 30px;
@@ -72,7 +72,7 @@
   padding: 20px;
   border-radius: 15px;
   position: absolute;
-  bottom: 35px;
+  bottom: 50px;
   left: 0;
   margin: 0;
   -webkit-animation-name: slideInDown;
@@ -144,24 +144,31 @@
   width: 100%;
 }
 
+.profile-container__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 .contacts {
   width: 200px;
   text-align: center;
   position: absolute;
-  bottom: 40px;
-  left: 320px;
+  bottom: 50px;
+  left: 265px;
   border: 1px solid #000000;
   padding: 10px;
   margin: 0 auto;
   border-radius: 20px;
   transition: all 0.3s;
   background-color: white;
-  -webkit-animation-name: contacts;
-  animation-name: contacts;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  transition: all 0.3s;
 }
 
 .contacts:hover {
@@ -176,10 +183,11 @@
   color: black;
 }
 
-.profile-container__link {
-  display: flex;
-  align-items: center;
-  height: 100%;
+.skills {
+  border-top: 2px solid #cdd2da;
+  border-bottom: 2px solid #cdd2da;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
 .ProyectsContainer {
@@ -279,23 +287,6 @@
   }
 }
 
-@-webkit-keyframes contacts {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes contacts {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
@@ -329,7 +320,6 @@
 
   .profile-container {
     display: grid;
-    grid-template: repeat(6, auto) / 1fr;
     gap: 15px 0;
     max-height: initial;
     height: auto;
@@ -363,6 +353,10 @@
     border: none;
     text-align: center;
   }
+
+  .skills {
+    border-radius: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -378,10 +372,6 @@
 @media screen and (max-width: 650px) {
   .profileContainer {
     padding: 25px 20px;
-  }
-
-  .profileContainer .profile-container {
-    flex-direction: column;
   }
 
   .profile-container__link {
