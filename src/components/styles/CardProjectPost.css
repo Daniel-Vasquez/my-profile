@@ -7,8 +7,6 @@
 .projectContainer-blogs {
   display: grid;
   grid-template-rows: 0.2fr 0.9fr 0.5fr;
-  /* align-items: flex-start; */
-  /* margin-bottom: 20px; */
   justify-content: center;
 }
 

@@ -44,9 +44,12 @@
 }
 
 .main-container__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 480px;
-  height: 260px;
-  padding: 30px 15px;
+  height: 240px;
+  padding: 0px 15px;
   box-shadow: 0px 0px 7px 1px #5a5a5a;
   backdrop-filter: blur(4px);
   border-radius: 20px;
@@ -69,7 +72,15 @@
 
 .containerLinks {
   display: flex;
-  width: auto;
+  height: 35px;
+}
+
+.mainContainer-whats__link,
+.mainContainer-git__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
 }
 
 .mainContainer-whats__link,
@@ -107,14 +118,6 @@
 .mainContainer-linkProjects__link:hover {
   background-color: black;
   color: white;
-}
-
-.mainContainer-whats__link,
-.mainContainer-git__link {
-  display: flex;
-  align-items: center;
-  height: 35px;
-  font-weight: 600;
 }
 
 .mainContainer-git__link {
@@ -284,6 +287,7 @@
   font-size: 20px;
   color: black;
   margin: 0;
+  margin-top: 5px;
 }
 
 .main-container__span {
@@ -381,8 +385,6 @@
   }
 
   .main-container__description {
-    padding: 35px 15px 30px;
-    width: auto;
     position: initial;
   }
 }
@@ -415,6 +417,10 @@
 }
 
 @media screen and (max-width: 500px) {
+  .main-container__description {
+    width: auto;
+  }
+
   .ParagranphsImpact,
   .instagramContainer-title {
     font-size: 16px;
@@ -427,7 +433,7 @@
   .containerLinks {
     width: 100%;
     justify-content: center;
-    margin: 10px 0;
+    margin-top: 10px;
   }
 
   .main-container__mail {
@@ -440,11 +446,6 @@
   .main-container__paragraphs {
     margin: 10px 0;
     font-size: 13px;
-  }
-
-  .mainContainer-whats__link,
-  .mainContainer-git__link {
-    height: auto;
   }
 
   .ParagranphsImpact span {
