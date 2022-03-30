@@ -1,10 +1,16 @@
 .skillscontent-container {
-  border: 2px solid black;
-  max-width: 300px;
+  border: 1px solid #cdd2da;
+  max-width: 280px;
   width: 100%;
   min-height: 300px;
   border-radius: 20px;
   overflow: hidden;
+  transition: all 0.3s;
+  background-color: white;
+}
+
+.skillscontent-container:hover {
+  transform: scale(1.1);
 }
 
 .skillscontent-container__title {
@@ -13,7 +19,7 @@
   font-weight: 500;
   padding: 15px;
   background-color: white;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #cdd2da;
   color: black;
   margin: 0;
 }
@@ -32,7 +38,7 @@
 }
 
 .skillscontent-container__technologies {
-  margin: 24px;
+  margin: 20px;
 }
 
 .skillscontent-container__technologies--list {
@@ -57,7 +63,7 @@
 
 .skillscontent-container__tools {
   background-color: white;
-  margin: 24px;
+  margin: 20px;
 }
 
 .skillscontent-container__tools--title {
@@ -91,6 +97,6 @@
 
 @media screen and (max-width: 700px) {
   .skillscontent-container {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }

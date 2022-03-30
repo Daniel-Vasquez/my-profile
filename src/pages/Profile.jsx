@@ -6,9 +6,8 @@ import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import Education from "../components/Education.jsx";
 import Certificates from "../components/Certificates.jsx";
-import "../components/styles/Profile.css";
-
 import Skills from "../components/Skills.jsx";
+import "../components/styles/Profile.css";
 
 const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
 
