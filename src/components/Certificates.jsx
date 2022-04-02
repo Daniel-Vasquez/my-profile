@@ -27,6 +27,7 @@ const Certificates = () => {
                     pathname: certificate.link,
                   }}
                   target="_blank"
+                  title="Ver certificado"
                 >
                   {certificate.title}
                 </Link>
