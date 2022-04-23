@@ -7,10 +7,15 @@
   overflow: hidden;
   transition: all 0.3s;
   background-color: white;
+  cursor: pointer;
 }
 
 .skillscontent-container:hover {
-  transform: scale(1.1);
+  border-color: black;
+}
+
+.skillscontent-container:hover .skillscontent-container__title {
+  border-bottom-color: black;
 }
 
 .skillscontent-container__title {
@@ -22,6 +27,7 @@
   border-bottom: 1px solid #cdd2da;
   color: black;
   margin: 0;
+  transition: all 0.3s;
 }
 
 .skillscontent-container__technologies--title {
@@ -92,7 +98,11 @@
 
 .item-link {
   text-decoration: none;
-  color: #2666c2;
+  color: #206bd5;
+}
+
+.item-link:hover {
+  text-decoration: revert;
 }
 
 @media screen and (max-width: 700px) {

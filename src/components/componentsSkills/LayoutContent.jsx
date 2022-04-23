@@ -21,9 +21,33 @@ const LayoutContent = ({
         </h3>
         <hr className="skillscontent-container__technologies--line" />
         <ul className="skillscontent-container__technologies--list">
-          <li className="item">{item}</li>
+          <li className="item">
+            <Link
+              className="item-link"
+              to={{
+                pathname:
+                  "https://platzi.com/p/DanielVas/curso/1492-html-css-2019/diploma/detalle/",
+              }}
+              target="_blank"
+              title="Visitar proyecto"
+            >
+              {item}
+            </Link>
+          </li>
           <li className="item">{item2}</li>
-          <li className="item">{item3}</li>
+          <li className="item">
+            <Link
+              className="item-link"
+              to={{
+                pathname:
+                  "https://platzi.com/p/DanielVas/curso/1229-css-grid-layout-2017/diploma/detalle/",
+              }}
+              target="_blank"
+              title="Visitar proyecto"
+            >
+              {item3}
+            </Link>
+          </li>
           <li className="item">{item4}</li>
         </ul>
       </div>

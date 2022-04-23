@@ -1,7 +1,7 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
-import profilePhoto from "../images/danPerfil.png";
+import profilePhoto from "../images/dan-perfil.png";
 import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import Education from "../components/Education.jsx";

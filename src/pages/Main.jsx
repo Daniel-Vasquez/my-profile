@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logoGithub from "../images/logo-github.png";
 import logoWhats from "../images/logo-whatsapp.png";
 import logoEmail from "../images/logo-correo.png";
-import personalImage from "../images/danPerfil.png";
+import personalImage from "../images/dan-perfil.png";
 import NewLittleCard from "../components/NewLittleCard";
 import "../components/styles/Main.css";
 
