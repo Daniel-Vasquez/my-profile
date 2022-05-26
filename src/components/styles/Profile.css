@@ -1,5 +1,5 @@
 .profileContainer {
-  padding: 30px 40px;
+  padding: 15px 40px;
   border-top: 2px solid #cdd2da;
   border-bottom: 2px solid #cdd2da;
   margin-bottom: 30px;
@@ -315,6 +315,238 @@
   }
 }
 
+
+#generalContainerToggle {
+  height: 310px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#camera {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #eaeaea;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+
+}
+
+#panel {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background: #eaeaea;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, .2);
+  transform: rotate(-90deg) scale(0);
+  margin-left: 200px;
+}
+
+#camera {
+  z-index: 2;
+  margin-left: 350px;
+}
+
+.btn {
+  position: absolute;
+  top: 22px;
+  right: 35px;
+  width: 40px;
+  height: 30px;
+  background-color: #2e3e4f;
+  border-radius: 15px;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, .4);
+  transition: all .2s ease-in-out;
+  animation: led 1.3s infinite;
+
+}
+
+.btn:hover {
+  cursor: pointer;
+  margin-top: 2px;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, .4);
+}
+
+.shadow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 240px;
+  height: 20px;
+  margin: 170px -120px 0px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .3);
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.strip {
+  height: 110px;
+  background-color: #54b59a;
+  border-top: 10px solid #479a83;
+  border-bottom: 10px solid #479a83;
+  margin: 80px 0px;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, .4);
+}
+
+.lens {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 144px;
+  height: 144px;
+  margin: -90px;
+  border: 18px solid #b44b37;
+  border-radius: 50%;
+  background-color: #111;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, .4);
+}
+
+.lens:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 20px solid rgb(60, 60, 60);
+  border-radius: 50%;
+  background: rgb(34, 34, 34);
+}
+
+.lens:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin: 40px;
+  border: 11px solid rgb(22, 22, 22);
+  border-radius: 50%;
+  background: rgb(131, 131, 131);
+}
+
+.led {
+  position: absolute;
+  left: 35px;
+  top: 30px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 136, 115);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, .1);
+}
+
+.pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -120px -75px;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, .2);
+}
+
+.pic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lnk {
+  position: relative;
+  top: 230px;
+  font-size: 25px;
+  color: #777;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.lnk:hover {
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, .2);
+  color: black;
+}
+
+#generalContainerToggle.open>#panel {
+  transform-origin: 0% 0%;
+  transform: rotate(0deg) scale(1);
+  margin-left: 500px;
+  width: 300px;
+  height: 300px;
+}
+
+#generalContainerToggle.open>#camera {
+  margin-left: 200px;
+}
+
+#generalContainerToggle.open>.shadow {
+  margin: 170px -260px 0px;
+  width: 520px;
+}
+
+@-webkit-keyframes led {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes led {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes led {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes led {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes led {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1055px) {
   .profile-container__title,
   .profile-container__text1,
@@ -323,6 +555,7 @@
   .presentationImg {
     position: initial;
     margin: 0 auto;
+    text-align: center;
   }
 
   .profile-container {
@@ -334,6 +567,30 @@
 
   .contacts {
     position: initial;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #generalContainerToggle {
+    height: auto;
+    width: 300px;
+  }
+
+  #camera, #panel {
+    margin: 0 auto;
+  }
+
+  #camera, #panel {
+    position: relative;
+  }
+
+  #generalContainerToggle.open>#camera, 
+  #generalContainerToggle.open>#panel {
+    margin: 0 auto;
+  }
+
+  #generalContainerToggle.open>#panel {
+    transform-origin: top;
   }
 }
 
