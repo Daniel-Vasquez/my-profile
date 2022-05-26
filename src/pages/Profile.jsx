@@ -7,8 +7,8 @@ import projectData from "../api";
 import Education from "../components/Education.jsx";
 import Certificates from "../components/Certificates.jsx";
 import Skills from "../components/Skills.jsx";
-import "../components/styles/Profile.css";
 import personalImage from "../images/daniel.png";
+import "../components/styles/Profile.css";
 
 
 const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
@@ -32,6 +32,39 @@ class Profile extends Component {
 
     return (
       <div className="containerGenealProfile">
+                <section>
+          <div id="generalContainerToggle" className="generalContainer">
+            <div id="camera">
+              <div className="strip"></div>
+              <div className="lens"></div>
+              <div className="led"></div>
+              <div
+                id="btnToggle"
+                onClick={() => this.handleButtonClicked()}
+                className="btnCamera"
+              ></div>
+            </div>
+            <div id="panel">
+              <div className="pic">
+                <img className="pic-img" src={personalImage} />
+              </div>
+              <center>
+                <Link 
+                  className="lnk"
+                  to={{
+                    pathname: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+                  }}
+                  target="_black"
+                  title="Visitar"
+                >
+                  Linkedin
+                </Link>
+              </center>
+            </div>
+            {/* <div className="shadow"></div> */}
+          </div>
+        </section>
+
         <section className="profileContainer">
           <div className="generalContainer profile-container">
             <h3 className="profile-container__title">
@@ -75,39 +108,6 @@ class Profile extends Component {
               <p className="contacts-text">Contactos</p>
               <Contacts />
             </section>
-          </div>
-        </section>
-
-        <section>
-          <div id="generalContainerToggle" className="generalContainer">
-            <div id="camera">
-              <div className="strip"></div>
-              <div className="lens"></div>
-              <div className="led"></div>
-              <div
-                id="btnToggle"
-                onClick={() => this.handleButtonClicked()}
-                className="btn"
-              ></div>
-            </div>
-            <div id="panel">
-              <div className="pic">
-                <img className="pic-img" src={personalImage} />
-              </div>
-              <center>
-                <Link 
-                  className="lnk"
-                  to={{
-                    pathname: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-                  }}
-                  target="_black"
-                  title="Visitar"
-                >
-                  Linkedin
-                </Link>
-              </center>
-            </div>
-            {/* <div className="shadow"></div> */}
           </div>
         </section>
 
