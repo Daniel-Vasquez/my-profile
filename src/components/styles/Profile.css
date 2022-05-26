@@ -269,10 +269,10 @@
   }
 }
 
-
 #generalContainerToggle {
-  height: 310px;
+  height: 298px;
   position: relative;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -299,7 +299,7 @@
   transition: all .5s ease-in-out;
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, .2);
   transform: rotate(-90deg) scale(0);
-  margin-left: 200px;
+  margin-left: 360px;
 }
 
 #camera {

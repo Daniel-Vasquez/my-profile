@@ -32,7 +32,7 @@ class Profile extends Component {
 
     return (
       <div className="containerGenealProfile">
-                <section>
+        <section className="continerCamera">
           <div id="generalContainerToggle" className="generalContainer">
             <div id="camera">
               <div className="strip"></div>
@@ -49,10 +49,11 @@ class Profile extends Component {
                 <img className="pic-img" src={personalImage} />
               </div>
               <center>
-                <Link 
+                <Link
                   className="lnk"
                   to={{
-                    pathname: "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
+                    pathname:
+                      "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
                   }}
                   target="_black"
                   title="Visitar"
@@ -61,7 +62,6 @@ class Profile extends Component {
                 </Link>
               </center>
             </div>
-            {/* <div className="shadow"></div> */}
           </div>
         </section>
 
