@@ -29,7 +29,7 @@
 .contactContainer-whats__img,
 .contactContainer-email__img {
   width: 65%;
-  opacity: 0.4;
+  opacity: 0.5;
   transition: all 0.2s;
 }
 

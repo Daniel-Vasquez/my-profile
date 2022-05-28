@@ -32,9 +32,9 @@ class Profile extends Component {
 
     return (
       <div className="containerGenealProfile">
-        <section className="continerCamera">
+        <section className="camera">
           <div id="generalContainerToggle" className="generalContainer">
-            <div id="camera">
+            <div id="cameraContainer">
               <div className="strip"></div>
               <div className="lens"></div>
               <div className="led"></div>
@@ -44,9 +44,14 @@ class Profile extends Component {
                 className="btnCamera"
               ></div>
             </div>
-            <div id="panel">
-              <div className="pic">
-                <img className="pic-img" src={personalImage} />
+            <div id="cameraScreen">
+              <div className="cameraMirror">
+                <div class="containerCard">
+                  <div class="contentCard">
+                    <img className="cameraMirror-img" src={personalImage} />
+                  </div>
+                  <div class="cameraFlap"></div>
+                </div>
               </div>
               <center>
                 <Link
@@ -74,6 +79,7 @@ class Profile extends Component {
               </span>
               con más de un año de preparación, de estudio y práctica.
             </h3>
+
             <p className="profile-container__text1">
               He tomado cursos base de HTMl y CSS (Maquetación, CSS Grid y
               responsive design), además de otros cursos más avanzados referente
@@ -83,8 +89,7 @@ class Profile extends Component {
               y python (tema en curso).
             </p>
             <p className="profile-container__text2">
-              Me encanta aprender nuevas cosas, soy una persona sumamente
-              obstinada y perseverante, pero sé en qué momento pedir ayuda.
+              Me encanta aprender nuevas cosas.
             </p>
             <div className="presentationImg">
               <Link
