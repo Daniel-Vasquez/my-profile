@@ -7,7 +7,7 @@ function Navbar() {
     <header className="headerContainer">
       <section className="headerContainer-title">
         <Link className="headerContainer-title__link" to="/">
-            Mi portafolio
+          Mi portafolio
         </Link>
       </section>
       <section className="headerContainer-link">

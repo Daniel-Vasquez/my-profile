@@ -7,41 +7,34 @@ import { motion } from "framer-motion";
 
 function LittleCardProjectPost() {
   return (
-    <div className="cardsContainer generalContainer">
-      <div className="modal"></div>
+    <div className="cardProject generalContainer">
       {ProjectsData.map((project) => {
         return (
           <React.Fragment key={project.id}>
             <motion.div
-              className="card"
-              style={{
-                backgroundImage: `url('${project.img}')`,
-              }}
+              className="cardProject-card"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
             >
-              <div className="card-description">
-                <div className="description-title">
+              <div className="cardProject-img">
+                <span className="cardProject-img-sapn">
+                  <img className="cardProject-img-sapn__img" src={project.img} alt="" style={{width: "300px"}}/>
+                </span>
+              </div>
+              <div className="cardProject-info">
+                <p className="cardProject-title">{project.title}</p>
+                <p className="cardProject-description">{project.description}</p>
+                <div className="cardProject-links">
                   <Link
-                    className="description-title__btn"
-                    to={{ pathname: project.link }}
-                    target="_black"
-                    title="Visitar sitio web"
-                  >
-                    <p className="description-title__title">{project.title}</p>
-                  </Link>
-                </div>
-                <div className="description-buttons">
-                  <Link
-                    className="description-buttons__btn"
+                    className="cardProject-links-btn__details"
                     to={`/project/${project.path}`}
                     title="Ver detalles del proycto"
                   >
                     Detalles
                   </Link>
                   <Link
-                    className="description-buttons__btn"
+                    className="cardProject-links-btn__visit"
                     to={{ pathname: project.link }}
                     target="_black"
                     title="Visitar sitio web"

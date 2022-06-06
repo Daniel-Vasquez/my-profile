@@ -1,4 +1,6 @@
-/*------ Camera -------*/
+.containerGenealProfile {
+  margin-top: 105px;
+}
 
 #generalContainerToggle {
   height: 298px;
@@ -181,17 +183,6 @@
   width: 520px;
 }
 
-
-
-/*------------# Card ------------*/
-
-.sectionsCardText {
-  position: relative;
-  height: 400px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .containerCard  {
   position: absolute;
   width: 100%;
@@ -266,16 +257,10 @@
   transform: translatex(-300px);
 }
 
-/*------------/ Card ------------*/
-
-/*------ Camera -------*/
-
-
-
 .profileContainer {
   padding: 15px 40px;
-  border-top: 2px solid #cdd2da;
-  border-bottom: 2px solid #cdd2da;
+  border-top: 1px solid #cdd2da;
+  border-bottom: 1px solid #cdd2da;
   margin-bottom: 30px;
 }
 
@@ -337,10 +322,6 @@
   animation-fill-mode: both;
   transition: all 0.3s;
 }
-
-/* .profile-container__text1:hover {
-  background-color: #3ce097;
-} */
 
 .profile-container__text2 {
   box-shadow: 0px 0px 5px 0px #00000063;
@@ -459,7 +440,6 @@
 }
 
 .contacts:hover {
-  /* box-shadow: inset 0px 0px 14px 3px black; */
   filter: invert(1);
 }
 

@@ -1,0 +1,32 @@
+.contactCustom {
+  display: flex;
+}
+
+.contactCustom-link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contactCustom-img {
+  width: 20px;
+  height: 20px;
+  opacity: .7;
+  transition: all .3s;
+}
+
+.contactCustom-title {
+  font-weight: 900;
+  color: #9ca3af;
+  margin-left: 8px;
+  transition: all .3s;
+}
+
+.contactCustom-link:hover .contactCustom-title {
+  color: black;
+}
+
+.contactCustom-link:hover .contactCustom-img {
+  opacity: 1;
+}

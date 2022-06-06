@@ -3,7 +3,7 @@
   background-color: white;
   position: relative;
   border-bottom: 1px solid #4d5055;
-  border-top: 1px solid #4d5055;
+  margin-top: 90px;
 }
 
 .main-container {
@@ -11,17 +11,17 @@
   align-items: center;
   max-width: 1000px;
   width: 100%;
-  min-height: 440px;
+  min-height: 380px;
   position: relative;
   margin: 0 auto;
 }
 
 .main-container__img {
-  max-width: 375px;
+  max-width: 200px;
   width: 100%;
-  height: 400px;
+  height: 320px;
   position: absolute;
-  right: 45px;
+  right: 197px;
   transition: all 0.3s;
 }
 
@@ -47,14 +47,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 480px;
-  height: 240px;
+  width: 470px;
+  height: 200px;
   padding: 0px 15px;
   box-shadow: 0px 0px 7px 1px #5a5a5a;
   backdrop-filter: blur(4px);
   border-radius: 20px;
   position: absolute;
-  left: 145px;
+  left: 150px;
   transition: all 0.4s;
   background-color: transparent;
   -webkit-animation-name: main-container__description;
@@ -102,22 +102,8 @@
 }
 
 .projectsContainer {
-  background-image: linear-gradient(25deg, #ffffffbf 50%, #cccccc 50%);
+  background-color: "#f6f6f6";
   padding-bottom: 30px;
-}
-
-.mainContainer-linkProjects {
-  text-align: center;
-}
-
-.mainContainer-linkProjects .mainContainer-linkProjects__link {
-  background-color: black;
-  color: white;
-}
-
-.mainContainer-linkProjects__link:hover {
-  background-color: black;
-  color: white;
 }
 
 .mainContainer-git__link {
@@ -133,21 +119,102 @@
 .projectsContainer-title {
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
-  background-color: black;
+  padding: 25px 0px;
+  background-color: white;
   font-size: 40px;
   font-weight: 500;
-  margin: 25px 0;
-  color: white;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  margin: 0;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.outstandingProjectsContainer {
+  padding: 0 10px;
+}
+
+.outstandingProjects-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+  transition: all .3s;
+}
+
+.outstandingProjects-container:hover {
+  transform: scale(1.03);
+}
+
+.outstandingProjects-img {
+  border-radius: 15px;
+  width: 400px;
+  height: 225px;
+  border: 1px solid #c7c7c7;
+}
+
+.outstandingProjects-info {
+  width: 100%;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.outstandingProjects-title {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 900;
+  color: #4781ff;
+}
+
+.outstandingProjects-description {
+  color: #9ca3af;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -.3px;
+}
+
+.outstandingProjects-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.outstandingProjects-btn__details {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #cffafe;
+  text-decoration: none;
+  color: #207490;
+  font-weight: 900;
+  transition: all .3s;
+  opacity: .7;
+}
+
+.outstandingProjects-btn__visit {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #dcfce7;
+  text-decoration: none;
+  color: #28803d;
+  font-weight: 900;
+  transition: all .3s;
+  opacity: .7;
+}
+
+.outstandingProjects-btn__details:hover,
+.outstandingProjects-btn__visit:hover {
+  opacity: 1;
+}
+
+.outstandingProjects-allProducts {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
 }
 
 .instagramContainer {
   background-color: #76787a;
   border-top: 1px solid #a1a3a76e;
   border-bottom: 1px solid #a1a3a76e;
-  padding-bottom: 30px;
+  padding: 90px 0;
 }
 
 .projectDestacado-link {
@@ -172,19 +239,6 @@
   transform: rotate(360deg);
 }
 
-.ParagranphsImpact {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
-  line-height: 1.3;
-  color: black;
-}
-
-.ParagranphsImpact span {
-  color: #c3285d;
-  font-size: 35px;
-}
-
 .main-container__paragraphs {
   margin: 10px 0;
   line-height: 1.4;
@@ -203,7 +257,10 @@
 
 .instagramContainer-title {
   text-align: center;
-  margin: 20px 5px;
+  margin: 0px;
+  font-size: 27px;
+  letter-spacing: -.3px;
+  margin-bottom: 50px;
 }
 
 .main-container__mail {
@@ -212,6 +269,7 @@
   width: 230px;
   margin-bottom: 10px;
   color: black;
+  font-weight: 900;
 }
 
 .main-mail__logo {
@@ -376,17 +434,21 @@
 
   .main-container {
     flex-direction: column;
-    height: auto;
+    height: 480px;
     position: initial;
   }
 
   .main-container__img {
-    position: initial;
+    position: relative;
+    right: 0;
   }
 
   .main-container__description {
-    position: initial;
+    position: absolute;
     margin-bottom: 20px;
+    left: initial;
+    bottom: 20px;
+    margin: 0 10px;
   }
 }
 
@@ -415,6 +477,32 @@
   .containerButton {
     margin-bottom: 45px;
   }
+
+  .outstandingProjectsContainer {
+    padding: 0;
+  }
+
+  .outstandingProjects-container {
+    flex-direction: column;
+  }
+
+  .outstandingProjects-img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .outstandingProjects-info {
+    margin-left: 0;
+  }
+
+  .outstandingProjects-btn {
+    margin: 0 auto;
+  }
+
+  .outstandingProjects-allProducts {
+    justify-content: center;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -422,9 +510,8 @@
     width: auto;
   }
 
-  .ParagranphsImpact,
   .instagramContainer-title {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .main-container__paragraphs {
@@ -448,15 +535,10 @@
     margin: 10px 0;
     font-size: 13px;
   }
-
-  .ParagranphsImpact span {
-    font-size: 27px;
-  }
 }
 
 @media screen and (max-width: 400px) {
   .main-container__img {
-    width: 280px;
-    height: 300px;
+    width: 200px;
   }
 }
