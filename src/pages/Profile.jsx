@@ -2,7 +2,7 @@ import React from "react";
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
-import profilePhoto from "../images/dan-perfil.png";
+// import profilePhoto from "../images/dan-perfil.png";
 import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import Education from "../components/Education.jsx";
@@ -12,7 +12,7 @@ import personalImage from "../images/daniel.png";
 import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Profile.css";
 
-const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
+// const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
 
 function ScrollToTopOnMount() {
   useScrollToTop();
@@ -40,6 +40,25 @@ class Profile extends Component {
       <React.Fragment>
         <ScrollToTopOnMount />
         <div className="containerGenealProfile">
+          <section className="infoPersonal generalContainer">
+            <h1 className="profile-container__title">Hola 👋, soy Daniel Vásquez.</h1>
+            <p className="profile-container__text">
+              Soy Desarrollador Frontend
+              con más de un año de preparación, de estudio y práctica.
+            </p>
+            <p>
+              He tomado cursos base de HTMl y CSS (Maquetación, CSS Grid y
+              responsive design), además de otros cursos más avanzados
+              referente a <span className="text1-span__js">JavaScript</span>{" "}
+              como: Web Components, Asíncronismo con javaScript, manipulación
+              del DOM (con puro vanilla js),{" "}
+              <span className="text1-span__react">React</span> y python (tema
+              en curso).
+            </p>
+            <p>
+              Me encanta aprender nuevas cosas.
+            </p>
+          </section>
           <section className="camera">
             <div id="generalContainerToggle" className="generalContainer">
               <div id="cameraContainer">
@@ -77,53 +96,10 @@ class Profile extends Component {
               </div>
             </div>
           </section>
-
-          <section className="profileContainer">
-            <div className="generalContainer profile-container">
-              <h3 className="profile-container__title">
-                Soy{" "}
-                <span className="profile-container__span">
-                  Desarrollador Frontend
-                </span>
-                con más de un año de preparación, de estudio y práctica.
-              </h3>
-
-              <p className="profile-container__text1">
-                He tomado cursos base de HTMl y CSS (Maquetación, CSS Grid y
-                responsive design), además de otros cursos más avanzados
-                referente a <span className="text1-span__js">JavaScript</span>{" "}
-                como: Web Components, Asíncronismo con javaScript, manipulación
-                del DOM (con puro vanilla js),{" "}
-                <span className="text1-span__react">React</span> y python (tema
-                en curso).
-              </p>
-              <p className="profile-container__text2">
-                Me encanta aprender nuevas cosas.
-              </p>
-              <div className="presentationImg">
-                <Link
-                  className="profile-container__link"
-                  to={{
-                    pathname:
-                      "https://www.linkedin.com/in/daniel-vasquez-nepomuceno/",
-                  }}
-                  target="_black"
-                  title="Linkedin"
-                >
-                  {!profilePhoto && <ImageProfile />}
-                  <img
-                    className="profile-container__img"
-                    src={profilePhoto}
-                    alt="Daniel Vásquez"
-                  />
-                </Link>
-              </div>
-              <section className="contacts">
-                <p className="contacts-text">Contactos</p>
-                <Contacts />
-              </section>
-            </div>
-          </section>
+          <div className="contacts">
+            <p className="contacts-text">Contactos</p>
+            <Contacts />
+          </div>
 
           <section className="Education">
             <div className="generalContainer">
