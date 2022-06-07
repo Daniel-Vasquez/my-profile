@@ -19,7 +19,10 @@ function LittleCardProjectPost() {
             >
               <div className="cardProject-img">
                 <span className="cardProject-img-sapn">
-                  <img className="cardProject-img-sapn__img" src={project.img} alt="" style={{width: "300px"}}/>
+                  <img 
+                    className="cardProject-img-sapn__img" 
+                    src={project.img} alt={project.title}
+                  />
                 </span>
               </div>
               <div className="cardProject-info">

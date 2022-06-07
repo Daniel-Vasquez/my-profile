@@ -30,6 +30,7 @@
   width: 120px;
   height: 10px;
   border-radius: 10px;
+  background-color: transparent;
 }
 .levelContainer-input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -51,7 +52,7 @@
   height: 17px;
   width: 17px;
   margin-top: -9px; 
-  background: #ffffff; 
+  background-color: #ffffff; 
   border-radius: 50%; 
   border: solid 0.125em rgba(0, 0, 0, 0.5); 
   box-shadow: 0 .125em .125em #3b4547; 

@@ -173,7 +173,7 @@
 .outstandingProjects-btn {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 165px;
 }
 
 .outstandingProjects-btn__details {
@@ -473,11 +473,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  .containerButton {
-    margin-bottom: 45px;
-  }
-
+@media screen and (max-width: 850px) {
   .outstandingProjectsContainer {
     padding: 0;
   }
@@ -486,17 +482,17 @@
     flex-direction: column;
   }
 
+  .outstandingProjects-image {
+    text-align: center;
+  }
+
   .outstandingProjects-img {
-    width: 300px;
-    height: 200px;
+    width: 95%;
+    height: auto;
   }
 
   .outstandingProjects-info {
     margin-left: 0;
-  }
-
-  .outstandingProjects-btn {
-    margin: 0 auto;
   }
 
   .outstandingProjects-allProducts {

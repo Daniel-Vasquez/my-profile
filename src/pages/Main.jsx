@@ -6,6 +6,7 @@ import logoWhats from "../images/logo-whatsapp.png";
 import logoEmail from "../images/logo-correo.png";
 import personalImage from "../images/daniel.png";
 import Btn from "../components/Btn.jsx";
+import useScrollToTop from "../hooks/useScrollToTop";
 import "../components/styles/Main.css";
 
 function LinkWithImage({ linkClassName, url, text, imgClassName, img }) {
@@ -23,7 +24,7 @@ function LinkWithImage({ linkClassName, url, text, imgClassName, img }) {
 
 function Main() {
   const outstandingProjects = ProjectsData.slice(0, 4);
-
+  useScrollToTop()
   return (
     <>
       <section className="mainContainer">
