@@ -119,21 +119,24 @@
 .projectsContainer-title {
   display: flex;
   justify-content: center;
-  padding: 25px 0px;
-  background-color: white;
+  width: 250px;
+  border-bottom: 1px solid #7c7c7c;
+  padding: 25px 0px 15px;
   font-size: 40px;
   font-weight: 500;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   color: black;
 }
 
 .outstandingProjectsContainer {
-  padding: 0 10px;
+  padding: 20px 10px 0;
 }
 
 .outstandingProjects-container {
-  display: flex;
+  display: grid;
+  grid-template: 1fr / .2fr 1fr;
+  gap: 0px 25px;
   align-items: center;
   margin-bottom: 45px;
   transition: all .3s;
@@ -152,8 +155,10 @@
 
 .outstandingProjects-info {
   width: 100%;
-  padding: 20px;
-  margin-left: 30px;
+  padding: 25px;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
 }
 
 .outstandingProjects-title {
@@ -479,7 +484,9 @@
   }
 
   .outstandingProjects-container {
-    flex-direction: column;
+    grid-template: .2fr auto / 90%;
+    justify-items: center;
+    justify-content: center;
   }
 
   .outstandingProjects-image {
@@ -489,10 +496,14 @@
   .outstandingProjects-img {
     width: 95%;
     height: auto;
+    border-radius: 10px;
   }
 
   .outstandingProjects-info {
     margin-left: 0;
+    margin-top: 5px;
+    width: 95%;
+    border-radius: 10px;
   }
 
   .outstandingProjects-allProducts {
@@ -523,6 +534,13 @@
   .main-container__mail {
     margin: 0 auto;
     justify-content: center;
+  }
+
+  .outstandingProjects-description {
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 

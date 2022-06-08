@@ -2,7 +2,6 @@ import React from "react";
 import { Component } from "react";
 import { Link } from "react-router-dom";
 import Contacts from "../components/Contacts.jsx";
-// import profilePhoto from "../images/dan-perfil.png";
 import MobileCard from "../components/MobileCard.jsx";
 import projectData from "../api";
 import Education from "../components/Education.jsx";
@@ -11,8 +10,6 @@ import Skills from "../components/Skills.jsx";
 import personalImage from "../images/daniel.png";
 import useScrollToTop from "../hooks/useScrollToTop.js";
 import "../components/styles/Profile.css";
-
-// const ImageProfile = () => <p className="imageProfile">Cargando...</p>;
 
 function ScrollToTopOnMount() {
   useScrollToTop();
