@@ -70,11 +70,12 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .containerImages {
     grid-template: auto auto / 1fr;
     gap: 15px 0;
     height: auto;
+    margin-top: 0;
   }
 
   .containerDesk {
@@ -112,10 +113,6 @@
 }
 
 @media screen and (max-width: 450px) {
-  .containerImages {
-    grid-template: 2fr 1fr / 1fr;
-  }
-
   .cicle {
     width: 8px;
     height: 8px;

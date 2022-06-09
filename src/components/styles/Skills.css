@@ -1,6 +1,7 @@
 .skills-container {
   max-width: 1000px;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   background-color: transparent;
   display: flex;
   justify-content: space-evenly;

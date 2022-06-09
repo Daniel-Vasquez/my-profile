@@ -12,26 +12,32 @@ const Footer = () => {
     <div className="footer generalContainer">
       <div className="footer-info">
         <div className="contactsContainer">
-          <FooterLogos
-            url="https://github.com/Daniel-Vasquez"
-            logo={logoGithub}
-            text="GitHub"
-          />
-          <FooterLogos
-            url="https://api.whatsapp.com/send?phone=525531483433"
-            logo={logoWhats}
-            text="WhatsApp"
-          />
-          <FooterLogos
-            url="mailto:dani.vasquez.dev@gmail.com"
-            logo={logoEmail}
-            text="Correo"
-          />
-          <FooterLogos
-            url="https://www.linkedin.com/in/daniel-vasquez-nepomuceno/"
-            logo={logoLinkedin}
-            text="Linkedin"
-          />
+          <ul className="wrapper">
+            <FooterLogos
+              socialClassName="gitHub"
+              url="https://github.com/Daniel-Vasquez"
+              logo={logoGithub}
+              name="GitHub"
+            />
+            <FooterLogos
+              socialClassName="whatsApp"
+              url="https://api.whatsapp.com/send?phone=525531483433"
+              logo={logoWhats}
+              name="WhatsApp"
+            />
+            <FooterLogos
+              socialClassName="correo"
+              url="mailto:dani.vasquez.dev@gmail.com"
+              logo={logoEmail}
+              name="Correo"
+            />
+            <FooterLogos
+              socialClassName="linkedin"
+              url="https://www.linkedin.com/in/daniel-vasquez-nepomuceno/"
+              logo={logoLinkedin}
+              name="Linkedin"
+            />
+          </ul>
         </div>
         <div className="contactsContainer-me">
           <Link className="contactsContainer-me__link" to="/perfil">

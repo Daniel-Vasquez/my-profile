@@ -21,7 +21,9 @@ function CardProjectPost(props) {
           <h2 className="projectContainer-info__title">{props.title}</h2>
           <div className="projectContainer-info__paragraph">
             {props.children}
-            {props.description}
+            <div className="projectContainer-info__description">
+              {props.description}
+            </div>
             <Icons technologies={props.technologies} />
             <span className="projectContainer-info__span">
               *Porcentajes tomados de cada proyecto en GitHub
@@ -29,18 +31,19 @@ function CardProjectPost(props) {
           </div>
           <div className="projectContainer-links">
             <Link
-              className="projectContainer-sitio__link"
+              className="projectContainer-links__link effectBtn"
               to={{ pathname: props.link }}
               target="_blank"
             >
-              Visitar sitio
+              <span>Visitar</span>
             </Link>
+
             <Link
-              className="projectContainer-codigo__link"
+              className="projectContainer-links__link effectBtn"
               to={{ pathname: props.codigo }}
               target="_blank"
             >
-              Ver código
+              <span>Ver código</span>
             </Link>
           </div>
         </div>

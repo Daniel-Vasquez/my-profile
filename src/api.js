@@ -347,8 +347,9 @@ const ProjectsData = [
       <>
         Mi primer boceto de 'Mi portafolio personal', diseñado con puro HTMl y
         CSS. Lo agregué a mis proyectos destacados porque refleja la enorme
-        diferencia entre el primer y el actual portafolio. <br /> Es un diseño
-        sumamente sencillo y fácil, pero marca el antes y de lo que ahora puedo
+        diferencia entre el primer y el actual portafolio. <br /> 
+        <br />
+        Es un diseño sumamente sencillo y fácil, pero marca el antes y de lo que ahora puedo
         lograr con mi constante preparación.
       </>
     ),
@@ -397,10 +398,7 @@ const ProjectsData = [
       <>
         Jugar a "Piedra, papel o tijera" no solo es un entretenimiento, también
         juega un papel importante la estrategia. Hay quien tiene hasta un método
-        para ganar siempre. ¡Siempre! <br />
-        <br /> Además, jugarlo supone rapidez física y mental, eso lo convierte
-        en un divertido entretenimiento que gusta mucho a los niños porque
-        pueden enfrentar sus habilidades.
+        para ganar siempre.
       </>
     ),
     link: "https://daniel-vasquez.github.io/piedra-papel-tijera/",

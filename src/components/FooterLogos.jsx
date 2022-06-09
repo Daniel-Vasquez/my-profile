@@ -1,25 +1,17 @@
-import React from 'react'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import "./styles/FooterLogos.css"
+import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-const FooterLogos = ({url, logo, text}) => {
+const FooterLogos = ({ socialClassName, url, logo, name }) => {
   return (
-    <div className="contactCustom">
-      <Link
-        className="contactCustom-link"
-        to={{ pathname: url }}
-        target="_black"
-      >
-        <img
-          className="contactCustom-img"
-          src={logo}
-          alt="Contacto"
-          title="GitHub"
-        />
-        <p className="contactCustom-title">{text}</p>
-      </Link>
-    </div>
-  )
-}
+    <Link
+      className={`icon ${socialClassName}`}
+      to={{ pathname: url }}
+      target="_black"
+    >
+      <span className="tooltip">{name}</span>
+      <img className="icon-img" src={logo} alt={name} title={name} />
+    </Link>
+  );
+};
 
-export default FooterLogos
+export default FooterLogos;
