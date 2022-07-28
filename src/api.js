@@ -460,16 +460,12 @@ const ProjectsData = [
         src: "../pets-battle.png",
       },
       {
-        id: 2,
+        id: 1,
         src: "../pets-battle-2.png",
       },
       {
-        id: 3,
+        id: 2,
         src: "../pets-battle-3.png",
-      },
-      {
-        id: 4,
-        src: "../pets-battle-4.png",
       },
     ],
     technologies: [
