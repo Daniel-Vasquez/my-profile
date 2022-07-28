@@ -438,6 +438,58 @@ const ProjectsData = [
       },
     ],
   },
+  {
+    id: 10,
+    path: "battalla-de-mascotas",
+    title: "Batalla de mascotas",
+    description: (
+      <>
+        Vive una épica batalla entre mascotas, elige estratégicamente a tu 
+        personaje y cada uno de sus ataques 
+        ya que el enemigo nunca tendrá piedad contigo. 
+      </>
+    ),
+    link: "https://daniel-vasquez.github.io/pet-battle/",
+    img: "pets-battle.png",
+    gif: "pets-battle.gif",
+    imageMobile: "pets-battle-mobile.gif",
+    codigo: "https://github.com/Daniel-Vasquez/pet-battle",
+    images: [
+      {
+        id: 0,
+        src: "../pets-battle.png",
+      },
+      {
+        id: 2,
+        src: "../pets-battle-2.png",
+      },
+      {
+        id: 3,
+        src: "../pets-battle-3.png",
+      },
+      {
+        id: 4,
+        src: "../pets-battle-4.png",
+      },
+    ],
+    technologies: [
+      {
+        name: "javaScript",
+        src: "../java-script-icono.png",
+        level: 34.0,
+      },
+      {
+        name: "html",
+        src: "../html-5-icono.png",
+        level: 21.3,
+      },
+      {
+        name: "css",
+        src: "../css-3-icono.png",
+        level: 44.7,
+      },
+    ],
+  },
 ];
 
 export default ProjectsData;
